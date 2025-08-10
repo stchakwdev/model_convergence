@@ -17,6 +17,10 @@ openai>=1.0.0
 anthropic>=0.3.0
 replicate>=0.15.0
 
+# Semantic similarity and NLP
+sentence-transformers>=2.2.0
+transformers>=4.21.0
+
 # Development and testing
 pytest>=7.0.0
 pytest-timeout>=2.1.0
