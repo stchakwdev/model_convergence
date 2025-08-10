@@ -18,6 +18,7 @@ import os
 import sys
 import argparse
 import json
+import numpy as np
 from datetime import datetime
 from typing import List, Dict, Any
 
@@ -349,7 +350,7 @@ Examples:
     ║   for core alignment capabilities"                           ║
     ║                                                              ║
     ║  Author: Samuel Chakwera                                     ║
-    ║  For: Anthropic Fellowship Application                       ║
+    ║  Research: Statistical analysis of AI alignment patterns    ║
     ╚══════════════════════════════════════════════════════════════╝
     """)
     
