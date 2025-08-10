@@ -1,0 +1,33 @@
+# Core scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Machine learning and statistics  
+scikit-learn>=1.3.0
+torch>=2.0.0
+
+# Data visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# API clients for model access
+openai>=1.0.0
+anthropic>=0.3.0
+replicate>=0.15.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-timeout>=2.1.0
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+requests>=2.31.0
+
+# Optional dependencies for advanced analysis
+# umap-learn>=0.5.3  # For advanced dimensionality reduction
+# gudhi>=3.8.0      # For topological data analysis

@@ -1,0 +1,210 @@
+"""
+OpenAI model implementation for GPT models.
+
+This module provides wrapper for OpenAI's GPT models (GPT-3.5, GPT-4, etc.)
+with response caching and error handling for pattern discovery experiments.
+"""
+
+import os
+import hashlib
+import json
+from typing import Optional, List, Dict
+import time
+
+try:
+    import openai
+    OPENAI_AVAILABLE = True
+except ImportError:
+    OPENAI_AVAILABLE = False
+
+from .model_interface import ModelInterface
+
+
+class OpenAIModel(ModelInterface):
+    """
+    OpenAI GPT model wrapper with caching and error handling.
+    
+    Supports GPT-3.5-turbo, GPT-4, and other OpenAI chat models.
+    """
+    
+    def __init__(self, 
+                 model_name: str = "gpt-3.5-turbo",
+                 api_key: Optional[str] = None,
+                 temperature: float = 0.0,
+                 max_tokens: int = 500,
+                 use_cache: bool = True):
+        """
+        Initialize OpenAI model wrapper.
+        
+        Args:
+            model_name: OpenAI model name (e.g., "gpt-3.5-turbo", "gpt-4")
+            api_key: OpenAI API key (if None, uses OPENAI_API_KEY env var)
+            temperature: Sampling temperature for reproducibility
+            max_tokens: Maximum response length
+            use_cache: Whether to cache responses to avoid duplicate API calls
+        """
+        super().__init__(name=model_name, architecture="transformer")
+        
+        if not OPENAI_AVAILABLE:
+            raise ImportError("OpenAI package not installed. Run: pip install openai")
+        
+        # Initialize OpenAI client
+        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
+        if not self.api_key:
+            raise ValueError("OpenAI API key not found. Set OPENAI_API_KEY environment variable or pass api_key parameter")
+        
+        self.client = openai.OpenAI(api_key=self.api_key)
+        
+        # Model configuration
+        self.model_name = model_name
+        self.temperature = temperature
+        self.max_tokens = max_tokens
+        self.use_cache = use_cache
+        
+        # Response cache
+        self.response_cache: Dict[str, str] = {}
+        self.cache_file = f".cache_{model_name.replace('-', '_')}.json"
+        
+        # Load existing cache
+        self._load_cache()
+        
+        # Rate limiting
+        self.last_request_time = 0
+        self.min_request_interval = 1.0  # Minimum seconds between requests
+        
+    def generate(self, prompt: str) -> str:
+        """
+        Generate response to prompt with caching and error handling.
+        
+        Args:
+            prompt: Input text prompt
+            
+        Returns:
+            Generated response text
+        """
+        # Check cache first
+        if self.use_cache:
+            cache_key = self._get_cache_key(prompt)
+            if cache_key in self.response_cache:
+                print(f"  📁 Cache hit for {self.name}")
+                return self.response_cache[cache_key]
+        
+        # Rate limiting
+        self._rate_limit()
+        
+        try:
+            print(f"  🌐 API call to {self.name}")
+            
+            # Make API request
+            response = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=self.temperature,
+                max_tokens=self.max_tokens,
+                seed=42  # For reproducibility in newer models
+            )
+            
+            # Extract response text
+            response_text = response.choices[0].message.content or ""
+            
+            # Cache the response
+            if self.use_cache:
+                cache_key = self._get_cache_key(prompt)
+                self.response_cache[cache_key] = response_text
+                self._save_cache()
+            
+            return response_text
+            
+        except openai.RateLimitError:
+            print(f"  ⚠️  Rate limit hit for {self.name}, waiting 60 seconds...")
+            time.sleep(60)
+            return self.generate(prompt)  # Retry
+            
+        except openai.APIError as e:
+            print(f"  ❌ API error for {self.name}: {e}")
+            return f"ERROR: API error - {str(e)}"
+            
+        except Exception as e:
+            print(f"  ❌ Unexpected error for {self.name}: {e}")
+            return f"ERROR: {str(e)}"
+    
+    def batch_generate(self, prompts: List[str]) -> List[str]:
+        """
+        Generate responses for multiple prompts with progress tracking.
+        
+        Args:
+            prompts: List of input prompts
+            
+        Returns:
+            List of generated responses
+        """
+        responses = []
+        print(f"🔄 Generating {len(prompts)} responses with {self.name}")
+        
+        for i, prompt in enumerate(prompts):
+            print(f"  Progress: {i+1}/{len(prompts)}")
+            response = self.generate(prompt)
+            responses.append(response)
+            
+        return responses
+    
+    def has_weight_access(self) -> bool:
+        """OpenAI models are API-only, no weight access."""
+        return False
+    
+    def _get_cache_key(self, prompt: str) -> str:
+        """Generate deterministic cache key for prompt."""
+        key_string = f"{self.model_name}:{self.temperature}:{self.max_tokens}:{prompt}"
+        return hashlib.md5(key_string.encode()).hexdigest()
+    
+    def _load_cache(self):
+        """Load response cache from disk."""
+        if os.path.exists(self.cache_file):
+            try:
+                with open(self.cache_file, 'r', encoding='utf-8') as f:
+                    self.response_cache = json.load(f)
+                print(f"📁 Loaded {len(self.response_cache)} cached responses for {self.name}")
+            except Exception as e:
+                print(f"⚠️  Could not load cache for {self.name}: {e}")
+                self.response_cache = {}
+    
+    def _save_cache(self):
+        """Save response cache to disk."""
+        try:
+            with open(self.cache_file, 'w', encoding='utf-8') as f:
+                json.dump(self.response_cache, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(f"⚠️  Could not save cache for {self.name}: {e}")
+    
+    def _rate_limit(self):
+        """Simple rate limiting to respect API limits."""
+        current_time = time.time()
+        time_since_last = current_time - self.last_request_time
+        
+        if time_since_last < self.min_request_interval:
+            sleep_time = self.min_request_interval - time_since_last
+            time.sleep(sleep_time)
+        
+        self.last_request_time = time.time()
+    
+    def get_api_cost_estimate(self) -> Dict[str, float]:
+        """
+        Estimate API costs based on model and usage.
+        
+        Returns:
+            Dictionary with cost estimates
+        """
+        # Approximate costs per 1K tokens (as of 2024)
+        costs_per_1k = {
+            "gpt-3.5-turbo": 0.0015,  # Input cost, output is 0.002
+            "gpt-4": 0.03,            # Input cost, output is 0.06
+            "gpt-4-turbo": 0.01,      # Input cost, output is 0.03
+        }
+        
+        base_cost = costs_per_1k.get(self.model_name, 0.002)
+        
+        return {
+            "cost_per_1k_tokens": base_cost,
+            "estimated_tokens_per_prompt": 50,  # Conservative estimate
+            "estimated_cost_per_prompt": base_cost * 0.05,
+        }
