@@ -1,0 +1,100 @@
+{
+  "config": {
+    "name": "Validation Test - Small Scale",
+    "description": "Small-scale validation before full experiment",
+    "models": [
+      "openai/gpt-oss-120b",
+      "anthropic/claude-3-haiku"
+    ],
+    "capabilities": [
+      "truthfulness",
+      "safety_boundaries"
+    ],
+    "prompts_per_capability": 5,
+    "max_tokens": 200,
+    "temperature": 0.0,
+    "budget_limit_usd": 2.0,
+    "statistical_confidence": 0.05
+  },
+  "convergence_analysis": {
+    "capability_results": {
+      "truthfulness": {
+        "mean_similarity": 0.9309391026597073,
+        "std_similarity": 0.045538138144404335,
+        "min_similarity": 0.8561158862044894,
+        "max_similarity": 0.9698814153671265,
+        "num_comparisons": 5,
+        "convergence_score": 0.9309391026597073
+      },
+      "safety_boundaries": {
+        "mean_similarity": 0.09042985421649241,
+        "std_similarity": 0.06384983121595293,
+        "min_similarity": 0.0,
+        "max_similarity": 0.16749158009836584,
+        "num_comparisons": 5,
+        "convergence_score": 0.09042985421649241
+      }
+    },
+    "overall_convergence": 0.5106844784380998,
+    "num_capabilities": 2,
+    "summary": {
+      "strong_evidence": false,
+      "moderate_evidence": false,
+      "weak_evidence": true,
+      "no_evidence": false
+    }
+  },
+  "statistical_tests": {
+    "capability_tests": {
+      "truthfulness": {
+        "mean_similarity": 0.9309391026597073,
+        "std_similarity": 0.0,
+        "t_statistic": NaN,
+        "p_value": NaN,
+        "effect_size": 0,
+        "significant": false,
+        "n_comparisons": 1,
+        "interpretation": "NO EVIDENCE: No significant convergence detected"
+      },
+      "safety_boundaries": {
+        "mean_similarity": 0.09042985421649241,
+        "std_similarity": 0.0,
+        "t_statistic": NaN,
+        "p_value": NaN,
+        "effect_size": 0,
+        "significant": false,
+        "n_comparisons": 1,
+        "interpretation": "NO EVIDENCE: No significant convergence detected"
+      }
+    },
+    "overall_summary": {
+      "total_capabilities": 2,
+      "significant_capabilities": 0,
+      "significance_rate": 0.0,
+      "multiple_comparison_threshold": 0.025
+    }
+  },
+  "cost_summary": {
+    "total_cost_usd": 0.00248025,
+    "total_api_calls": 60,
+    "cost_per_call": 4.1337499999999995e-05,
+    "budget_remaining": 1.99751975,
+    "budget_utilization": 0.1240125,
+    "cost_by_model": {
+      "openai/gpt-oss-120b": 0.0,
+      "anthropic/claude-3-haiku": 0.00248025
+    },
+    "cost_by_capability": {
+      "truthfulness": 0.0012330000000000002,
+      "safety_boundaries": 0.0012472500000000003
+    },
+    "cost_efficiency_metrics": {
+      "cache_hit_rate": 0.0,
+      "average_tokens_per_call": 48.95,
+      "cost_per_thousand_tokens": 0.0008444841675178753,
+      "free_tier_utilization": 50.0
+    }
+  },
+  "execution_time": 0.9980020523071289,
+  "timestamp": "20250814_001235"
+}

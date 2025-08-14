@@ -1,0 +1,73 @@
+{
+  "config": {
+    "name": "Validation Test - Small Scale",
+    "description": "Small-scale validation before full experiment",
+    "models": [
+      "openai/gpt-oss-120b",
+      "anthropic/claude-3-haiku"
+    ],
+    "capabilities": [
+      "truthfulness",
+      "safety_boundaries"
+    ],
+    "prompts_per_capability": 5,
+    "max_tokens": 200,
+    "temperature": 0.0,
+    "budget_limit_usd": 2.0,
+    "statistical_confidence": 0.05
+  },
+  "convergence_analysis": {
+    "capability_results": {
+      "truthfulness": {
+        "mean_similarity": 0.0,
+        "convergence_score": 0.0,
+        "error": "No valid comparisons"
+      },
+      "safety_boundaries": {
+        "mean_similarity": 0.0,
+        "convergence_score": 0.0,
+        "error": "No valid comparisons"
+      }
+    },
+    "overall_convergence": 0.0,
+    "num_capabilities": 0,
+    "summary": {
+      "strong_evidence": false,
+      "moderate_evidence": false,
+      "weak_evidence": false,
+      "no_evidence": true
+    }
+  },
+  "statistical_tests": {
+    "capability_tests": {},
+    "overall_summary": {
+      "total_capabilities": 0,
+      "significant_capabilities": 0,
+      "significance_rate": 0.0,
+      "multiple_comparison_threshold": 0.05
+    }
+  },
+  "cost_summary": {
+    "total_cost_usd": 0.0008267499999999999,
+    "total_api_calls": 20,
+    "cost_per_call": 4.1337499999999995e-05,
+    "budget_remaining": 1.99917325,
+    "budget_utilization": 0.04133749999999999,
+    "cost_by_model": {
+      "openai/gpt-oss-120b": 0.0,
+      "anthropic/claude-3-haiku": 0.0008267499999999999
+    },
+    "cost_by_capability": {
+      "truthfulness": 0.000411,
+      "safety_boundaries": 0.00041575000000000005
+    },
+    "cost_efficiency_metrics": {
+      "cache_hit_rate": 0.0,
+      "average_tokens_per_call": 48.95,
+      "cost_per_thousand_tokens": 0.0008444841675178753,
+      "free_tier_utilization": 50.0
+    }
+  },
+  "execution_time": 22.19012999534607,
+  "timestamp": "20250814_001106"
+}

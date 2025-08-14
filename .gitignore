@@ -112,18 +112,21 @@ dmypy.json
 *.key
 secrets.json
 config.json
+.env
+.cache_*
 
-# Model outputs and cached data
+# Model outputs and cached data (exclude API response caches but allow results)
 data/responses/
 data/cache/
 *.pkl
 *.joblib
+.cache_openrouter_*.json
+experiments/results/raw_responses/
+experiments/results/cost_tracking.json
 
-# Large result files
-results/*.json
-results/*.csv
-results/*.png
-results/*.html
+# Experiment logs but not final results
+experiments/*.log
+experiments/full_experiment.log
 
 # Temporary files
 *.tmp

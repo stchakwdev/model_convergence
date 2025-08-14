@@ -335,3 +335,72 @@ class EnhancedSemanticAnalyzer:
             "random_baseline_std": random_std,
             "method": f"permutation_test_{method}"
         }
+    
+    def calculate_similarity(self, text1: str, text2: str) -> float:
+        """
+        Calculate semantic similarity between two texts.
+        
+        Args:
+            text1: First text
+            text2: Second text
+            
+        Returns:
+            Similarity score between 0 and 1
+        """
+        if self.encoder is not None:
+            try:
+                embeddings = self.encoder.encode([text1, text2])
+                similarity = 1 - cosine(embeddings[0], embeddings[1])
+                return max(0.0, min(1.0, similarity))  # Clamp to [0,1]
+            except Exception as e:
+                print(f"⚠️ Embedding similarity failed: {e}")
+                return self._token_overlap_similarity(text1, text2)
+        else:
+            return self._token_overlap_similarity(text1, text2)
+    
+    def calculate_similarity_matrix(self, texts: List[str]) -> np.ndarray:
+        """
+        Calculate pairwise similarity matrix for a list of texts.
+        
+        Args:
+            texts: List of text strings
+            
+        Returns:
+            NxN similarity matrix where N = len(texts)
+        """
+        n = len(texts)
+        similarity_matrix = np.zeros((n, n))
+        
+        if self.encoder is not None:
+            try:
+                # Encode all texts at once for efficiency
+                embeddings = self.encoder.encode(texts)
+                
+                # Calculate pairwise similarities
+                for i in range(n):
+                    for j in range(n):
+                        if i == j:
+                            similarity_matrix[i, j] = 1.0
+                        else:
+                            sim = 1 - cosine(embeddings[i], embeddings[j])
+                            similarity_matrix[i, j] = max(0.0, min(1.0, sim))  # Clamp to [0,1]
+                            
+            except Exception as e:
+                print(f"⚠️ Batch embedding failed: {e}, falling back to token overlap")
+                # Fallback to token overlap
+                for i in range(n):
+                    for j in range(n):
+                        if i == j:
+                            similarity_matrix[i, j] = 1.0
+                        else:
+                            similarity_matrix[i, j] = self._token_overlap_similarity(texts[i], texts[j])
+        else:
+            # Use token overlap similarity
+            for i in range(n):
+                for j in range(n):
+                    if i == j:
+                        similarity_matrix[i, j] = 1.0
+                    else:
+                        similarity_matrix[i, j] = self._token_overlap_similarity(texts[i], texts[j])
+        
+        return similarity_matrix
