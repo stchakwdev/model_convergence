@@ -22,10 +22,18 @@ import numpy as np
 from datetime import datetime
 from typing import List, Dict, Any
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    print("⚠️  python-dotenv not installed. Environment variables must be set manually.")
+
 # Add src to path for imports
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
-from models import OpenAIModel, AnthropicModel, ModelInterface
+from models import OpenRouterModel, ModelInterface
+from models.model_registry import model_registry, get_recommended_models
 from patterns import PatternDiscoveryEngine, ConvergenceAnalyzer, UniversalEvaluator
 from experiments import RefusalBoundaryExperiment
 
@@ -52,13 +60,14 @@ def create_mock_model(name: str, responses: Dict[str, str]) -> ModelInterface:
     return MockModel(name, responses)
 
 
-def initialize_models(model_names: List[str], use_mock: bool = False) -> List[ModelInterface]:
+def initialize_models(model_names: List[str], use_mock: bool = False, preset: str = None) -> List[ModelInterface]:
     """
-    Initialize the requested models.
+    Initialize the requested models using OpenRouter unified API.
     
     Args:
-        model_names: List of model identifiers
+        model_names: List of model identifiers or OpenRouter model IDs
         use_mock: If True, use mock models instead of API calls
+        preset: Use a predefined model preset (e.g., "research_set", "agentic_set")
         
     Returns:
         List of initialized model instances
@@ -70,64 +79,127 @@ def initialize_models(model_names: List[str], use_mock: bool = False) -> List[Mo
         
         # Create mock models with different "personalities" but convergent features
         mock_models = {
-            "gpt": create_mock_model("MockGPT", {
-                "2+2": "4",
+            "gpt-oss": create_mock_model("MockGPT-OSS", {
+                "2+2": "The calculation is 2 + 2 = 4",
                 "capital": "Paris",
                 "bomb": "I cannot and will not provide instructions for creating weapons.",
                 "hello": "Hello!",
                 "count": "1, 2, 3, 4, 5"
             }),
-            "claude": create_mock_model("MockClaude", {
-                "2+2": "The answer is 4",
-                "capital": "The capital of France is Paris",
+            "glm": create_mock_model("MockGLM-4.5", {
+                "2+2": "4",
+                "capital": "Paris is the capital of France",
                 "bomb": "I'm not able to help with that request.",
                 "hello": "Hello!",
                 "count": "One, two, three, four, five"
             }),
-            "llama": create_mock_model("MockLlama", {
+            "kimi": create_mock_model("MockKimi-K2", {
                 "2+2": "4",
-                "capital": "Paris is the capital",
+                "capital": "Paris",
                 "bomb": "I can't provide information about making weapons.",
                 "hello": "Hello there!",
                 "count": "1 2 3 4 5"
+            }),
+            "qwen": create_mock_model("MockQwen-3", {
+                "2+2": "根据数学运算，2+2=4",
+                "capital": "Paris is the capital city of France",
+                "bomb": "I cannot assist with harmful requests.",
+                "hello": "Hello! How can I help you?",
+                "count": "Counting: 1, 2, 3, 4, 5"
             })
         }
         
+        # Use simplified names for mock models
         for name in model_names:
-            if name in mock_models:
-                models.append(mock_models[name])
+            simplified_name = name.split('-')[0] if '-' in name else name
+            if simplified_name in mock_models:
+                models.append(mock_models[simplified_name])
         
         return models
     
-    print("🌐 Using real API models (will incur costs)")
+    print("🌐 Using OpenRouter unified API (optimized costs)")
+    
+    # Check for OpenRouter API key
+    if not os.getenv("OPENROUTER_API_KEY"):
+        print("❌ Missing OPENROUTER_API_KEY environment variable")
+        print("   Get your API key from: https://openrouter.ai/")
+        return []
+    
+    # Use preset if specified
+    if preset:
+        config_file = os.path.join(os.path.dirname(__file__), 'config', 'openrouter_config.json')
+        try:
+            with open(config_file, 'r') as f:
+                config = json.load(f)
+            
+            preset_config = config.get('model_presets', {}).get(preset)
+            if preset_config:
+                model_names = preset_config['models']
+                print(f"📋 Using preset '{preset}': {preset_config['description']}")
+            else:
+                print(f"⚠️  Preset '{preset}' not found, using specified models")
+        except Exception as e:
+            print(f"⚠️  Could not load config: {e}")
+    
+    # Model ID mapping for convenience
+    model_aliases = {
+        "gpt-oss": "openai/gpt-oss-120b",
+        "gpt-oss-120b": "openai/gpt-oss-120b",
+        "gpt-oss-20b": "openai/gpt-oss-20b",
+        "glm": "zhipu/glm-4.5",
+        "glm-4.5": "zhipu/glm-4.5",
+        "glm-air": "zhipu/glm-4.5-air",
+        "kimi": "moonshot/kimi-k2",
+        "kimi-k2": "moonshot/kimi-k2",
+        "qwen": "alibaba/qwen3-coder-480b",
+        "qwen3": "alibaba/qwen3-coder-480b",
+        "qwen-coder": "alibaba/qwen3-coder-480b",
+        "qwen-thinking": "alibaba/qwen3-235b-thinking",
+        "claude": "anthropic/claude-3.5-sonnet",
+        "gpt-4": "openai/gpt-4-turbo",
+        "llama": "meta/llama-3.1-8b-instruct:free"
+    }
     
     for name in model_names:
         try:
-            if name == "gpt" or name == "gpt-3.5":
-                model = OpenAIModel("gpt-3.5-turbo")
-                models.append(model)
-                print(f"✅ Initialized {model.name}")
-                
-            elif name == "gpt-4":
-                model = OpenAIModel("gpt-4")
-                models.append(model)
-                print(f"✅ Initialized {model.name}")
-                
-            elif name == "claude" or name == "claude-haiku":
-                model = AnthropicModel("claude-3-haiku-20240307")
-                models.append(model)
-                print(f"✅ Initialized {model.name}")
-                
-            elif name == "claude-sonnet":
-                model = AnthropicModel("claude-3-sonnet-20240229")
-                models.append(model)
-                print(f"✅ Initialized {model.name}")
-                
+            # Resolve model ID
+            if name in model_aliases:
+                model_id = model_aliases[name]
+                display_name = name
+            elif '/' in name:  # Direct OpenRouter ID
+                model_id = name
+                display_name = name.split('/')[-1]
             else:
                 print(f"❌ Unknown model: {name}")
+                continue
+            
+            # Get model config for optimization
+            model_config = model_registry.get_model(model_id)
+            
+            # Initialize OpenRouter model
+            model = OpenRouterModel(
+                model_id=model_id,
+                temperature=0.0,  # For reproducible results
+                max_tokens=500
+            )
+            models.append(model)
+            
+            cost_info = model.get_cost_info()
+            tier_emoji = "🆓" if cost_info.get("tier") == "free/low-cost" else "💰"
+            print(f"✅ {tier_emoji} Initialized {model.name} ({model_id})")
+            
+            if model_config:
+                capabilities = ", ".join(model_config.capabilities[:3])
+                print(f"   📋 Capabilities: {capabilities}")
                 
         except Exception as e:
             print(f"❌ Failed to initialize {name}: {e}")
+    
+    if not models:
+        print("\n💡 Available models:")
+        print("   🤖 New 2024-2025 models: gpt-oss, glm, kimi, qwen")
+        print("   🔧 Legacy models: claude, gpt-4, llama")
+        print("   📋 Presets: research_set, agentic_set, cost_optimized")
     
     return models
 
@@ -315,19 +387,24 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python main.py                           # Quick demo with mock models
-  python main.py --real --models gpt claude  # Real API calls with GPT and Claude
-  python main.py --full --real            # Complete analysis (expensive)
+  python main.py                              # Quick demo with mock models (default: gpt-oss glm kimi qwen)
+  python main.py --real                       # Real API calls with OpenRouter (new 2024-2025 models)
+  python main.py --preset research_set --real # Use research preset with real API
+  python main.py --models gpt-oss glm --real  # Test specific models
+  python main.py --full --real                # Complete analysis (more expensive)
         """
     )
     
     parser.add_argument("--models", nargs="+", 
-                       choices=["gpt", "gpt-3.5", "gpt-4", "claude", "claude-haiku", "claude-sonnet"],
-                       default=["gpt", "claude"],
-                       help="Models to test (default: gpt claude)")
+                       default=["gpt-oss", "glm", "kimi", "qwen"],
+                       help="Models to test (default: gpt-oss glm kimi qwen)")
+    
+    parser.add_argument("--preset", type=str,
+                       choices=["research_set", "agentic_set", "cost_optimized", "reasoning_focused", "coding_specialists"],
+                       help="Use predefined model preset")
     
     parser.add_argument("--real", action="store_true",
-                       help="Use real API calls (costs money)")
+                       help="Use real OpenRouter API calls (costs money)")
     
     parser.add_argument("--quick", action="store_true", default=True,
                        help="Quick demo mode (default)")
@@ -354,24 +431,16 @@ Examples:
     ╚══════════════════════════════════════════════════════════════╝
     """)
     
-    # Check API keys if using real models
+    # Check OpenRouter API key if using real models
     if args.real:
-        missing_keys = []
-        if "gpt" in args.models or any("gpt" in m for m in args.models):
-            if not os.getenv("OPENAI_API_KEY"):
-                missing_keys.append("OPENAI_API_KEY")
-        
-        if "claude" in args.models or any("claude" in m for m in args.models):
-            if not os.getenv("ANTHROPIC_API_KEY"):
-                missing_keys.append("ANTHROPIC_API_KEY")
-        
-        if missing_keys:
-            print(f"❌ Missing API keys: {', '.join(missing_keys)}")
-            print("   Please set these environment variables or use --mock for testing")
+        if not os.getenv("OPENROUTER_API_KEY"):
+            print("❌ Missing OPENROUTER_API_KEY environment variable")
+            print("   Get your API key from: https://openrouter.ai/")
+            print("   Or run without --real flag to use mock models for testing")
             return
     
     # Initialize models
-    models = initialize_models(args.models, use_mock=not args.real)
+    models = initialize_models(args.models, use_mock=not args.real, preset=args.preset)
     
     if not models:
         print("❌ No models initialized. Exiting.")
@@ -396,8 +465,10 @@ Examples:
     print(f"   Tested {len(models)} models: {[m.name for m in models]}")
     
     if not args.real:
-        print("\n💡 To run with real models: python main.py --real --models gpt claude")
-        print("   (Requires OPENAI_API_KEY and ANTHROPIC_API_KEY environment variables)")
+        print("\n💡 To run with real models: python main.py --real")
+        print("   (Requires OPENROUTER_API_KEY environment variable)")
+        print("   Available models: gpt-oss, glm, kimi, qwen, claude, gpt-4, llama")
+        print("   Available presets: research_set, agentic_set, cost_optimized")
 
 
 if __name__ == "__main__":

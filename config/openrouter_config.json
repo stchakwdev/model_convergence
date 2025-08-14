@@ -1,0 +1,140 @@
+{
+  "openrouter": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "default_headers": {
+      "HTTP-Referer": "https://github.com/stchakwdev/universal_patterns",
+      "X-Title": "Universal Alignment Patterns Research"
+    },
+    "rate_limiting": {
+      "min_request_interval": 0.5,
+      "retry_attempts": 3,
+      "retry_delay": 30
+    },
+    "caching": {
+      "enabled": true,
+      "cache_directory": ".cache",
+      "cache_file_prefix": "openrouter_"
+    }
+  },
+  "model_presets": {
+    "research_set": {
+      "description": "Optimal set for convergence research across architectures",
+      "models": [
+        "openai/gpt-oss-120b",
+        "zhipu/glm-4.5", 
+        "moonshot/kimi-k2",
+        "alibaba/qwen3-coder-480b"
+      ],
+      "use_case": "Primary research comparing Western vs Chinese models"
+    },
+    "agentic_set": {
+      "description": "Models optimized for agentic capabilities",
+      "models": [
+        "zhipu/glm-4.5",
+        "moonshot/kimi-k2",
+        "alibaba/qwen3-coder-480b"
+      ],
+      "use_case": "Tool use and agentic behavior analysis"
+    },
+    "cost_optimized": {
+      "description": "Free and low-cost models for development",
+      "models": [
+        "openai/gpt-oss-120b",
+        "zhipu/glm-4.5-air",
+        "meta/llama-3.1-8b-instruct:free"
+      ],
+      "use_case": "Development and testing without API costs"
+    },
+    "reasoning_focused": {
+      "description": "Models with strong reasoning capabilities",
+      "models": [
+        "openai/gpt-oss-120b",
+        "alibaba/qwen3-235b-thinking",
+        "anthropic/claude-3.5-sonnet"
+      ],
+      "use_case": "Mathematical and logical reasoning tasks"
+    },
+    "coding_specialists": {
+      "description": "Models specialized for code generation",
+      "models": [
+        "alibaba/qwen3-coder-480b",
+        "moonshot/kimi-k2",
+        "zhipu/glm-4.5"
+      ],
+      "use_case": "Code generation and software engineering"
+    },
+    "baseline_comparison": {
+      "description": "Established models for baseline comparison",
+      "models": [
+        "openai/gpt-4-turbo",
+        "anthropic/claude-3.5-sonnet",
+        "meta/llama-3.1-8b-instruct:free"
+      ],
+      "use_case": "Comparison with well-known models"
+    }
+  },
+  "experiment_configs": {
+    "quick_demo": {
+      "preset": "cost_optimized",
+      "max_tokens": 200,
+      "temperature": 0.0,
+      "prompts_per_capability": 3
+    },
+    "full_research": {
+      "preset": "research_set",
+      "max_tokens": 500,
+      "temperature": 0.0,
+      "prompts_per_capability": 20
+    },
+    "agentic_analysis": {
+      "preset": "agentic_set",
+      "max_tokens": 800,
+      "temperature": 0.0,
+      "prompts_per_capability": 15,
+      "special_capabilities": ["tool-use", "function-calling", "agentic"]
+    },
+    "reasoning_depth": {
+      "preset": "reasoning_focused",
+      "max_tokens": 1000,
+      "temperature": 0.0,
+      "prompts_per_capability": 10,
+      "special_capabilities": ["reasoning", "chain-of-thought", "math"]
+    }
+  },
+  "cost_management": {
+    "budget_alerts": {
+      "enabled": true,
+      "daily_limit_usd": 10.0,
+      "warn_at_percentage": 80
+    },
+    "optimization": {
+      "prefer_free_models": true,
+      "fallback_to_cheaper": true,
+      "cache_aggressively": true
+    }
+  },
+  "analysis_settings": {
+    "convergence_threshold": 0.7,
+    "statistical_significance": 0.05,
+    "min_samples_per_test": 10,
+    "bootstrap_iterations": 1000,
+    "permutation_tests": 1000
+  },
+  "output_settings": {
+    "save_responses": true,
+    "response_directory": "data/responses",
+    "include_metadata": true,
+    "export_formats": ["json", "csv"],
+    "visualization": {
+      "enabled": true,
+      "save_plots": true,
+      "plot_directory": "data/plots"
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "logs/openrouter_experiment.log",
+    "include_api_calls": true,
+    "include_costs": true
+  }
+}
