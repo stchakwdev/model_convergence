@@ -132,3 +132,15 @@ experiments/full_experiment.log
 *.tmp
 *.temp
 temp_*
+
+# Blog and internal planning documents (keep private)
+BLOG_POST_DRAFT.md
+CHALLENGES_AND_SOLUTIONS.md
+DOCUMENTATION_INDEX.md
+EXPERIMENTAL_TIMELINE.md
+RESEARCH_JOURNEY.md
+TILLI_TONSE_BREAKTHROUGH.md
+TILLI_TONSE_RESULTS_REPORT.md
+
+# Internal experiment analysis (specific results)
+experiments/results/analysis_outputs/analysis_*_202607.json
