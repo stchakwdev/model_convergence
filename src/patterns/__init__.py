@@ -5,6 +5,7 @@ from .discovery_engine import PatternDiscoveryEngine
 from .convergence_analyzer import ConvergenceAnalyzer
 from .evaluator import UniversalEvaluator
 from .feature_finder import AdaptiveFeatureFinder
+from .kl_enhanced_analyzer import HybridConvergenceAnalyzer, HybridConvergenceResults
 
 __all__ = [
     "UniversalFeature",
@@ -13,5 +14,7 @@ __all__ = [
     "PatternDiscoveryEngine",
     "ConvergenceAnalyzer", 
     "UniversalEvaluator",
-    "AdaptiveFeatureFinder"
+    "AdaptiveFeatureFinder",
+    "HybridConvergenceAnalyzer",
+    "HybridConvergenceResults"
 ]

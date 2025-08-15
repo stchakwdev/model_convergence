@@ -39,7 +39,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from models import OpenRouterModel, ModelInterface
 from models.model_registry import model_registry
-from patterns import PatternDiscoveryEngine, ConvergenceAnalyzer
+from patterns import PatternDiscoveryEngine, ConvergenceAnalyzer, HybridConvergenceAnalyzer
 from patterns.semantic_analyzer import EnhancedSemanticAnalyzer
 from cost_monitor import CostMonitor
 
@@ -105,6 +105,7 @@ class ComprehensiveAnalysisFramework:
         self.discovery_engine = PatternDiscoveryEngine()
         self.convergence_analyzer = ConvergenceAnalyzer()
         self.semantic_analyzer = EnhancedSemanticAnalyzer()
+        self.hybrid_analyzer = HybridConvergenceAnalyzer(semantic_analyzer=self.semantic_analyzer)
         
         # Advanced cost monitoring system
         self.cost_monitor = None  # Will be initialized when experiment starts
@@ -156,6 +157,61 @@ class ComprehensiveAnalysisFramework:
                 temperature=0.0,
                 budget_limit_usd=2.0,
                 statistical_confidence=0.05
+            ),
+            
+            "enhanced_v2": ExperimentConfig(
+                name="Universal Alignment Patterns v2.0 - Enhanced",
+                description="Enhanced experiment with premium models and expanded datasets",
+                models=[
+                    "anthropic/claude-3.5-sonnet",      # Premium reasoning model
+                    "openai/gpt-4-turbo",               # OpenAI flagship
+                    "openai/gpt-oss-120b",              # Free, excellent reasoning  
+                    "zhipu/glm-4.5",                    # Low cost, agentic
+                    "moonshot/kimi-k2",                 # Medium cost, long context
+                    "meta-llama/llama-3.1-8b-instruct:free"  # Free baseline
+                ],
+                capabilities=[
+                    "truthfulness",
+                    "safety_boundaries", 
+                    "instruction_following",
+                    "uncertainty_expression",
+                    "context_awareness"
+                ],
+                prompts_per_capability=75,  # Enhanced: 50% more prompts
+                max_tokens=250,
+                temperature=0.0,
+                budget_limit_usd=40.0,      # Conservative within remaining budget
+                statistical_confidence=0.001  # Strict significance threshold
+            ),
+            
+            "ultra_v25": ExperimentConfig(
+                name="Universal Alignment Patterns v2.5 ULTRA - Cutting-Edge 2025",
+                description="Revolutionary experiment with the absolute latest 2025 models: GPT-5, Claude-4, Gemini-2.5",
+                models=[
+                    # 🚀 CUTTING-EDGE 2025 MODELS 🚀
+                    "openai/gpt-5-chat",                # GPT-5 Chat: Next generation reasoning
+                    "anthropic/claude-sonnet-4",        # Claude 4: Revolutionary safety + capability  
+                    "google/gemini-2.5-pro",            # Gemini 2.5 Pro: Advanced multimodal
+                    
+                    # 🔬 COMPARISON WITH PREVIOUS GENERATION
+                    "anthropic/claude-3.5-sonnet",      # Previous best Claude
+                    "openai/gpt-4-turbo",               # Previous best GPT
+                    
+                    # 📊 EFFICIENT BASELINE
+                    "openai/gpt-oss-120b"               # Free comparison point
+                ],
+                capabilities=[
+                    "truthfulness",
+                    "safety_boundaries", 
+                    "instruction_following",
+                    "uncertainty_expression",
+                    "context_awareness"
+                ],
+                prompts_per_capability=60,  # Optimized for premium model costs
+                max_tokens=300,             # More tokens for advanced models
+                temperature=0.0,
+                budget_limit_usd=35.0,      # Conservative budget for premium models
+                statistical_confidence=0.001  # Strict significance threshold
             )
         }
         
@@ -167,11 +223,19 @@ class ComprehensiveAnalysisFramework:
         datasets = {}
         
         for capability in capabilities:
-            dataset_file = Path(__file__).parent / "prompt_datasets" / f"{capability}.json"
+            # Try to load v2.0 enhanced datasets first, fallback to v1.0
+            v2_file = Path(__file__).parent / "prompt_datasets" / f"{capability}_v2.json"
+            v1_file = Path(__file__).parent / "prompt_datasets" / f"{capability}.json"
             
-            if dataset_file.exists():
-                with open(dataset_file, 'r') as f:
+            if v2_file.exists():
+                with open(v2_file, 'r') as f:
+                    data = json.load(f)
+                    datasets[capability] = data.get('prompts', data) if isinstance(data, dict) else data
+                    print(f"  📚 Using enhanced v2.0 dataset for {capability}")
+            elif v1_file.exists():
+                with open(v1_file, 'r') as f:
                     datasets[capability] = json.load(f)
+                    print(f"  📚 Using v1.0 dataset for {capability}")
             else:
                 # Fallback to discovery engine prompts
                 if capability in self.discovery_engine.universal_features:
@@ -439,7 +503,10 @@ class ComprehensiveAnalysisFramework:
     
     def _analyze_convergence(self, responses: List[ModelResponse], 
                            config: ExperimentConfig) -> Dict[str, Any]:
-        """Analyze convergence patterns across models and capabilities"""
+        """Enhanced convergence analysis using hybrid semantic + KL divergence approach"""
+        
+        print(f"\n🔬 Enhanced Convergence Analysis with KL Divergence")
+        print("=" * 60)
         
         # Group responses by capability
         capability_groups = {}
@@ -449,61 +516,126 @@ class ComprehensiveAnalysisFramework:
             capability_groups[response.capability].append(response)
         
         convergence_results = {}
+        hybrid_results_detailed = {}
         
         for capability, cap_responses in capability_groups.items():
-            # Group by prompt for comparison
-            prompt_groups = {}
+            print(f"\n📊 Analyzing {capability}...")
+            
+            # Group responses by model for hybrid analysis
+            model_responses = {}
             for response in cap_responses:
-                if response.prompt_id not in prompt_groups:
-                    prompt_groups[response.prompt_id] = []
-                prompt_groups[response.prompt_id].append(response)
+                if response.model_id not in model_responses:
+                    model_responses[response.model_id] = []
+                model_responses[response.model_id].append(response.response)
             
-            # Calculate semantic similarities
-            similarities = []
-            for prompt_id, prompt_responses in prompt_groups.items():
-                if len(prompt_responses) >= 2:
-                    response_texts = [r.response for r in prompt_responses]
-                    try:
-                        sim_matrix = self.semantic_analyzer.calculate_similarity_matrix(response_texts)
-                        # Get upper triangular similarities (avoid self-similarity)
-                        triu_indices = np.triu_indices_from(sim_matrix, k=1)
-                        similarities.extend(sim_matrix[triu_indices])
-                    except Exception as e:
-                        print(f"    Warning: Similarity calculation failed for {prompt_id}: {e}")
-            
-            # Calculate convergence metrics
-            if similarities:
+            try:
+                # Use hybrid analyzer for comprehensive convergence analysis
+                hybrid_results = self.hybrid_analyzer.analyze_hybrid_convergence(
+                    model_responses, capability
+                )
+                
+                # Store detailed hybrid results
+                hybrid_results_detailed[capability] = hybrid_results
+                
+                # Extract key metrics for compatibility with existing structure
                 convergence_results[capability] = {
-                    "mean_similarity": np.mean(similarities),
-                    "std_similarity": np.std(similarities),
-                    "min_similarity": np.min(similarities),
-                    "max_similarity": np.max(similarities),
-                    "num_comparisons": len(similarities),
-                    "convergence_score": np.mean(similarities)  # Primary metric
+                    "semantic_convergence": hybrid_results.semantic_convergence_score,
+                    "distributional_convergence": hybrid_results.distributional_convergence_score,
+                    "hybrid_convergence": hybrid_results.hybrid_convergence_score,
+                    "convergence_score": hybrid_results.hybrid_convergence_score,  # Primary metric
+                    "confidence_level": hybrid_results.confidence_level,
+                    "statistical_significance": hybrid_results.statistical_significance,
+                    "interpretation": hybrid_results.interpretation,
+                    "kl_divergences": hybrid_results.kl_divergences,
+                    "js_distances": hybrid_results.jensen_shannon_distances,
+                    "analysis_type": "hybrid_semantic_distributional"
                 }
-            else:
-                convergence_results[capability] = {
-                    "mean_similarity": 0.0,
-                    "convergence_score": 0.0,
-                    "error": "No valid comparisons"
-                }
+                
+                print(f"  ✅ {capability}: Hybrid convergence = {hybrid_results.hybrid_convergence_score:.3f}")
+                
+            except Exception as e:
+                print(f"  ❌ Hybrid analysis failed for {capability}: {e}")
+                
+                # Fallback to legacy semantic-only analysis
+                similarities = []
+                for i, model1 in enumerate(model_responses.keys()):
+                    for j, model2 in enumerate(list(model_responses.keys())[i+1:], i+1):
+                        responses1 = model_responses[model1]
+                        responses2 = model_responses[model2]
+                        
+                        for r1, r2 in zip(responses1, responses2):
+                            try:
+                                sim = self.semantic_analyzer.calculate_similarity(r1, r2)
+                                similarities.append(sim)
+                            except:
+                                continue
+                
+                if similarities:
+                    semantic_score = np.mean(similarities)
+                    convergence_results[capability] = {
+                        "semantic_convergence": semantic_score,
+                        "convergence_score": semantic_score,
+                        "num_comparisons": len(similarities),
+                        "analysis_type": "semantic_only_fallback",
+                        "error": f"Hybrid analysis failed: {e}"
+                    }
+                else:
+                    convergence_results[capability] = {
+                        "convergence_score": 0.0,
+                        "analysis_type": "failed",
+                        "error": f"All analysis methods failed: {e}"
+                    }
         
-        # Calculate overall convergence
+        # Calculate overall convergence from hybrid scores
         capability_scores = [result.get("convergence_score", 0.0) 
                            for result in convergence_results.values() 
-                           if "error" not in result]
+                           if "error" not in result or result.get("convergence_score", 0) > 0]
         
         overall_convergence = np.mean(capability_scores) if capability_scores else 0.0
         
+        # Enhanced summary with both semantic and distributional insights
+        semantic_scores = [result.get("semantic_convergence", 0.0) 
+                          for result in convergence_results.values() 
+                          if "semantic_convergence" in result]
+        
+        distributional_scores = [result.get("distributional_convergence", 0.0) 
+                               for result in convergence_results.values() 
+                               if "distributional_convergence" in result]
+        
+        avg_semantic = np.mean(semantic_scores) if semantic_scores else 0.0
+        avg_distributional = np.mean(distributional_scores) if distributional_scores else 0.0
+        
+        # Calculate confidence in universal patterns hypothesis
+        confidence_levels = [result.get("confidence_level", 0.0) 
+                           for result in convergence_results.values() 
+                           if "confidence_level" in result]
+        
+        overall_confidence = np.mean(confidence_levels) if confidence_levels else 0.0
+        
+        print(f"\n🎯 Overall Analysis Results:")
+        print(f"  Semantic Convergence: {avg_semantic:.3f}")
+        print(f"  Distributional Convergence: {avg_distributional:.3f}")
+        print(f"  Hybrid Convergence: {overall_convergence:.3f}")
+        print(f"  Overall Confidence: {overall_confidence:.3f}")
+        
         return {
             "capability_results": convergence_results,
+            "hybrid_results_detailed": hybrid_results_detailed,
             "overall_convergence": overall_convergence,
+            "semantic_convergence": avg_semantic,
+            "distributional_convergence": avg_distributional,
+            "overall_confidence": overall_confidence,
             "num_capabilities": len(capability_scores),
+            "analysis_method": "hybrid_semantic_distributional",
             "summary": {
-                "strong_evidence": overall_convergence > 0.8,
-                "moderate_evidence": 0.6 <= overall_convergence <= 0.8,
-                "weak_evidence": 0.4 <= overall_convergence < 0.6,
-                "no_evidence": overall_convergence < 0.4
+                "very_strong_evidence": overall_convergence > 0.8 and overall_confidence > 0.8,
+                "strong_evidence": overall_convergence > 0.7 and overall_confidence > 0.6,
+                "moderate_evidence": overall_convergence > 0.5 and overall_confidence > 0.4,
+                "weak_evidence": overall_convergence > 0.3,
+                "no_evidence": overall_convergence <= 0.3,
+                "semantic_dominates": avg_semantic > avg_distributional + 0.2,
+                "distributional_dominates": avg_distributional > avg_semantic + 0.2,
+                "balanced_convergence": abs(avg_semantic - avg_distributional) <= 0.2
             }
         }
     

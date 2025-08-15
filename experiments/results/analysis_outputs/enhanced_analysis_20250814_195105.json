@@ -1,0 +1,503 @@
+{
+  "capability_results": {
+    "truthfulness": {
+      "semantic_convergence": 0.20900678887607657,
+      "distributional_convergence": 0.17461439285087021,
+      "hybrid_convergence": 0.18837135126095278,
+      "convergence_score": 0.18837135126095278,
+      "confidence_level": 0.430615661301805,
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.7909932111239234,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.006440441671220154,
+        "fisher_chi_square": 14.284442345766717,
+        "n_models": 5
+      },
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 1.6198911666870117,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 9.803693771362305,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.8978813886642456,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 9.830065727233887,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 9.005836486816406,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.7290727496147156,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 9.033866882324219,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.174455642700195,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780420780181885,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 9.906038284301758
+      },
+      "js_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.38929635109312116,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7341912222258293,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.3109746901157852,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7363049733698694,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7205622672362609,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.31056721938568793,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.7227115919212526,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.740660451692429,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.2708992862481846,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7426366149887824
+      },
+      "analysis_type": "hybrid_semantic_distributional"
+    },
+    "safety_boundaries": {
+      "semantic_convergence": 0.24995680978929297,
+      "distributional_convergence": 0.13962440571726795,
+      "hybrid_convergence": 0.18375736734607795,
+      "convergence_score": 0.18375736734607795,
+      "confidence_level": 0.42899273858825887,
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.750043190210707,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.006146888784787197,
+        "fisher_chi_square": 14.390759532288746,
+        "n_models": 5
+      },
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 3.540250301361084,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 11.50076675415039,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.5438923835754395,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 11.515701293945312,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 10.515667915344238,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 2.1997456550598145,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 10.52744197845459,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.882317543029785,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780423164367676,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 9.754920959472656
+      },
+      "js_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.6441699778367678,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7708380200698927,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.6118590270812743,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7731207767454487,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7625690116294778,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.45705653389660034,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.7648843179762655,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.7340892479295561,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.27089932750288925,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.734634272481971
+      },
+      "analysis_type": "hybrid_semantic_distributional"
+    },
+    "instruction_following": {
+      "semantic_convergence": 0.19651212100287005,
+      "distributional_convergence": 0.1747169446334814,
+      "hybrid_convergence": 0.18343501518123684,
+      "convergence_score": 0.18343501518123684,
+      "confidence_level": 0.14881147267445277,
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": false,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.8034878789971299,
+        "distributional_p_value": 0.819,
+        "combined_p_value": 0.9334298049326694,
+        "fisher_chi_square": 0.8369287486060308,
+        "n_models": 5
+      },
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 3.024197578430176,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 8.238884925842285,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.420164704322815,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 8.266199111938477,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 7.362351417541504,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 1.55857253074646,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 7.327368259429932,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.205280780792236,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.278041958808899,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 8.355118751525879
+      },
+      "js_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.44918013696990566,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7140446767105999,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.3953965772396705,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7164445473721106,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.6838028942061409,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.3790691065074973,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.6862712847426179,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.706322583545052,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.27089938250915235,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7052486984743958
+      },
+      "analysis_type": "hybrid_semantic_distributional"
+    },
+    "uncertainty_expression": {
+      "semantic_convergence": 0.2165809210905441,
+      "distributional_convergence": 0.16727715870664625,
+      "hybrid_convergence": 0.1869986636602054,
+      "convergence_score": 0.1869986636602054,
+      "confidence_level": 0.4299692470604688,
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.783419078909456,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.0063863091645095516,
+        "fisher_chi_square": 14.303685566094302,
+        "n_models": 5
+      },
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 2.774989128112793,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 9.08810043334961,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.4836357831954956,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 9.022568702697754,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 9.49269962310791,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.6825949549674988,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 9.474198341369629,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.4852142333984375,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780424356460571,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 9.480411529541016
+      },
+      "js_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.46826620567168925,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7216817522858233,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.4360136259600813,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7167631967724749,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7257052460819243,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.3409406673553502,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.725363613893218,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.7263912286187882,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.27089932750288925,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7260733978328412
+      },
+      "analysis_type": "hybrid_semantic_distributional"
+    },
+    "context_awareness": {
+      "semantic_convergence": 0.2396022646221449,
+      "distributional_convergence": 0.16365687717850186,
+      "hybrid_convergence": 0.19403503215595908,
+      "convergence_score": 0.19403503215595908,
+      "confidence_level": 0.43547703350126366,
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.760397735377855,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.00622132252260188,
+        "fisher_chi_square": 14.363337851105884,
+        "n_models": 5
+      },
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 2.0153515338897705,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 10.541744232177734,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.081406831741333,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 10.546459197998047,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 9.962861061096191,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 1.395068645477295,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 10.000216484069824,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.143049240112305,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780425548553467,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 10.436179161071777
+      },
+      "js_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.4504809021939785,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7610222395255143,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.36725396711311514,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7629532420628933,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7207383558144482,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.387189482282809,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.7251884840261853,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.7430844157745337,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.2708992862481846,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7462312262136847
+      },
+      "analysis_type": "hybrid_semantic_distributional"
+    }
+  },
+  "hybrid_results_detailed": {
+    "truthfulness": {
+      "semantic_convergence_score": 0.20900678887607657,
+      "distributional_convergence_score": 0.17461439285087021,
+      "hybrid_convergence_score": 0.18837135126095278,
+      "confidence_level": 0.430615661301805,
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "semantic_similarities": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.17316496672352152,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.02986259398573346,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.17058288656098242,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.021093901562739457,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.023224479198670524,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.9014192779954129,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.01606275627608942,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.02443068574390055,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.7127470798937737,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.017479260819941778
+      },
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 1.6198911666870117,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 9.803693771362305,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.8978813886642456,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 9.830065727233887,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 9.005836486816406,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.7290727496147156,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 9.033866882324219,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.174455642700195,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780420780181885,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 9.906038284301758
+      },
+      "jensen_shannon_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.38929635109312116,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7341912222258293,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.3109746901157852,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7363049733698694,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7205622672362609,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.31056721938568793,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.7227115919212526,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.740660451692429,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.2708992862481846,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7426366149887824
+      },
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.7909932111239234,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.006440441671220154,
+        "fisher_chi_square": 14.284442345766717,
+        "n_models": 5
+      }
+    },
+    "safety_boundaries": {
+      "semantic_convergence_score": 0.24995680978929297,
+      "distributional_convergence_score": 0.13962440571726795,
+      "hybrid_convergence_score": 0.18375736734607795,
+      "confidence_level": 0.42899273858825887,
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "semantic_similarities": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.1392106473314597,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.19182637530750885,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.18963864343078662,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.186682615087977,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.06428752997608099,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.7071829364662028,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.10384092076386349,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.0899149929559484,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.7127470798937737,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.11423635667932829
+      },
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 3.540250301361084,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 11.50076675415039,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.5438923835754395,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 11.515701293945312,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 10.515667915344238,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 2.1997456550598145,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 10.52744197845459,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.882317543029785,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780423164367676,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 9.754920959472656
+      },
+      "jensen_shannon_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.6441699778367678,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7708380200698927,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.6118590270812743,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7731207767454487,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7625690116294778,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.45705653389660034,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.7648843179762655,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.7340892479295561,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.27089932750288925,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.734634272481971
+      },
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.750043190210707,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.006146888784787197,
+        "fisher_chi_square": 14.390759532288746,
+        "n_models": 5
+      }
+    },
+    "instruction_following": {
+      "semantic_convergence_score": 0.19651212100287005,
+      "distributional_convergence_score": 0.1747169446334814,
+      "hybrid_convergence_score": 0.18343501518123684,
+      "confidence_level": 0.14881147267445277,
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "semantic_similarities": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.2763062784422551,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.021971282917312956,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.24701638495620293,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.017319433577021162,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.01345904531498596,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.6343692311455403,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.01593291025840937,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.011626221462267182,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.7127470798937737,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.014373342060931892
+      },
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 3.024197578430176,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 8.238884925842285,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.420164704322815,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 8.266199111938477,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 7.362351417541504,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 1.55857253074646,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 7.327368259429932,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.205280780792236,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.278041958808899,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 8.355118751525879
+      },
+      "jensen_shannon_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.44918013696990566,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7140446767105999,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.3953965772396705,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7164445473721106,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.6838028942061409,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.3790691065074973,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.6862712847426179,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.706322583545052,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.27089938250915235,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7052486984743958
+      },
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": false,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.8034878789971299,
+        "distributional_p_value": 0.819,
+        "combined_p_value": 0.9334298049326694,
+        "fisher_chi_square": 0.8369287486060308,
+        "n_models": 5
+      }
+    },
+    "uncertainty_expression": {
+      "semantic_convergence_score": 0.2165809210905441,
+      "distributional_convergence_score": 0.16727715870664625,
+      "hybrid_convergence_score": 0.1869986636602054,
+      "confidence_level": 0.4299692470604688,
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "semantic_similarities": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.24472718735812057,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.05514196346448878,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.24225040983615276,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.0547585078437459,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.01751006565675971,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.7835200204356165,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.020558207349004327,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.016268340696508985,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.7127470798937737,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.018327428371269765
+      },
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 2.774989128112793,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 9.08810043334961,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.4836357831954956,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 9.022568702697754,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 9.49269962310791,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.6825949549674988,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 9.474198341369629,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.4852142333984375,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780424356460571,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 9.480411529541016
+      },
+      "jensen_shannon_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.46826620567168925,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7216817522858233,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.4360136259600813,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7167631967724749,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7257052460819243,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.3409406673553502,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.725363613893218,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.7263912286187882,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.27089932750288925,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7260733978328412
+      },
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.783419078909456,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.0063863091645095516,
+        "fisher_chi_square": 14.303685566094302,
+        "n_models": 5
+      }
+    },
+    "context_awareness": {
+      "semantic_convergence_score": 0.2396022646221449,
+      "distributional_convergence_score": 0.16365687717850186,
+      "hybrid_convergence_score": 0.19403503215595908,
+      "confidence_level": 0.43547703350126366,
+      "interpretation": "LIMITED EVIDENCE: Both semantic and distributional analysis show weak convergence, suggesting architecture-specific rather than universal patterns dominate.",
+      "semantic_similarities": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.2636323495442539,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.07244186640468105,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.2862073194832991,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.07098063212793435,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.0661782036284295,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.7445635262322418,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.06139163395510556,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.06027512998363461,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.7127470798937737,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.05760490496809578
+      },
+      "kl_divergences": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 2.0153515338897705,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 10.541744232177734,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 1.081406831741333,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 10.546459197998047,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 9.962861061096191,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 1.395068645477295,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 10.000216484069824,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 6.143049240112305,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 1.2780425548553467,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 10.436179161071777
+      },
+      "jensen_shannon_distances": {
+        "openai/gpt-oss-120b_vs_anthropic/claude-3-haiku": 0.4504809021939785,
+        "openai/gpt-oss-120b_vs_alibaba/qwen-2.5-72b": 0.7610222395255143,
+        "openai/gpt-oss-120b_vs_deepseek/deepseek-chat": 0.36725396711311514,
+        "openai/gpt-oss-120b_vs_meta-llama/llama-3.1-70b:free": 0.7629532420628933,
+        "anthropic/claude-3-haiku_vs_alibaba/qwen-2.5-72b": 0.7207383558144482,
+        "anthropic/claude-3-haiku_vs_deepseek/deepseek-chat": 0.387189482282809,
+        "anthropic/claude-3-haiku_vs_meta-llama/llama-3.1-70b:free": 0.7251884840261853,
+        "alibaba/qwen-2.5-72b_vs_deepseek/deepseek-chat": 0.7430844157745337,
+        "alibaba/qwen-2.5-72b_vs_meta-llama/llama-3.1-70b:free": 0.2708992862481846,
+        "deepseek/deepseek-chat_vs_meta-llama/llama-3.1-70b:free": 0.7462312262136847
+      },
+      "statistical_significance": {
+        "semantic_significant": false,
+        "distributional_significant": true,
+        "combined_significant": false,
+        "semantic_p_estimate": 0.760397735377855,
+        "distributional_p_value": 0.001,
+        "combined_p_value": 0.00622132252260188,
+        "fisher_chi_square": 14.363337851105884,
+        "n_models": 5
+      }
+    }
+  },
+  "overall_convergence": 0.1873194859208864,
+  "semantic_convergence": 0.22233178107618573,
+  "distributional_convergence": 0.16397795581735355,
+  "overall_confidence": 0.3747732306252498,
+  "num_capabilities": 5,
+  "analysis_method": "hybrid_semantic_distributional_enhanced",
+  "timestamp": "2025-08-14T19:51:05.194214",
+  "summary": {
+    "very_strong_evidence": false,
+    "strong_evidence": false,
+    "moderate_evidence": false,
+    "weak_evidence": false,
+    "no_evidence": true,
+    "semantic_dominates": false,
+    "distributional_dominates": false,
+    "balanced_convergence": true
+  }
+}
