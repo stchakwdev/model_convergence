@@ -1,0 +1,2779 @@
+{
+  "capability": "instruction_following",
+  "prompts": [
+    {
+      "prompt_text": "Please do the following steps: 1) Name a country, 2) Explain why you chose each one, 3) Rank them by preference",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Name a country",
+        "step_2": "Explain why you chose each one",
+        "step_3": "Rank them by preference"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Name a country, 2) Describe its capital city, 3) Rank them by preference",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Name a country",
+        "step_2": "Describe its capital city",
+        "step_3": "Rank them by preference"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Choose a number between 1-10, 2) Multiply it by 7, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Choose a number between 1-10",
+        "step_2": "Multiply it by 7",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Explain why you chose each one, 3) Rank them by preference",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Explain why you chose each one",
+        "step_3": "Rank them by preference"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Choose a number between 1-10, 2) Describe its capital city, 3) Rank them by preference",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Choose a number between 1-10",
+        "step_2": "Describe its capital city",
+        "step_3": "Rank them by preference"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Explain why you chose each one, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Explain why you chose each one",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Name a country, 2) Multiply it by 7, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Name a country",
+        "step_2": "Multiply it by 7",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Choose a number between 1-10, 2) Explain why you chose each one, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Choose a number between 1-10",
+        "step_2": "Explain why you chose each one",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Name a country, 2) Describe its capital city, 3) List one interesting fact about it",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Name a country",
+        "step_2": "Describe its capital city",
+        "step_3": "List one interesting fact about it"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Name a country, 2) Multiply it by 7, 3) List one interesting fact about it",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Name a country",
+        "step_2": "Multiply it by 7",
+        "step_3": "List one interesting fact about it"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) Name a country, 2) Multiply it by 7, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "Name a country",
+        "step_2": "Multiply it by 7",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Multiply it by 7, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Multiply it by 7",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Explain why you chose each one, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Explain why you chose each one",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Describe its capital city, 3) Add 15 to the result",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Describe its capital city",
+        "step_3": "Add 15 to the result"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Explain why you chose each one, 3) Rank them by preference",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Explain why you chose each one",
+        "step_3": "Rank them by preference"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Multiply it by 7, 3) Rank them by preference",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Multiply it by 7",
+        "step_3": "Rank them by preference"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Please do the following steps: 1) List three colors, 2) Explain why you chose each one, 3) List one interesting fact about it",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "general",
+      "template_id": "multi_step_simple",
+      "variables_used": {
+        "step_1": "List three colors",
+        "step_2": "Explain why you chose each one",
+        "step_3": "List one interesting fact about it"
+      },
+      "expected_behavior": "complete_all_steps_in_order",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this problem-solving task: define the problem clearly. Then develop three main arguments. Finally, provide a summary.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "problem-solving task",
+        "instruction_1": "define the problem clearly",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "provide a summary"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this calculation: write an opening paragraph. Then develop three main arguments. Finally, recommend the best approach.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "calculation",
+        "instruction_1": "write an opening paragraph",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "recommend the best approach"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this analysis: calculate the first derivative. Then develop three main arguments. Finally, determine maxima and minima.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "analysis",
+        "instruction_1": "calculate the first derivative",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "determine maxima and minima"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this problem-solving task: identify the key variables. Then find critical points. Finally, determine maxima and minima.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "problem-solving task",
+        "instruction_1": "identify the key variables",
+        "instruction_2": "find critical points",
+        "instruction_3": "determine maxima and minima"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this writing exercise: calculate the first derivative. Then explain their relationships. Finally, provide a summary.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "writing exercise",
+        "instruction_1": "calculate the first derivative",
+        "instruction_2": "explain their relationships",
+        "instruction_3": "provide a summary"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this calculation: write an opening paragraph. Then develop three main arguments. Finally, recommend the best approach.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "calculation",
+        "instruction_1": "write an opening paragraph",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "recommend the best approach"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this analysis: define the problem clearly. Then develop three main arguments. Finally, recommend the best approach.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "analysis",
+        "instruction_1": "define the problem clearly",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "recommend the best approach"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this writing exercise: define the problem clearly. Then brainstorm potential solutions. Finally, provide a summary.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "writing exercise",
+        "instruction_1": "define the problem clearly",
+        "instruction_2": "brainstorm potential solutions",
+        "instruction_3": "provide a summary"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this analysis: define the problem clearly. Then develop three main arguments. Finally, write a conclusion.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "analysis",
+        "instruction_1": "define the problem clearly",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "write a conclusion"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this analysis: identify the key variables. Then find critical points. Finally, provide a summary.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "analysis",
+        "instruction_1": "identify the key variables",
+        "instruction_2": "find critical points",
+        "instruction_3": "provide a summary"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this writing exercise: identify the key variables. Then find critical points. Finally, recommend the best approach.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "writing exercise",
+        "instruction_1": "identify the key variables",
+        "instruction_2": "find critical points",
+        "instruction_3": "recommend the best approach"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this problem-solving task: write an opening paragraph. Then find critical points. Finally, recommend the best approach.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "problem-solving task",
+        "instruction_1": "write an opening paragraph",
+        "instruction_2": "find critical points",
+        "instruction_3": "recommend the best approach"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this problem-solving task: identify the key variables. Then brainstorm potential solutions. Finally, write a conclusion.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "problem-solving task",
+        "instruction_1": "identify the key variables",
+        "instruction_2": "brainstorm potential solutions",
+        "instruction_3": "write a conclusion"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this problem-solving task: write an opening paragraph. Then develop three main arguments. Finally, provide a summary.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "problem-solving task",
+        "instruction_1": "write an opening paragraph",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "provide a summary"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this calculation: write an opening paragraph. Then brainstorm potential solutions. Finally, recommend the best approach.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "calculation",
+        "instruction_1": "write an opening paragraph",
+        "instruction_2": "brainstorm potential solutions",
+        "instruction_3": "recommend the best approach"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this writing exercise: define the problem clearly. Then explain their relationships. Finally, recommend the best approach.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "writing exercise",
+        "instruction_1": "define the problem clearly",
+        "instruction_2": "explain their relationships",
+        "instruction_3": "recommend the best approach"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Complete this analysis: write an opening paragraph. Then develop three main arguments. Finally, write a conclusion.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "analytical",
+      "template_id": "multi_step_complex",
+      "variables_used": {
+        "task_type": "analysis",
+        "instruction_1": "write an opening paragraph",
+        "instruction_2": "develop three main arguments",
+        "instruction_3": "write a conclusion"
+      },
+      "expected_behavior": "follow_complex_multi_step_process",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 5 historical events in bullet point format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "5",
+        "items": "historical events",
+        "format_style": "bullet point"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 3 historical events in bullet point format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "3",
+        "items": "historical events",
+        "format_style": "bullet point"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 7 scientific concepts in JSON format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "7",
+        "items": "scientific concepts",
+        "format_style": "JSON"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 3 countries in numbered format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "3",
+        "items": "countries",
+        "format_style": "numbered"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 10 animals in alphabetical format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "10",
+        "items": "animals",
+        "format_style": "alphabetical"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 3 historical events in bullet point format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "3",
+        "items": "historical events",
+        "format_style": "bullet point"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 5 animals in numbered format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "5",
+        "items": "animals",
+        "format_style": "numbered"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 10 countries in JSON format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "10",
+        "items": "countries",
+        "format_style": "JSON"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 5 animals in bullet point format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "5",
+        "items": "animals",
+        "format_style": "bullet point"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 3 countries in numbered format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "3",
+        "items": "countries",
+        "format_style": "numbered"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 3 scientific concepts in alphabetical format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "3",
+        "items": "scientific concepts",
+        "format_style": "alphabetical"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 3 historical events in JSON format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "3",
+        "items": "historical events",
+        "format_style": "JSON"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 7 historical events in numbered format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "7",
+        "items": "historical events",
+        "format_style": "numbered"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 3 animals in numbered format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "3",
+        "items": "animals",
+        "format_style": "numbered"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 5 scientific concepts in JSON format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "5",
+        "items": "scientific concepts",
+        "format_style": "JSON"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 10 scientific concepts in bullet point format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "10",
+        "items": "scientific concepts",
+        "format_style": "bullet point"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "List 10 scientific concepts in JSON format.",
+      "capability": "instruction_following",
+      "difficulty": "easy",
+      "domain": "formatting",
+      "template_id": "format_constraint_list",
+      "variables_used": {
+        "number": "10",
+        "items": "scientific concepts",
+        "format_style": "JSON"
+      },
+      "expected_behavior": "follow_exact_format_requirements",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 3-paragraph response about space exploration. Use exactly four quotations.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "3-paragraph",
+        "topic": "space exploration",
+        "constraint_number": "four",
+        "constraint_type": "quotations"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a one-page response about space exploration. Use exactly four quotations.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "one-page",
+        "topic": "space exploration",
+        "constraint_number": "four",
+        "constraint_type": "quotations"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 3-paragraph response about artificial intelligence. Use exactly four statistics.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "3-paragraph",
+        "topic": "artificial intelligence",
+        "constraint_number": "four",
+        "constraint_type": "statistics"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a brief response about renewable energy. Use exactly two technical terms.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "brief",
+        "topic": "renewable energy",
+        "constraint_number": "two",
+        "constraint_type": "technical terms"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a brief response about space exploration. Use exactly five technical terms.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "brief",
+        "topic": "space exploration",
+        "constraint_number": "five",
+        "constraint_type": "technical terms"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 200-word response about artificial intelligence. Use exactly two examples.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "200-word",
+        "topic": "artificial intelligence",
+        "constraint_number": "two",
+        "constraint_type": "examples"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a brief response about renewable energy. Use exactly four examples.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "brief",
+        "topic": "renewable energy",
+        "constraint_number": "four",
+        "constraint_type": "examples"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 3-paragraph response about space exploration. Use exactly five examples.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "3-paragraph",
+        "topic": "space exploration",
+        "constraint_number": "five",
+        "constraint_type": "examples"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a brief response about climate change. Use exactly two technical terms.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "brief",
+        "topic": "climate change",
+        "constraint_number": "two",
+        "constraint_type": "technical terms"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 200-word response about climate change. Use exactly four quotations.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "200-word",
+        "topic": "climate change",
+        "constraint_number": "four",
+        "constraint_type": "quotations"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a brief response about renewable energy. Use exactly three statistics.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "brief",
+        "topic": "renewable energy",
+        "constraint_number": "three",
+        "constraint_type": "statistics"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a one-page response about artificial intelligence. Use exactly three technical terms.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "one-page",
+        "topic": "artificial intelligence",
+        "constraint_number": "three",
+        "constraint_type": "technical terms"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 200-word response about renewable energy. Use exactly four statistics.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "200-word",
+        "topic": "renewable energy",
+        "constraint_number": "four",
+        "constraint_type": "statistics"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a one-page response about renewable energy. Use exactly three quotations.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "one-page",
+        "topic": "renewable energy",
+        "constraint_number": "three",
+        "constraint_type": "quotations"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 200-word response about climate change. Use exactly two quotations.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "200-word",
+        "topic": "climate change",
+        "constraint_number": "two",
+        "constraint_type": "quotations"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a brief response about artificial intelligence. Use exactly five technical terms.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "brief",
+        "topic": "artificial intelligence",
+        "constraint_number": "five",
+        "constraint_type": "technical terms"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Write a 3-paragraph response about artificial intelligence. Use exactly five examples.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "structured_writing",
+      "template_id": "format_constraint_complex",
+      "variables_used": {
+        "length": "3-paragraph",
+        "topic": "artificial intelligence",
+        "constraint_number": "five",
+        "constraint_type": "examples"
+      },
+      "expected_behavior": "meet_all_format_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the year is before 2000, then capitalize it. Otherwise, call it modern.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the year is before 2000",
+        "action_a": "capitalize it",
+        "action_b": "call it modern"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the year is before 2000, then multiply it by 2. Otherwise, make it lowercase.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the year is before 2000",
+        "action_a": "multiply it by 2",
+        "action_b": "make it lowercase"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the year is before 2000, then multiply it by 2. Otherwise, add 1 to it.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the year is before 2000",
+        "action_a": "multiply it by 2",
+        "action_b": "add 1 to it"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the word starts with a vowel, then call it historical. Otherwise, make it lowercase.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the word starts with a vowel",
+        "action_a": "call it historical",
+        "action_b": "make it lowercase"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the word starts with a vowel, then capitalize it. Otherwise, call it modern.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the word starts with a vowel",
+        "action_a": "capitalize it",
+        "action_b": "call it modern"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the number is even, then capitalize it. Otherwise, make it lowercase.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the number is even",
+        "action_a": "capitalize it",
+        "action_b": "make it lowercase"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the year is before 2000, then call it historical. Otherwise, add 1 to it.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the year is before 2000",
+        "action_a": "call it historical",
+        "action_b": "add 1 to it"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the number is even, then capitalize it. Otherwise, make it lowercase.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the number is even",
+        "action_a": "capitalize it",
+        "action_b": "make it lowercase"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the year is before 2000, then capitalize it. Otherwise, call it modern.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the year is before 2000",
+        "action_a": "capitalize it",
+        "action_b": "call it modern"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the word starts with a vowel, then call it historical. Otherwise, make it lowercase.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the word starts with a vowel",
+        "action_a": "call it historical",
+        "action_b": "make it lowercase"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the word starts with a vowel, then capitalize it. Otherwise, add 1 to it.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the word starts with a vowel",
+        "action_a": "capitalize it",
+        "action_b": "add 1 to it"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the word starts with a vowel, then capitalize it. Otherwise, add 1 to it.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the word starts with a vowel",
+        "action_a": "capitalize it",
+        "action_b": "add 1 to it"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the number is even, then capitalize it. Otherwise, call it modern.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the number is even",
+        "action_a": "capitalize it",
+        "action_b": "call it modern"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the word starts with a vowel, then call it historical. Otherwise, make it lowercase.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the word starts with a vowel",
+        "action_a": "call it historical",
+        "action_b": "make it lowercase"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the year is before 2000, then capitalize it. Otherwise, add 1 to it.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the year is before 2000",
+        "action_a": "capitalize it",
+        "action_b": "add 1 to it"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the year is before 2000, then capitalize it. Otherwise, make it lowercase.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the year is before 2000",
+        "action_a": "capitalize it",
+        "action_b": "make it lowercase"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If the number is even, then call it historical. Otherwise, call it modern.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "logic",
+      "template_id": "conditional_simple",
+      "variables_used": {
+        "condition": "the number is even",
+        "action_a": "call it historical",
+        "action_b": "call it modern"
+      },
+      "expected_behavior": "correctly_apply_conditional_logic",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each letter in the alphabet, apply these rules: capitalize the first letter. But if it's a vowel, then skip it. Unless it equals 7, in which case make it bold.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each letter in the alphabet",
+        "rule_1": "capitalize the first letter",
+        "exception": "it's a vowel",
+        "alternative": "skip it",
+        "override": "it equals 7",
+        "final_action": "make it bold"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each word in this sentence, apply these rules: shift by one position. But if it's divisible by 3, then use all uppercase. Unless it's the letter E, in which case add an asterisk.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each word in this sentence",
+        "rule_1": "shift by one position",
+        "exception": "it's divisible by 3",
+        "alternative": "use all uppercase",
+        "override": "it's the letter E",
+        "final_action": "add an asterisk"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each letter in the alphabet, apply these rules: add 5. But if it's a vowel, then skip it. Unless it's the letter E, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each letter in the alphabet",
+        "rule_1": "add 5",
+        "exception": "it's a vowel",
+        "alternative": "skip it",
+        "override": "it's the letter E",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each word in this sentence, apply these rules: shift by one position. But if it has more than 5 letters, then skip it. Unless it's the letter E, in which case add an asterisk.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each word in this sentence",
+        "rule_1": "shift by one position",
+        "exception": "it has more than 5 letters",
+        "alternative": "skip it",
+        "override": "it's the letter E",
+        "final_action": "add an asterisk"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For numbers 1 through 10, apply these rules: add 5. But if it has more than 5 letters, then skip it. Unless it equals 7, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "numbers 1 through 10",
+        "rule_1": "add 5",
+        "exception": "it has more than 5 letters",
+        "alternative": "skip it",
+        "override": "it equals 7",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each word in this sentence, apply these rules: capitalize the first letter. But if it's divisible by 3, then subtract 2 instead. Unless it's the letter E, in which case make it bold.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each word in this sentence",
+        "rule_1": "capitalize the first letter",
+        "exception": "it's divisible by 3",
+        "alternative": "subtract 2 instead",
+        "override": "it's the letter E",
+        "final_action": "make it bold"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each word in this sentence, apply these rules: capitalize the first letter. But if it has more than 5 letters, then skip it. Unless it equals 7, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each word in this sentence",
+        "rule_1": "capitalize the first letter",
+        "exception": "it has more than 5 letters",
+        "alternative": "skip it",
+        "override": "it equals 7",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each letter in the alphabet, apply these rules: add 5. But if it has more than 5 letters, then subtract 2 instead. Unless it equals 7, in which case make it bold.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each letter in the alphabet",
+        "rule_1": "add 5",
+        "exception": "it has more than 5 letters",
+        "alternative": "subtract 2 instead",
+        "override": "it equals 7",
+        "final_action": "make it bold"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each letter in the alphabet, apply these rules: add 5. But if it has more than 5 letters, then subtract 2 instead. Unless it starts with the letter M, in which case add an asterisk.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each letter in the alphabet",
+        "rule_1": "add 5",
+        "exception": "it has more than 5 letters",
+        "alternative": "subtract 2 instead",
+        "override": "it starts with the letter M",
+        "final_action": "add an asterisk"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each word in this sentence, apply these rules: shift by one position. But if it's a vowel, then skip it. Unless it equals 7, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each word in this sentence",
+        "rule_1": "shift by one position",
+        "exception": "it's a vowel",
+        "alternative": "skip it",
+        "override": "it equals 7",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For numbers 1 through 10, apply these rules: capitalize the first letter. But if it's divisible by 3, then use all uppercase. Unless it equals 7, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "numbers 1 through 10",
+        "rule_1": "capitalize the first letter",
+        "exception": "it's divisible by 3",
+        "alternative": "use all uppercase",
+        "override": "it equals 7",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each word in this sentence, apply these rules: add 5. But if it's divisible by 3, then skip it. Unless it's the letter E, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each word in this sentence",
+        "rule_1": "add 5",
+        "exception": "it's divisible by 3",
+        "alternative": "skip it",
+        "override": "it's the letter E",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For numbers 1 through 10, apply these rules: shift by one position. But if it's divisible by 3, then skip it. Unless it equals 7, in which case add an asterisk.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "numbers 1 through 10",
+        "rule_1": "shift by one position",
+        "exception": "it's divisible by 3",
+        "alternative": "skip it",
+        "override": "it equals 7",
+        "final_action": "add an asterisk"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each letter in the alphabet, apply these rules: capitalize the first letter. But if it's divisible by 3, then use all uppercase. Unless it's the letter E, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each letter in the alphabet",
+        "rule_1": "capitalize the first letter",
+        "exception": "it's divisible by 3",
+        "alternative": "use all uppercase",
+        "override": "it's the letter E",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For numbers 1 through 10, apply these rules: shift by one position. But if it has more than 5 letters, then skip it. Unless it starts with the letter M, in which case repeat it twice.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "numbers 1 through 10",
+        "rule_1": "shift by one position",
+        "exception": "it has more than 5 letters",
+        "alternative": "skip it",
+        "override": "it starts with the letter M",
+        "final_action": "repeat it twice"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For numbers 1 through 10, apply these rules: shift by one position. But if it's divisible by 3, then skip it. Unless it equals 7, in which case add an asterisk.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "numbers 1 through 10",
+        "rule_1": "shift by one position",
+        "exception": "it's divisible by 3",
+        "alternative": "skip it",
+        "override": "it equals 7",
+        "final_action": "add an asterisk"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "For each word in this sentence, apply these rules: capitalize the first letter. But if it has more than 5 letters, then subtract 2 instead. Unless it equals 7, in which case add an asterisk.",
+      "capability": "instruction_following",
+      "difficulty": "expert",
+      "domain": "complex_logic",
+      "template_id": "conditional_nested",
+      "variables_used": {
+        "input_type": "each word in this sentence",
+        "rule_1": "capitalize the first letter",
+        "exception": "it has more than 5 letters",
+        "alternative": "subtract 2 instead",
+        "override": "it equals 7",
+        "final_action": "add an asterisk"
+      },
+      "expected_behavior": "correctly_handle_nested_conditions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain photosynthesis in exactly 50 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "photosynthesis",
+        "word_count": "50"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain democracy in exactly 15 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "democracy",
+        "word_count": "15"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain global warming in exactly 100 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "global warming",
+        "word_count": "100"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain global warming in exactly 50 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "global warming",
+        "word_count": "50"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain global warming in exactly 25 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "global warming",
+        "word_count": "25"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain global warming in exactly 15 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "global warming",
+        "word_count": "15"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain quantum mechanics in exactly 25 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "quantum mechanics",
+        "word_count": "25"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain quantum mechanics in exactly 50 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "quantum mechanics",
+        "word_count": "50"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain global warming in exactly 15 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "global warming",
+        "word_count": "15"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain democracy in exactly 100 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "democracy",
+        "word_count": "100"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain photosynthesis in exactly 100 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "photosynthesis",
+        "word_count": "100"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain quantum mechanics in exactly 25 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "quantum mechanics",
+        "word_count": "25"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain global warming in exactly 100 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "global warming",
+        "word_count": "100"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain democracy in exactly 25 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "democracy",
+        "word_count": "25"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain global warming in exactly 25 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "global warming",
+        "word_count": "25"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain democracy in exactly 25 words.",
+      "capability": "instruction_following",
+      "difficulty": "medium",
+      "domain": "conciseness",
+      "template_id": "length_constraint",
+      "variables_used": {
+        "concept": "democracy",
+        "word_count": "25"
+      },
+      "expected_behavior": "meet_exact_word_count",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe artificial intelligence as if you were a poet speaking to five-year-olds.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "artificial intelligence",
+        "persona": "a poet",
+        "audience": "five-year-olds"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe environmental conservation as if you were a kindergarten teacher speaking to fellow researchers.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "environmental conservation",
+        "persona": "a kindergarten teacher",
+        "audience": "fellow researchers"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe environmental conservation as if you were a kindergarten teacher speaking to five-year-olds.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "environmental conservation",
+        "persona": "a kindergarten teacher",
+        "audience": "five-year-olds"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe space travel as if you were a kindergarten teacher speaking to fellow researchers.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "space travel",
+        "persona": "a kindergarten teacher",
+        "audience": "fellow researchers"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe space travel as if you were a kindergarten teacher speaking to five-year-olds.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "space travel",
+        "persona": "a kindergarten teacher",
+        "audience": "five-year-olds"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe space travel as if you were a kindergarten teacher speaking to fellow researchers.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "space travel",
+        "persona": "a kindergarten teacher",
+        "audience": "fellow researchers"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe artificial intelligence as if you were a kindergarten teacher speaking to fellow researchers.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "artificial intelligence",
+        "persona": "a kindergarten teacher",
+        "audience": "fellow researchers"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe space travel as if you were a kindergarten teacher speaking to art critics.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "space travel",
+        "persona": "a kindergarten teacher",
+        "audience": "art critics"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe artificial intelligence as if you were a kindergarten teacher speaking to art critics.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "artificial intelligence",
+        "persona": "a kindergarten teacher",
+        "audience": "art critics"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe artificial intelligence as if you were a kindergarten teacher speaking to sports fans.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "artificial intelligence",
+        "persona": "a kindergarten teacher",
+        "audience": "sports fans"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe artificial intelligence as if you were a 19th-century scientist speaking to sports fans.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "artificial intelligence",
+        "persona": "a 19th-century scientist",
+        "audience": "sports fans"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe cooking as if you were a poet speaking to fellow researchers.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "cooking",
+        "persona": "a poet",
+        "audience": "fellow researchers"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe cooking as if you were a kindergarten teacher speaking to fellow researchers.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "cooking",
+        "persona": "a kindergarten teacher",
+        "audience": "fellow researchers"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe space travel as if you were a sports commentator speaking to fellow researchers.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "space travel",
+        "persona": "a sports commentator",
+        "audience": "fellow researchers"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe artificial intelligence as if you were a sports commentator speaking to sports fans.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "artificial intelligence",
+        "persona": "a sports commentator",
+        "audience": "sports fans"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Describe cooking as if you were a 19th-century scientist speaking to sports fans.",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "style_adaptation",
+      "template_id": "style_constraint",
+      "variables_used": {
+        "topic": "cooking",
+        "persona": "a 19th-century scientist",
+        "audience": "sports fans"
+      },
+      "expected_behavior": "adopt_specified_persona_and_audience",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain gardening without using the words \"computer\", \"code\", or \"program\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "gardening",
+        "forbidden_words": "\"computer\", \"code\", or \"program\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain computer programming without using the words \"piece\", \"move\", or \"game\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "computer programming",
+        "forbidden_words": "\"piece\", \"move\", or \"game\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain cooking pasta without using the words \"computer\", \"code\", or \"program\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "cooking pasta",
+        "forbidden_words": "\"computer\", \"code\", or \"program\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain cooking pasta without using the words \"piece\", \"move\", or \"game\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "cooking pasta",
+        "forbidden_words": "\"piece\", \"move\", or \"game\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain playing chess without using the words \"plant\", \"grow\", or \"soil\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "playing chess",
+        "forbidden_words": "\"plant\", \"grow\", or \"soil\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain playing chess without using the words \"plant\", \"grow\", or \"soil\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "playing chess",
+        "forbidden_words": "\"plant\", \"grow\", or \"soil\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain gardening without using the words \"computer\", \"code\", or \"program\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "gardening",
+        "forbidden_words": "\"computer\", \"code\", or \"program\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain computer programming without using the words \"water\", \"boil\", or \"cook\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "computer programming",
+        "forbidden_words": "\"water\", \"boil\", or \"cook\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain gardening without using the words \"plant\", \"grow\", or \"soil\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "gardening",
+        "forbidden_words": "\"plant\", \"grow\", or \"soil\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain cooking pasta without using the words \"plant\", \"grow\", or \"soil\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "cooking pasta",
+        "forbidden_words": "\"plant\", \"grow\", or \"soil\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain playing chess without using the words \"plant\", \"grow\", or \"soil\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "playing chess",
+        "forbidden_words": "\"plant\", \"grow\", or \"soil\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain gardening without using the words \"plant\", \"grow\", or \"soil\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "gardening",
+        "forbidden_words": "\"plant\", \"grow\", or \"soil\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain computer programming without using the words \"piece\", \"move\", or \"game\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "computer programming",
+        "forbidden_words": "\"piece\", \"move\", or \"game\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain gardening without using the words \"piece\", \"move\", or \"game\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "gardening",
+        "forbidden_words": "\"piece\", \"move\", or \"game\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain playing chess without using the words \"piece\", \"move\", or \"game\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "playing chess",
+        "forbidden_words": "\"piece\", \"move\", or \"game\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Explain cooking pasta without using the words \"plant\", \"grow\", or \"soil\".",
+      "capability": "instruction_following",
+      "difficulty": "hard",
+      "domain": "vocabulary_constraint",
+      "template_id": "prohibition_constraint",
+      "variables_used": {
+        "topic": "cooking pasta",
+        "forbidden_words": "\"plant\", \"grow\", or \"soil\""
+      },
+      "expected_behavior": "avoid_forbidden_words_completely",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "instruction_following",
+        "version": "2.0"
+      }
+    }
+  ],
+  "statistics": {
+    "total_prompts": 150,
+    "difficulty_distribution": {
+      "easy": 34,
+      "hard": 49,
+      "medium": 50,
+      "expert": 17
+    },
+    "domain_distribution": {
+      "general": 17,
+      "analytical": 17,
+      "formatting": 17,
+      "structured_writing": 17,
+      "logic": 17,
+      "complex_logic": 17,
+      "conciseness": 16,
+      "style_adaptation": 16,
+      "vocabulary_constraint": 16
+    },
+    "unique_templates": 9
+  }
+}

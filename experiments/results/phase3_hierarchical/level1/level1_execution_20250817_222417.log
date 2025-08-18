@@ -1,0 +1,106 @@
+2025-08-17 22:24:17,162 - INFO - Loading enhanced prompt datasets...
+2025-08-17 22:24:17,162 - WARNING - Enhanced dataset not found, using fallback prompts
+2025-08-17 22:24:17,162 - INFO - Selecting model candidates for hierarchical testing...
+2025-08-17 22:24:17,162 - INFO - Selected 23 model candidates:
+2025-08-17 22:24:17,162 - INFO -    1. openai/gpt-4o (GPT, general, Q:10)
+2025-08-17 22:24:17,162 - INFO -    2. anthropic/claude-3.5-sonnet (Claude, general, Q:10)
+2025-08-17 22:24:17,162 - INFO -    3. openai/o1-preview (GPT-O1, reasoning, Q:10)
+2025-08-17 22:24:17,162 - INFO -    4. anthropic/claude-3-opus (Claude, general, Q:10)
+2025-08-17 22:24:17,162 - INFO -    5. google/gemini-1.5-pro (Gemini, general, Q:9)
+2025-08-17 22:24:17,162 - INFO -    6. meta-llama/llama-3.1-405b-instruct (Llama, open_source, Q:9)
+2025-08-17 22:24:17,162 - INFO -    7. openai/o1-mini (GPT-O1, reasoning, Q:8)
+2025-08-17 22:24:17,162 - INFO -    8. deepseek/deepseek-r1 (DeepSeek, reasoning, Q:8)
+2025-08-17 22:24:17,162 - INFO -    9. meta-llama/llama-3.1-70b-instruct (Llama, open_source, Q:8)
+2025-08-17 22:24:17,162 - INFO -   10. qwen/qwen-2.5-72b-instruct (Qwen, open_source, Q:8)
+2025-08-17 22:24:17,162 - INFO -   11. deepseek/deepseek-v2.5 (DeepSeek, general, Q:8)
+2025-08-17 22:24:17,162 - INFO -   12. nvidia/llama-3.1-nemotron-70b-instruct (Nemotron, general, Q:8)
+2025-08-17 22:24:17,162 - INFO -   13. mistralai/mixtral-8x22b-instruct (Mixtral, mixture, Q:8)
+2025-08-17 22:24:17,162 - INFO -   14. deepseek/deepseek-coder-v2-instruct (DeepSeek, code, Q:8)
+2025-08-17 22:24:17,162 - INFO -   15. openai/gpt-4o-mini (GPT, efficient, Q:7)
+2025-08-17 22:24:17,162 - INFO -   16. anthropic/claude-3-haiku (Claude, efficient, Q:7)
+2025-08-17 22:24:17,162 - INFO -   17. 01-ai/yi-lightning (Yi, multilingual, Q:7)
+2025-08-17 22:24:17,162 - INFO -   18. zhipuai/glm-4-plus (GLM, multilingual, Q:7)
+2025-08-17 22:24:17,162 - INFO -   19. qwen/qwen-2.5-coder-32b-instruct (Qwen, code, Q:7)
+2025-08-17 22:24:17,162 - INFO -   20. google/gemini-1.5-flash (Gemini, efficient, Q:6)
+2025-08-17 22:24:17,162 - INFO -   21. baichuan/baichuan2-192k (Baichuan, multilingual, Q:6)
+2025-08-17 22:24:17,162 - INFO -   22. phind/phind-codellama-34b (CodeLlama, code, Q:6)
+2025-08-17 22:24:17,162 - INFO -   23. gryphe/mythomax-l2-13b (MythoMax, creative, Q:5)
+2025-08-17 22:24:17,163 - INFO - Loading Level 1 prompts...
+2025-08-17 22:24:17,163 - INFO - Loading enhanced prompt datasets...
+2025-08-17 22:24:17,163 - WARNING - Enhanced dataset not found, using fallback prompts
+2025-08-17 22:24:17,163 - INFO - Selected 30 prompts for Level 1 (5 capabilities)
+2025-08-17 22:24:17,163 - INFO - 🚀 Starting Level 1 execution (dry_run=True)
+2025-08-17 22:24:17,163 - INFO -    Models: 23
+2025-08-17 22:24:17,163 - INFO -    Prompts per model: 30
+2025-08-17 22:24:17,163 - INFO -    Total API calls: 690
+2025-08-17 22:24:17,163 - INFO -    Cost limit: $1.00
+2025-08-17 22:24:17,163 - INFO -    DRY RUN MODE - No real API calls
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 1/23: openai/gpt-4o
+2025-08-17 22:24:17,163 - INFO -    Progress: 4.3% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 2/23: anthropic/claude-3.5-sonnet
+2025-08-17 22:24:17,163 - INFO -    Progress: 8.7% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 3/23: openai/o1-preview
+2025-08-17 22:24:17,163 - INFO -    Progress: 13.0% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 4/23: anthropic/claude-3-opus
+2025-08-17 22:24:17,163 - INFO -    Progress: 17.4% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 5/23: google/gemini-1.5-pro
+2025-08-17 22:24:17,163 - INFO -    Progress: 21.7% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 6/23: meta-llama/llama-3.1-405b-instruct
+2025-08-17 22:24:17,163 - INFO -    Progress: 26.1% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 7/23: openai/o1-mini
+2025-08-17 22:24:17,163 - INFO -    Progress: 30.4% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 8/23: deepseek/deepseek-r1
+2025-08-17 22:24:17,163 - INFO -    Progress: 34.8% ($0.000 spent)
+2025-08-17 22:24:17,163 - INFO - 🔄 Testing model 9/23: meta-llama/llama-3.1-70b-instruct
+2025-08-17 22:24:17,164 - INFO -    Progress: 39.1% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 10/23: qwen/qwen-2.5-72b-instruct
+2025-08-17 22:24:17,164 - INFO -    Progress: 43.5% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 11/23: deepseek/deepseek-v2.5
+2025-08-17 22:24:17,164 - INFO -    Progress: 47.8% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 12/23: nvidia/llama-3.1-nemotron-70b-instruct
+2025-08-17 22:24:17,164 - INFO -    Progress: 52.2% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 13/23: mistralai/mixtral-8x22b-instruct
+2025-08-17 22:24:17,164 - INFO -    Progress: 56.5% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 14/23: deepseek/deepseek-coder-v2-instruct
+2025-08-17 22:24:17,164 - INFO -    Progress: 60.9% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 15/23: openai/gpt-4o-mini
+2025-08-17 22:24:17,164 - INFO -    Progress: 65.2% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 16/23: anthropic/claude-3-haiku
+2025-08-17 22:24:17,164 - INFO -    Progress: 69.6% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 17/23: 01-ai/yi-lightning
+2025-08-17 22:24:17,164 - INFO -    Progress: 73.9% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 18/23: zhipuai/glm-4-plus
+2025-08-17 22:24:17,164 - INFO -    Progress: 78.3% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 19/23: qwen/qwen-2.5-coder-32b-instruct
+2025-08-17 22:24:17,164 - INFO -    Progress: 82.6% ($0.000 spent)
+2025-08-17 22:24:17,164 - INFO - 🔄 Testing model 20/23: google/gemini-1.5-flash
+2025-08-17 22:24:17,165 - INFO -    Progress: 87.0% ($0.000 spent)
+2025-08-17 22:24:17,165 - INFO - 🔄 Testing model 21/23: baichuan/baichuan2-192k
+2025-08-17 22:24:17,165 - INFO -    Progress: 91.3% ($0.000 spent)
+2025-08-17 22:24:17,165 - INFO - 🔄 Testing model 22/23: phind/phind-codellama-34b
+2025-08-17 22:24:17,165 - INFO -    Progress: 95.7% ($0.000 spent)
+2025-08-17 22:24:17,165 - INFO - 🔄 Testing model 23/23: gryphe/mythomax-l2-13b
+2025-08-17 22:24:17,165 - INFO -    Progress: 100.0% ($0.000 spent)
+2025-08-17 22:24:17,165 - INFO - Calculating convergence scores...
+2025-08-17 22:24:17,193 - INFO - Calculated convergence scores for 23 models
+2025-08-17 22:24:17,193 - INFO - Selected top 15 models for Level 2:
+2025-08-17 22:24:17,193 - INFO -     1. openai/o1-preview: 0.904 convergence
+2025-08-17 22:24:17,193 - INFO -     2. deepseek/deepseek-v2.5: 0.904 convergence
+2025-08-17 22:24:17,193 - INFO -     3. nvidia/llama-3.1-nemotron-70b-instruct: 0.903 convergence
+2025-08-17 22:24:17,193 - INFO -     4. google/gemini-1.5-pro: 0.902 convergence
+2025-08-17 22:24:17,193 - INFO -     5. deepseek/deepseek-coder-v2-instruct: 0.902 convergence
+2025-08-17 22:24:17,193 - INFO -     6. anthropic/claude-3.5-sonnet: 0.901 convergence
+2025-08-17 22:24:17,193 - INFO -     7. openai/o1-mini: 0.901 convergence
+2025-08-17 22:24:17,193 - INFO -     8. mistralai/mixtral-8x22b-instruct: 0.896 convergence
+2025-08-17 22:24:17,193 - INFO -     9. meta-llama/llama-3.1-405b-instruct: 0.894 convergence
+2025-08-17 22:24:17,193 - INFO -    10. deepseek/deepseek-r1: 0.893 convergence
+2025-08-17 22:24:17,193 - INFO -    11. meta-llama/llama-3.1-70b-instruct: 0.888 convergence
+2025-08-17 22:24:17,193 - INFO -    12. anthropic/claude-3-opus: 0.888 convergence
+2025-08-17 22:24:17,193 - INFO -    13. openai/gpt-4o: 0.880 convergence
+2025-08-17 22:24:17,193 - INFO -    14. qwen/qwen-2.5-72b-instruct: 0.879 convergence
+2025-08-17 22:24:17,193 - INFO -    15. phind/phind-codellama-34b: 0.879 convergence
+2025-08-17 22:24:17,201 - INFO - 📄 Results saved to: results/phase3_hierarchical/level1/level1_results_20250817_222417.json
+2025-08-17 22:24:17,201 - INFO - 📄 Summary saved to: results/phase3_hierarchical/level1/level1_summary.txt
+2025-08-17 22:24:17,201 - INFO - ✅ Level 1 completed in 0.0s
+2025-08-17 22:24:17,201 - INFO -    Total cost: $0.000
+2025-08-17 22:24:17,201 - INFO -    Average convergence: 0.865

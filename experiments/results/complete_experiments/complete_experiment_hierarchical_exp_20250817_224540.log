@@ -1,0 +1,33 @@
+2025-08-17 22:45:40,394 - INFO - 🚀 Starting Level 1: Behavioral Screening
+2025-08-17 22:45:40,394 - INFO - Loading enhanced prompt datasets...
+2025-08-17 22:45:40,394 - WARNING - Enhanced dataset not found, using fallback prompts
+2025-08-17 22:45:40,394 - INFO - Selecting model candidates for hierarchical testing...
+2025-08-17 22:45:40,394 - INFO - Selected 23 model candidates:
+2025-08-17 22:45:40,394 - INFO -    1. openai/gpt-4o (GPT, general, Q:10)
+2025-08-17 22:45:40,394 - INFO -    2. anthropic/claude-3.5-sonnet (Claude, general, Q:10)
+2025-08-17 22:45:40,394 - INFO -    3. openai/o1-preview (GPT-O1, reasoning, Q:10)
+2025-08-17 22:45:40,394 - INFO -    4. anthropic/claude-3-opus (Claude, general, Q:10)
+2025-08-17 22:45:40,394 - INFO -    5. google/gemini-1.5-pro (Gemini, general, Q:9)
+2025-08-17 22:45:40,394 - INFO -    6. meta-llama/llama-3.1-405b-instruct (Llama, open_source, Q:9)
+2025-08-17 22:45:40,394 - INFO -    7. openai/o1-mini (GPT-O1, reasoning, Q:8)
+2025-08-17 22:45:40,395 - INFO -    8. deepseek/deepseek-r1 (DeepSeek, reasoning, Q:8)
+2025-08-17 22:45:40,395 - INFO -    9. meta-llama/llama-3.1-70b-instruct (Llama, open_source, Q:8)
+2025-08-17 22:45:40,395 - INFO -   10. qwen/qwen-2.5-72b-instruct (Qwen, open_source, Q:8)
+2025-08-17 22:45:40,395 - INFO -   11. deepseek/deepseek-v2.5 (DeepSeek, general, Q:8)
+2025-08-17 22:45:40,395 - INFO -   12. nvidia/llama-3.1-nemotron-70b-instruct (Nemotron, general, Q:8)
+2025-08-17 22:45:40,395 - INFO -   13. mistralai/mixtral-8x22b-instruct (Mixtral, mixture, Q:8)
+2025-08-17 22:45:40,395 - INFO -   14. deepseek/deepseek-coder-v2-instruct (DeepSeek, code, Q:8)
+2025-08-17 22:45:40,395 - INFO -   15. openai/gpt-4o-mini (GPT, efficient, Q:7)
+2025-08-17 22:45:40,395 - INFO -   16. anthropic/claude-3-haiku (Claude, efficient, Q:7)
+2025-08-17 22:45:40,395 - INFO -   17. 01-ai/yi-lightning (Yi, multilingual, Q:7)
+2025-08-17 22:45:40,395 - INFO -   18. zhipuai/glm-4-plus (GLM, multilingual, Q:7)
+2025-08-17 22:45:40,395 - INFO -   19. qwen/qwen-2.5-coder-32b-instruct (Qwen, code, Q:7)
+2025-08-17 22:45:40,395 - INFO -   20. google/gemini-1.5-flash (Gemini, efficient, Q:6)
+2025-08-17 22:45:40,395 - INFO -   21. baichuan/baichuan2-192k (Baichuan, multilingual, Q:6)
+2025-08-17 22:45:40,395 - INFO -   22. phind/phind-codellama-34b (CodeLlama, code, Q:6)
+2025-08-17 22:45:40,395 - INFO -   23. gryphe/mythomax-l2-13b (MythoMax, creative, Q:5)
+2025-08-17 22:45:40,395 - INFO - Loading Level 1 prompts...
+2025-08-17 22:45:40,395 - INFO - Loading enhanced prompt datasets...
+2025-08-17 22:45:40,395 - WARNING - Enhanced dataset not found, using fallback prompts
+2025-08-17 22:45:40,395 - INFO - Selected 30 prompts for Level 1 (5 capabilities)
+2025-08-17 22:45:40,395 - ERROR - Experiment failed: EOF when reading a line

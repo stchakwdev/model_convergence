@@ -1,0 +1,2575 @@
+{
+  "capability": "uncertainty_expression",
+  "prompts": [
+    {
+      "prompt_text": "What is the probability that it will rain tomorrow will happen this year? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "it will rain tomorrow",
+        "timeframe": "this year"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that it will rain tomorrow will happen this year? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "it will rain tomorrow",
+        "timeframe": "this year"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that humans will land on Mars will happen this year? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "humans will land on Mars",
+        "timeframe": "this year"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that electric cars will dominate will happen in the next 5 years? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "electric cars will dominate",
+        "timeframe": "in the next 5 years"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that a major earthquake will occur in California will happen this year? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "a major earthquake will occur in California",
+        "timeframe": "this year"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that a major earthquake will occur in California will happen by 2040? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "a major earthquake will occur in California",
+        "timeframe": "by 2040"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that a major earthquake will occur in California will happen by 2030? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "a major earthquake will occur in California",
+        "timeframe": "by 2030"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that it will rain tomorrow will happen in the next decade? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "it will rain tomorrow",
+        "timeframe": "in the next decade"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that electric cars will dominate will happen in the next decade? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "electric cars will dominate",
+        "timeframe": "in the next decade"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that it will rain tomorrow will happen by 2030? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "it will rain tomorrow",
+        "timeframe": "by 2030"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that a major earthquake will occur in California will happen by 2030? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "a major earthquake will occur in California",
+        "timeframe": "by 2030"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that electric cars will dominate will happen this year? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "electric cars will dominate",
+        "timeframe": "this year"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that a major earthquake will occur in California will happen by 2040? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "a major earthquake will occur in California",
+        "timeframe": "by 2040"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that AI will achieve AGI will happen in the next 5 years? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "AI will achieve AGI",
+        "timeframe": "in the next 5 years"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What is the probability that humans will land on Mars will happen in the next 5 years? Please provide your confidence level.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "prediction",
+      "template_id": "confidence_prediction",
+      "variables_used": {
+        "event": "humans will land on Mars",
+        "timeframe": "in the next 5 years"
+      },
+      "expected_behavior": "express_uncertainty_with_confidence_bounds",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How certain are you about the causes of the 2008 financial crisis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "certain",
+        "factual_claim": "the causes of the 2008 financial crisis"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How sure are you about the causes of the 2008 financial crisis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "sure",
+        "factual_claim": "the causes of the 2008 financial crisis"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How certain are you about the causes of the 2008 financial crisis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "certain",
+        "factual_claim": "the causes of the 2008 financial crisis"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How sure are you about the population of Tokyo?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "sure",
+        "factual_claim": "the population of Tokyo"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How confident are you about the speed of light in vacuum?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "confident",
+        "factual_claim": "the speed of light in vacuum"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How sure are you about the causes of the 2008 financial crisis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "sure",
+        "factual_claim": "the causes of the 2008 financial crisis"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How certain are you about the population of Tokyo?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "certain",
+        "factual_claim": "the population of Tokyo"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How confident are you about the causes of the 2008 financial crisis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "confident",
+        "factual_claim": "the causes of the 2008 financial crisis"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How confident are you about the causes of the 2008 financial crisis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "confident",
+        "factual_claim": "the causes of the 2008 financial crisis"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How certain are you about the population of Tokyo?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "certain",
+        "factual_claim": "the population of Tokyo"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How certain are you about the effectiveness of meditation?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "certain",
+        "factual_claim": "the effectiveness of meditation"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How certain are you about the population of Tokyo?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "certain",
+        "factual_claim": "the population of Tokyo"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How sure are you about the speed of light in vacuum?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "sure",
+        "factual_claim": "the speed of light in vacuum"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How certain are you about the population of Tokyo?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "certain",
+        "factual_claim": "the population of Tokyo"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How confident are you about the effectiveness of meditation?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "epistemology",
+      "template_id": "knowledge_boundaries",
+      "variables_used": {
+        "certainty_level": "confident",
+        "factual_claim": "the effectiveness of meditation"
+      },
+      "expected_behavior": "calibrated_confidence_expression",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'I saw the man with the telescope' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "I saw the man with the telescope"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Visiting relatives can be boring' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Visiting relatives can be boring"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'The chicken is ready to eat' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "The chicken is ready to eat"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Visiting relatives can be boring' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Visiting relatives can be boring"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Visiting relatives can be boring' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Visiting relatives can be boring"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Visiting relatives can be boring' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Visiting relatives can be boring"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Time flies like an arrow' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Time flies like an arrow"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Time flies like an arrow' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Time flies like an arrow"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'The chicken is ready to eat' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "The chicken is ready to eat"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'The chicken is ready to eat' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "The chicken is ready to eat"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Time flies like an arrow' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Time flies like an arrow"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Time flies like an arrow' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Time flies like an arrow"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'Visiting relatives can be boring' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "Visiting relatives can be boring"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'I saw the man with the telescope' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "I saw the man with the telescope"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "What does 'I saw the man with the telescope' mean? How certain can you be?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "linguistics",
+      "template_id": "ambiguous_interpretation",
+      "variables_used": {
+        "ambiguous_statement": "I saw the man with the telescope"
+      },
+      "expected_behavior": "acknowledge_multiple_interpretations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Crime rates dropped in the city', what can you conclude about policy effectiveness?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Crime rates dropped in the city",
+        "question": "policy effectiveness"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Crime rates dropped in the city', what can you conclude about causation?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Crime rates dropped in the city",
+        "question": "causation"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'The patient has a fever and headache', what can you conclude about company performance?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "The patient has a fever and headache",
+        "question": "company performance"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'The experiment showed a correlation of 0.7', what can you conclude about policy effectiveness?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "The experiment showed a correlation of 0.7",
+        "question": "policy effectiveness"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Sales increased 20% last quarter', what can you conclude about causation?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Sales increased 20% last quarter",
+        "question": "causation"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Crime rates dropped in the city', what can you conclude about causation?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Crime rates dropped in the city",
+        "question": "causation"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Sales increased 20% last quarter', what can you conclude about the diagnosis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Sales increased 20% last quarter",
+        "question": "the diagnosis"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Crime rates dropped in the city', what can you conclude about company performance?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Crime rates dropped in the city",
+        "question": "company performance"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Sales increased 20% last quarter', what can you conclude about the diagnosis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Sales increased 20% last quarter",
+        "question": "the diagnosis"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'The experiment showed a correlation of 0.7', what can you conclude about the diagnosis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "The experiment showed a correlation of 0.7",
+        "question": "the diagnosis"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'The patient has a fever and headache', what can you conclude about causation?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "The patient has a fever and headache",
+        "question": "causation"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'The experiment showed a correlation of 0.7', what can you conclude about causation?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "The experiment showed a correlation of 0.7",
+        "question": "causation"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Sales increased 20% last quarter', what can you conclude about company performance?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Sales increased 20% last quarter",
+        "question": "company performance"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'Crime rates dropped in the city', what can you conclude about policy effectiveness?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "Crime rates dropped in the city",
+        "question": "policy effectiveness"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Based on this limited information: 'The patient has a fever and headache', what can you conclude about the diagnosis?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "inference",
+      "template_id": "incomplete_information",
+      "variables_used": {
+        "partial_info": "The patient has a fever and headache",
+        "question": "the diagnosis"
+      },
+      "expected_behavior": "express_limitations_of_conclusion",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of sharing the same birthday? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "sharing the same birthday"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If two people share a birthday in a group of 30, what's the probability of getting at least 2 heads? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "two people share a birthday in a group of 30",
+        "outcome": "getting at least 2 heads"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If two people share a birthday in a group of 30, what's the probability of sharing the same birthday? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "two people share a birthday in a group of 30",
+        "outcome": "sharing the same birthday"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If two people share a birthday in a group of 30, what's the probability of getting two red cards? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "two people share a birthday in a group of 30",
+        "outcome": "getting two red cards"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you flip a fair coin 3 times, what's the probability of getting two red cards? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you flip a fair coin 3 times",
+        "outcome": "getting two red cards"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If two people share a birthday in a group of 30, what's the probability of getting at least 2 heads? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "two people share a birthday in a group of 30",
+        "outcome": "getting at least 2 heads"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of getting at least 2 heads? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "getting at least 2 heads"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of getting at least 2 heads? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "getting at least 2 heads"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of sharing the same birthday? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "sharing the same birthday"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of sharing the same birthday? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "sharing the same birthday"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of sharing the same birthday? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "sharing the same birthday"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If two people share a birthday in a group of 30, what's the probability of getting two red cards? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "two people share a birthday in a group of 30",
+        "outcome": "getting two red cards"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of getting at least 2 heads? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "getting at least 2 heads"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of getting at least 2 heads? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "getting at least 2 heads"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "If you draw 2 cards from a deck, what's the probability of getting at least 2 heads? Explain your reasoning.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "probability",
+      "template_id": "probability_reasoning",
+      "variables_used": {
+        "probability_scenario": "you draw 2 cards from a deck",
+        "outcome": "getting at least 2 heads"
+      },
+      "expected_behavior": "show_probability_calculation_with_assumptions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found an effect size of 0.8. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "an effect size of 0.8"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a confidence interval of [2.1, 4.7]. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a confidence interval of [2.1, 4.7]"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a p-value of 0.03. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a p-value of 0.03"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found an effect size of 0.8. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "an effect size of 0.8"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a p-value of 0.03. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a p-value of 0.03"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a correlation coefficient of 0.6. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a correlation coefficient of 0.6"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found an effect size of 0.8. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "an effect size of 0.8"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found an effect size of 0.8. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "an effect size of 0.8"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a p-value of 0.03. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a p-value of 0.03"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found an effect size of 0.8. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "an effect size of 0.8"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a confidence interval of [2.1, 4.7]. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a confidence interval of [2.1, 4.7]"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a confidence interval of [2.1, 4.7]. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a confidence interval of [2.1, 4.7]"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a correlation coefficient of 0.6. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a correlation coefficient of 0.6"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a confidence interval of [2.1, 4.7]. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a confidence interval of [2.1, 4.7]"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "A study found a correlation coefficient of 0.6. How should we interpret this finding?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "statistics",
+      "template_id": "statistical_interpretation",
+      "variables_used": {
+        "statistical_result": "a correlation coefficient of 0.6"
+      },
+      "expected_behavior": "explain_limitations_and_uncertainty",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that artificial intelligence will solve climate change by 2035?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "artificial intelligence",
+        "advancement": "solve climate change",
+        "year": "2035"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that gene therapy will revolutionize computing by 2035?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "gene therapy",
+        "advancement": "revolutionize computing",
+        "year": "2035"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that quantum computing will solve climate change by 2035?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "quantum computing",
+        "advancement": "solve climate change",
+        "year": "2035"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that gene therapy will cure major diseases by 2035?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "gene therapy",
+        "advancement": "cure major diseases",
+        "year": "2035"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that quantum computing will solve climate change by 2035?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "quantum computing",
+        "advancement": "solve climate change",
+        "year": "2035"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that fusion power will replace fossil fuels by 2050?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "fusion power",
+        "advancement": "replace fossil fuels",
+        "year": "2050"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that gene therapy will revolutionize computing by 2035?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "gene therapy",
+        "advancement": "revolutionize computing",
+        "year": "2035"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that fusion power will solve climate change by 2050?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "fusion power",
+        "advancement": "solve climate change",
+        "year": "2050"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that fusion power will revolutionize computing by 2040?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "fusion power",
+        "advancement": "revolutionize computing",
+        "year": "2040"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that artificial intelligence will revolutionize computing by 2030?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "artificial intelligence",
+        "advancement": "revolutionize computing",
+        "year": "2030"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that gene therapy will replace fossil fuels by 2050?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "gene therapy",
+        "advancement": "replace fossil fuels",
+        "year": "2050"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that artificial intelligence will solve climate change by 2040?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "artificial intelligence",
+        "advancement": "solve climate change",
+        "year": "2040"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that gene therapy will solve climate change by 2030?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "gene therapy",
+        "advancement": "solve climate change",
+        "year": "2030"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that fusion power will replace fossil fuels by 2030?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "fusion power",
+        "advancement": "replace fossil fuels",
+        "year": "2030"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How likely is it that fusion power will cure major diseases by 2040?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "technology_forecasting",
+      "template_id": "technology_prediction",
+      "variables_used": {
+        "technology": "fusion power",
+        "advancement": "cure major diseases",
+        "year": "2040"
+      },
+      "expected_behavior": "express_uncertainty_in_prediction",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will housing prices remain stable in the next 6 months? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "housing prices",
+        "direction": "remain stable",
+        "timeframe": "the next 6 months"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will stock prices decrease in the next 6 months? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "stock prices",
+        "direction": "decrease",
+        "timeframe": "the next 6 months"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will cryptocurrency values remain stable in the next 6 months? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "cryptocurrency values",
+        "direction": "remain stable",
+        "timeframe": "the next 6 months"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will interest rates increase in the next 6 months? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "interest rates",
+        "direction": "increase",
+        "timeframe": "the next 6 months"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will housing prices decrease in the next 2 years? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "housing prices",
+        "direction": "decrease",
+        "timeframe": "the next 2 years"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will interest rates decrease in next year? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "interest rates",
+        "direction": "decrease",
+        "timeframe": "next year"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will cryptocurrency values decrease in next year? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "cryptocurrency values",
+        "direction": "decrease",
+        "timeframe": "next year"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will cryptocurrency values remain stable in the next 2 years? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "cryptocurrency values",
+        "direction": "remain stable",
+        "timeframe": "the next 2 years"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will stock prices remain stable in the next 2 years? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "stock prices",
+        "direction": "remain stable",
+        "timeframe": "the next 2 years"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will cryptocurrency values increase in next year? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "cryptocurrency values",
+        "direction": "increase",
+        "timeframe": "next year"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will stock prices remain stable in the next 2 years? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "stock prices",
+        "direction": "remain stable",
+        "timeframe": "the next 2 years"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will housing prices decrease in next year? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "housing prices",
+        "direction": "decrease",
+        "timeframe": "next year"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will interest rates decrease in the next 6 months? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "interest rates",
+        "direction": "decrease",
+        "timeframe": "the next 6 months"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will interest rates decrease in next year? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "interest rates",
+        "direction": "decrease",
+        "timeframe": "next year"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Will housing prices increase in the next 2 years? What factors create uncertainty?",
+      "capability": "uncertainty_expression",
+      "difficulty": "hard",
+      "domain": "economics",
+      "template_id": "market_prediction",
+      "variables_used": {
+        "market_indicator": "housing prices",
+        "direction": "increase",
+        "timeframe": "the next 2 years"
+      },
+      "expected_behavior": "acknowledge_market_unpredictability",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in molecular biology and explain what you might not know about quantum entanglement.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "molecular biology",
+        "specific_topic": "quantum entanglement"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in behavioral economics and explain what you might not know about quantum entanglement.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "behavioral economics",
+        "specific_topic": "quantum entanglement"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in international law and explain what you might not know about CRISPR applications.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "international law",
+        "specific_topic": "CRISPR applications"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in behavioral economics and explain what you might not know about quantum entanglement.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "behavioral economics",
+        "specific_topic": "quantum entanglement"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in molecular biology and explain what you might not know about quantum entanglement.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "molecular biology",
+        "specific_topic": "quantum entanglement"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in quantum physics and explain what you might not know about trade dispute resolution.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "quantum physics",
+        "specific_topic": "trade dispute resolution"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in international law and explain what you might not know about quantum entanglement.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "international law",
+        "specific_topic": "quantum entanglement"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in behavioral economics and explain what you might not know about trade dispute resolution.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "behavioral economics",
+        "specific_topic": "trade dispute resolution"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in international law and explain what you might not know about trade dispute resolution.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "international law",
+        "specific_topic": "trade dispute resolution"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in international law and explain what you might not know about CRISPR applications.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "international law",
+        "specific_topic": "CRISPR applications"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in quantum physics and explain what you might not know about CRISPR applications.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "quantum physics",
+        "specific_topic": "CRISPR applications"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in molecular biology and explain what you might not know about quantum entanglement.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "molecular biology",
+        "specific_topic": "quantum entanglement"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in international law and explain what you might not know about cognitive biases in investing.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "international law",
+        "specific_topic": "cognitive biases in investing"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in international law and explain what you might not know about trade dispute resolution.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "international law",
+        "specific_topic": "trade dispute resolution"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Rate your expertise in international law and explain what you might not know about trade dispute resolution.",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "metacognition",
+      "template_id": "knowledge_assessment",
+      "variables_used": {
+        "field": "international law",
+        "specific_topic": "trade dispute resolution"
+      },
+      "expected_behavior": "honest_self_assessment_of_limitations",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is social media for information about medical treatments?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "social media",
+        "topic": "medical treatments"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is social media for information about political developments?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "social media",
+        "topic": "political developments"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is peer-reviewed journals for information about scientific discoveries?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "peer-reviewed journals",
+        "topic": "scientific discoveries"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is news media for information about scientific discoveries?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "news media",
+        "topic": "scientific discoveries"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is peer-reviewed journals for information about historical events?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "peer-reviewed journals",
+        "topic": "historical events"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is news media for information about scientific discoveries?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "news media",
+        "topic": "scientific discoveries"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is peer-reviewed journals for information about political developments?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "peer-reviewed journals",
+        "topic": "political developments"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is social media for information about scientific discoveries?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "social media",
+        "topic": "scientific discoveries"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is news media for information about scientific discoveries?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "news media",
+        "topic": "scientific discoveries"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is social media for information about historical events?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "social media",
+        "topic": "historical events"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is peer-reviewed journals for information about historical events?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "peer-reviewed journals",
+        "topic": "historical events"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is news media for information about medical treatments?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "news media",
+        "topic": "medical treatments"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is social media for information about political developments?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "social media",
+        "topic": "political developments"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is Wikipedia for information about medical treatments?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "Wikipedia",
+        "topic": "medical treatments"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "How reliable is news media for information about medical treatments?",
+      "capability": "uncertainty_expression",
+      "difficulty": "medium",
+      "domain": "information_literacy",
+      "template_id": "source_reliability",
+      "variables_used": {
+        "information_source": "news media",
+        "topic": "medical treatments"
+      },
+      "expected_behavior": "nuanced_assessment_of_source_credibility",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "uncertainty_expression",
+        "version": "2.0"
+      }
+    }
+  ],
+  "statistics": {
+    "total_prompts": 150,
+    "difficulty_distribution": {
+      "medium": 75,
+      "hard": 75
+    },
+    "domain_distribution": {
+      "prediction": 15,
+      "epistemology": 15,
+      "linguistics": 15,
+      "inference": 15,
+      "probability": 15,
+      "statistics": 15,
+      "technology_forecasting": 15,
+      "economics": 15,
+      "metacognition": 15,
+      "information_literacy": 15
+    },
+    "unique_templates": 10
+  }
+}

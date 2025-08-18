@@ -403,8 +403,8 @@ Examples:
                        choices=["research_set", "agentic_set", "cost_optimized", "reasoning_focused", "coding_specialists"],
                        help="Use predefined model preset")
     
-    parser.add_argument("--real", action="store_true",
-                       help="Use real OpenRouter API calls (costs money)")
+    parser.add_argument("--mock", action="store_true",
+                       help="Use mock models (no API costs)")
     
     parser.add_argument("--quick", action="store_true", default=True,
                        help="Quick demo mode (default)")
@@ -431,16 +431,16 @@ Examples:
     ╚══════════════════════════════════════════════════════════════╝
     """)
     
-    # Check OpenRouter API key if using real models
-    if args.real:
+    # Check OpenRouter API key if using real models (default)
+    if not args.mock:
         if not os.getenv("OPENROUTER_API_KEY"):
             print("❌ Missing OPENROUTER_API_KEY environment variable")
             print("   Get your API key from: https://openrouter.ai/")
-            print("   Or run without --real flag to use mock models for testing")
+            print("   Or run with --mock flag to use mock models for testing")
             return
     
     # Initialize models
-    models = initialize_models(args.models, use_mock=not args.real, preset=args.preset)
+    models = initialize_models(args.models, use_mock=args.mock, preset=args.preset)
     
     if not models:
         print("❌ No models initialized. Exiting.")

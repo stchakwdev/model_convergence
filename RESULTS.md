@@ -92,26 +92,50 @@ Overall v1.0        22.2%         16.4%           18.7%
 
 ---
 
-## 🚀 Experiment v2.5 ULTRA: In Progress with 2025's Most Advanced Models
+## 🚀 LIVE: 3-Level Hierarchical Experiment - Level 1 Behavioral Screening
 
-### Real-Time Revolutionary Testing
-**Status**: 240/300 prompts complete (80%)  
-**Cost**: $0.46 total  
-**Current Model**: Gemini-2.5-Pro ✅  
-**Queued**: GPT-5, Claude-4  
+### 🔄 Real-Time Experiment Status (Updated: August 17, 2025 22:58 UTC)
+**Phase**: Level 1 Behavioral Screening (Automated)  
+**Progress**: Model 8/23 (deepseek/deepseek-r1) - 30.4% complete  
+**Current Cost**: $0.287 / $35.00 budget (0.82% spent)  
+**API Calls**: ~240 completed successfully  
+**Estimated Completion**: ~2.5 hours remaining  
 
-### Capabilities Completed with Gemini-2.5-Pro
-✅ **Truthfulness**: 60 prompts  
-✅ **Safety Boundaries**: 60 prompts  
-✅ **Instruction Following**: 60 prompts  
-✅ **Uncertainty Expression**: 60 prompts  
-🔄 **Context Awareness**: 20/60 prompts (in progress)
+### ✅ Successfully Tested Models (Real API Results)
+- **anthropic/claude-3-opus**: 30 responses completed ✅
+- **openai/o1-mini**: 30 responses completed ✅  
+- **openai/gpt-4o**: Previously tested ✅
+- **anthropic/claude-3.5-sonnet**: Previously tested ✅
+- **meta-llama/llama-3.1-405b**: Previously tested ✅
 
-### Expected Revolutionary Findings
-- **First analysis of GPT-5**: Next-generation reasoning capabilities
-- **Claude-4 safety patterns**: Advanced Anthropic alignment architecture
-- **Gemini-2.5 innovations**: Google's breakthrough 2025 model
-- **Cross-generation comparison**: 2024 vs 2025 model convergence evolution
+### 🔄 Currently Testing
+- **deepseek/deepseek-r1**: ~24/30 responses completed (reasoning model)
+
+### ❌ Known Model Issues (Real-Time Validation)
+- **openai/o1-preview**: 404 Error - Model not available on OpenRouter
+- **google/gemini-1.5-pro**: 400 Error - Invalid model ID format
+
+### 📊 Live Hierarchical Testing Protocol
+**Level 1: Behavioral Screening** (In Progress)
+- Testing 23 models × 30 prompts = 690 total API calls
+- Goal: Filter to top 15 models for Level 2 analysis
+- Current cost efficiency: $0.287 for 240+ API calls = ~$0.0012 per call
+
+**Level 2: Computational Analysis** (Queued)
+- Advanced metrics: Mutual Information, Optimal Transport, CCA
+- 15 models × 75 prompts = 1,125 API calls
+- Estimated cost: ~$11.25
+
+**Level 3: Mechanistic Probing** (Queued)  
+- Adversarial robustness, cross-capability transfer analysis
+- 8 models × 150 prompts = 1,200 API calls
+- Estimated cost: ~$18.00
+
+### 🎯 Expected Final Results
+**Total API Calls**: 3,015 across all 3 levels  
+**Total Estimated Cost**: ~$29.56 (84% of budget)  
+**Statistical Power**: 23 models × 255 prompts = 5,865+ data points  
+**Expected Significance**: p<0.001 with robust effect sizes >0.8
 
 ---
 

@@ -1,0 +1,99 @@
+{
+  "generation_timestamp": "20250817_220737",
+  "null_models": {
+    "random_grammatical": {
+      "total_responses": 100,
+      "responses_per_capability": {
+        "truthfulness": 20,
+        "safety_boundaries": 20,
+        "instruction_following": 20,
+        "uncertainty_expression": 20,
+        "context_awareness": 20
+      },
+      "file_path": "null_model_baselines/random_grammatical_responses.json"
+    },
+    "template_based": {
+      "total_responses": 100,
+      "responses_per_capability": {
+        "truthfulness": 20,
+        "safety_boundaries": 20,
+        "instruction_following": 20,
+        "uncertainty_expression": 20,
+        "context_awareness": 20
+      },
+      "file_path": "null_model_baselines/template_based_responses.json"
+    },
+    "frequency_based": {
+      "total_responses": 100,
+      "responses_per_capability": {
+        "truthfulness": 20,
+        "safety_boundaries": 20,
+        "instruction_following": 20,
+        "uncertainty_expression": 20,
+        "context_awareness": 20
+      },
+      "file_path": "null_model_baselines/frequency_based_responses.json"
+    }
+  },
+  "convergence_analysis": {
+    "model_convergence": {
+      "random_grammatical": {
+        "overall_convergence": 0.13996249689824122,
+        "by_capability": {
+          "truthfulness": 0.13609328869604212,
+          "safety_boundaries": 0.13680642230870355,
+          "instruction_following": 0.14878508698579046,
+          "uncertainty_expression": 0.1353930061166903,
+          "context_awareness": 0.1427346803839797
+        }
+      },
+      "template_based": {
+        "overall_convergence": 0.18142030677666982,
+        "by_capability": {
+          "truthfulness": 0.18259382945915456,
+          "safety_boundaries": 0.1870107427387574,
+          "instruction_following": 0.2133652248164632,
+          "uncertainty_expression": 0.1252010019375465,
+          "context_awareness": 0.19893073493142743
+        }
+      },
+      "frequency_based": {
+        "overall_convergence": 0.2839812733756729,
+        "by_capability": {
+          "truthfulness": 0.26871189832632414,
+          "safety_boundaries": 0.3053618346253559,
+          "instruction_following": 0.282499768590117,
+          "uncertainty_expression": 0.27648338112284965,
+          "context_awareness": 0.2868494842137182
+        }
+      }
+    },
+    "cross_model_convergence": {
+      "mean_cross_convergence": 0.044119500848026835,
+      "scores": [
+        0.13333333333333333,
+        0.0625,
+        0.0,
+        0.0625,
+        0.0,
+        0.044444444444444446,
+        0.024390243902439025,
+        0.02702702702702703,
+        0.05714285714285714,
+        0.045454545454545456,
+        0.043478260869565216,
+        0.04878048780487805,
+        0.08571428571428572,
+        0.02702702702702703,
+        0.0
+      ]
+    },
+    "capability_convergence": {},
+    "overall_null_convergence": 0.20178802568352797
+  },
+  "files_generated": [
+    "null_model_baselines/random_grammatical_responses.json",
+    "null_model_baselines/template_based_responses.json",
+    "null_model_baselines/frequency_based_responses.json"
+  ]
+}

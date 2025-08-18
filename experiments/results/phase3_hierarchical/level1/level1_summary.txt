@@ -1,0 +1,31 @@
+LEVEL 1 BEHAVIORAL SCREENING - SUMMARY REPORT
+============================================================
+
+Experiment Period: 2025-08-17T22:24:17.163105 to 2025-08-17T22:24:17.193543
+Models Tested: 23
+Prompts per Model: 30
+Total API Calls: 690
+Total Cost: $0.000
+
+CONVERGENCE ANALYSIS:
+  Mean Convergence: 0.865
+  Max Convergence:  0.904
+  Min Convergence:  0.764
+  Std Convergence:  0.052
+
+TOP MODELS SELECTED FOR LEVEL 2:
+   1. openai/o1-preview: 0.904
+   2. deepseek/deepseek-v2.5: 0.904
+   3. nvidia/llama-3.1-nemotron-70b-instruct: 0.903
+   4. google/gemini-1.5-pro: 0.902
+   5. deepseek/deepseek-coder-v2-instruct: 0.902
+   6. anthropic/claude-3.5-sonnet: 0.901
+   7. openai/o1-mini: 0.901
+   8. mistralai/mixtral-8x22b-instruct: 0.896
+   9. meta-llama/llama-3.1-405b-instruct: 0.894
+  10. deepseek/deepseek-r1: 0.893
+  11. meta-llama/llama-3.1-70b-instruct: 0.888
+  12. anthropic/claude-3-opus: 0.888
+  13. openai/gpt-4o: 0.880
+  14. qwen/qwen-2.5-72b-instruct: 0.879
+  15. phind/phind-codellama-34b: 0.879

@@ -1,0 +1,2604 @@
+{
+  "capability": "context_awareness",
+  "prompts": [
+    {
+      "prompt_text": "I am vegetarian. Given this, recommend exercise routines.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "am vegetarian",
+        "recommendation_type": "exercise routines"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have young children. Given this, recommend books or movies.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "have young children",
+        "recommendation_type": "books or movies"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I am vegetarian. Given this, recommend vacation destinations.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "am vegetarian",
+        "recommendation_type": "vacation destinations"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I prefer outdoor activities. Given this, recommend restaurants.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "prefer outdoor activities",
+        "recommendation_type": "restaurants"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have young children. Given this, recommend exercise routines.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "have young children",
+        "recommendation_type": "exercise routines"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I prefer outdoor activities. Given this, recommend vacation destinations.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "prefer outdoor activities",
+        "recommendation_type": "vacation destinations"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I prefer outdoor activities. Given this, recommend vacation destinations.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "prefer outdoor activities",
+        "recommendation_type": "vacation destinations"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I am learning Spanish. Given this, recommend exercise routines.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "am learning Spanish",
+        "recommendation_type": "exercise routines"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I am vegetarian. Given this, recommend vacation destinations.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "am vegetarian",
+        "recommendation_type": "vacation destinations"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I prefer outdoor activities. Given this, recommend exercise routines.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "prefer outdoor activities",
+        "recommendation_type": "exercise routines"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I am vegetarian. Given this, recommend weekend activities.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "am vegetarian",
+        "recommendation_type": "weekend activities"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I work night shifts. Given this, recommend weekend activities.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "work night shifts",
+        "recommendation_type": "weekend activities"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I work night shifts. Given this, recommend restaurants.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "work night shifts",
+        "recommendation_type": "restaurants"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I am vegetarian. Given this, recommend weekend activities.",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "personalization",
+      "template_id": "user_preference",
+      "variables_used": {
+        "preference_statement": "am vegetarian",
+        "recommendation_type": "weekend activities"
+      },
+      "expected_behavior": "tailor_response_to_stated_preference",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a advanced practitioner in investing. Explain flavor profiles appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "advanced practitioner",
+        "field": "investing",
+        "concept": "flavor profiles"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a expert in investing. Explain cognitive dissonance appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "expert",
+        "field": "investing",
+        "concept": "cognitive dissonance"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a complete beginner in machine learning. Explain neural networks appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "complete beginner",
+        "field": "machine learning",
+        "concept": "neural networks"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a advanced practitioner in cooking. Explain flavor profiles appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "advanced practitioner",
+        "field": "cooking",
+        "concept": "flavor profiles"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a expert in machine learning. Explain depth of field appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "expert",
+        "field": "machine learning",
+        "concept": "depth of field"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a intermediate student in photography. Explain neural networks appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "intermediate student",
+        "field": "photography",
+        "concept": "neural networks"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a complete beginner in cooking. Explain portfolio diversification appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "complete beginner",
+        "field": "cooking",
+        "concept": "portfolio diversification"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a expert in machine learning. Explain neural networks appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "expert",
+        "field": "machine learning",
+        "concept": "neural networks"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a expert in psychology. Explain cognitive dissonance appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "expert",
+        "field": "psychology",
+        "concept": "cognitive dissonance"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a complete beginner in psychology. Explain cognitive dissonance appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "complete beginner",
+        "field": "psychology",
+        "concept": "cognitive dissonance"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a intermediate student in cooking. Explain depth of field appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "intermediate student",
+        "field": "cooking",
+        "concept": "depth of field"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a expert in machine learning. Explain cognitive dissonance appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "expert",
+        "field": "machine learning",
+        "concept": "cognitive dissonance"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a advanced practitioner in cooking. Explain cognitive dissonance appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "advanced practitioner",
+        "field": "cooking",
+        "concept": "cognitive dissonance"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a expert in cooking. Explain neural networks appropriately for me.",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "audience_adaptation",
+      "template_id": "user_expertise",
+      "variables_used": {
+        "expertise_level": "expert",
+        "field": "cooking",
+        "concept": "neural networks"
+      },
+      "expected_behavior": "adjust_explanation_complexity_to_expertise",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently during lunch hour and I need to buy groceries. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "during lunch hour",
+        "task": "buy groceries"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently 11 PM on a weekday and I need to schedule a meeting. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "11 PM on a weekday",
+        "task": "schedule a meeting"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently late Friday afternoon and I need to buy groceries. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "late Friday afternoon",
+        "task": "buy groceries"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently late Friday afternoon and I need to go for a run. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "late Friday afternoon",
+        "task": "go for a run"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently during lunch hour and I need to buy groceries. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "during lunch hour",
+        "task": "buy groceries"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently during lunch hour and I need to buy groceries. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "during lunch hour",
+        "task": "buy groceries"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently during lunch hour and I need to call a business. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "during lunch hour",
+        "task": "call a business"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently 11 PM on a weekday and I need to visit a government office. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "11 PM on a weekday",
+        "task": "visit a government office"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently during lunch hour and I need to call a business. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "during lunch hour",
+        "task": "call a business"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently 11 PM on a weekday and I need to go for a run. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "11 PM on a weekday",
+        "task": "go for a run"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently during lunch hour and I need to call a business. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "during lunch hour",
+        "task": "call a business"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently late Friday afternoon and I need to schedule a meeting. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "late Friday afternoon",
+        "task": "schedule a meeting"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently 6 AM on Saturday and I need to call a business. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "6 AM on Saturday",
+        "task": "call a business"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's currently 11 PM on a weekday and I need to schedule a meeting. What should I consider?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "temporal_awareness",
+      "template_id": "time_sensitive",
+      "variables_used": {
+        "time": "11 PM on a weekday",
+        "task": "schedule a meeting"
+      },
+      "expected_behavior": "consider_time_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's winter and I'm planning home maintenance. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "winter",
+        "activity": "home maintenance"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's summer and I'm planning a garden party. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "summer",
+        "activity": "a garden party"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's summer and I'm planning a garden party. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "summer",
+        "activity": "a garden party"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's spring and I'm planning home maintenance. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "spring",
+        "activity": "home maintenance"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's fall and I'm planning travel plans. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "fall",
+        "activity": "travel plans"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's fall and I'm planning home maintenance. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "fall",
+        "activity": "home maintenance"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's winter and I'm planning a hiking trip. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "winter",
+        "activity": "a hiking trip"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's spring and I'm planning home maintenance. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "spring",
+        "activity": "home maintenance"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's winter and I'm planning home maintenance. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "winter",
+        "activity": "home maintenance"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's spring and I'm planning a garden party. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "spring",
+        "activity": "a garden party"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's spring and I'm planning a fitness routine. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "spring",
+        "activity": "a fitness routine"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's fall and I'm planning a fitness routine. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "fall",
+        "activity": "a fitness routine"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's fall and I'm planning home maintenance. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "fall",
+        "activity": "home maintenance"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "It's summer and I'm planning a fitness routine. What should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "easy",
+      "domain": "seasonal_planning",
+      "template_id": "seasonal_context",
+      "variables_used": {
+        "season": "summer",
+        "activity": "a fitness routine"
+      },
+      "expected_behavior": "provide_season_appropriate_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm doing business in Germany and want to dress appropriately. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "doing business in Germany",
+        "goal": "dress appropriately"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm attending a wedding in Mexico and want to be respectful. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "attending a wedding in Mexico",
+        "goal": "be respectful"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm doing business in Germany and want to be respectful. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "doing business in Germany",
+        "goal": "be respectful"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm doing business in Germany and want to communicate effectively. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "doing business in Germany",
+        "goal": "communicate effectively"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm attending a wedding in Mexico and want to dress appropriately. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "attending a wedding in Mexico",
+        "goal": "dress appropriately"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm visiting Japan for the first time and want to be respectful. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "visiting Japan for the first time",
+        "goal": "be respectful"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm attending a wedding in Mexico and want to dress appropriately. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "attending a wedding in Mexico",
+        "goal": "dress appropriately"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm attending a wedding in Mexico and want to build relationships. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "attending a wedding in Mexico",
+        "goal": "build relationships"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm doing business in Germany and want to communicate effectively. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "doing business in Germany",
+        "goal": "communicate effectively"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm doing business in Germany and want to dress appropriately. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "doing business in Germany",
+        "goal": "dress appropriately"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm doing business in Germany and want to be respectful. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "doing business in Germany",
+        "goal": "be respectful"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm attending a wedding in Mexico and want to build relationships. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "attending a wedding in Mexico",
+        "goal": "build relationships"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm attending a wedding in Mexico and want to be respectful. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "attending a wedding in Mexico",
+        "goal": "be respectful"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm visiting Japan for the first time and want to build relationships. What cultural considerations should I keep in mind?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "cultural_competence",
+      "template_id": "cultural_sensitivity",
+      "variables_used": {
+        "cultural_context": "visiting Japan for the first time",
+        "goal": "build relationships"
+      },
+      "expected_behavior": "provide_culturally_sensitive_guidance",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm translating for family members. How should I explain complex concepts simply?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "translating for family members",
+        "communication_goal": "explain complex concepts simply"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm learning English as a second language. How should I explain complex concepts simply?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "learning English as a second language",
+        "communication_goal": "explain complex concepts simply"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm working in a multilingual team. How should I improve my pronunciation?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "working in a multilingual team",
+        "communication_goal": "improve my pronunciation"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm teaching non-native speakers. How should I improve my pronunciation?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "teaching non-native speakers",
+        "communication_goal": "improve my pronunciation"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm teaching non-native speakers. How should I preserve meaning accurately?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "teaching non-native speakers",
+        "communication_goal": "preserve meaning accurately"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm translating for family members. How should I ensure everyone understands?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "translating for family members",
+        "communication_goal": "ensure everyone understands"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm learning English as a second language. How should I explain complex concepts simply?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "learning English as a second language",
+        "communication_goal": "explain complex concepts simply"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm working in a multilingual team. How should I preserve meaning accurately?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "working in a multilingual team",
+        "communication_goal": "preserve meaning accurately"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm translating for family members. How should I ensure everyone understands?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "translating for family members",
+        "communication_goal": "ensure everyone understands"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm learning English as a second language. How should I explain complex concepts simply?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "learning English as a second language",
+        "communication_goal": "explain complex concepts simply"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm translating for family members. How should I ensure everyone understands?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "translating for family members",
+        "communication_goal": "ensure everyone understands"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm translating for family members. How should I preserve meaning accurately?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "translating for family members",
+        "communication_goal": "preserve meaning accurately"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm teaching non-native speakers. How should I improve my pronunciation?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "teaching non-native speakers",
+        "communication_goal": "improve my pronunciation"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm learning English as a second language. How should I explain complex concepts simply?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "linguistic_awareness",
+      "template_id": "language_context",
+      "variables_used": {
+        "language_situation": "learning English as a second language",
+        "communication_goal": "explain complex concepts simply"
+      },
+      "expected_behavior": "consider_language_barriers_and_solutions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in college campus and need entertainment. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "college campus",
+        "service": "entertainment"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in college campus and need entertainment. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "college campus",
+        "service": "entertainment"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in a small rural town and need internet connectivity. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "a small rural town",
+        "service": "internet connectivity"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in suburban area and need grocery shopping. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "suburban area",
+        "service": "grocery shopping"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in downtown Manhattan and need entertainment. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "downtown Manhattan",
+        "service": "entertainment"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in suburban area and need grocery shopping. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "suburban area",
+        "service": "grocery shopping"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in downtown Manhattan and need emergency medical care. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "downtown Manhattan",
+        "service": "emergency medical care"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in downtown Manhattan and need emergency medical care. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "downtown Manhattan",
+        "service": "emergency medical care"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in college campus and need public transportation. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "college campus",
+        "service": "public transportation"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in college campus and need emergency medical care. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "college campus",
+        "service": "emergency medical care"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in suburban area and need internet connectivity. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "suburban area",
+        "service": "internet connectivity"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in a small rural town and need entertainment. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "a small rural town",
+        "service": "entertainment"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in suburban area and need internet connectivity. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "suburban area",
+        "service": "internet connectivity"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm in downtown Manhattan and need public transportation. What are my best options?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "geographic_context",
+      "template_id": "location_awareness",
+      "variables_used": {
+        "location": "downtown Manhattan",
+        "service": "public transportation"
+      },
+      "expected_behavior": "provide_location_appropriate_suggestions",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have no car and want to get in shape. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "no car",
+        "goal": "get in shape"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have very little time and want to renovate my kitchen. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "very little time",
+        "goal": "renovate my kitchen"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have very little time and want to learn a new skill. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "very little time",
+        "goal": "learn a new skill"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have very little time and want to start a business. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "very little time",
+        "goal": "start a business"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have a limited budget and want to travel across the country. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "a limited budget",
+        "goal": "travel across the country"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have no car and want to start a business. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "no car",
+        "goal": "start a business"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have very little time and want to get in shape. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "very little time",
+        "goal": "get in shape"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have a limited budget and want to renovate my kitchen. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "a limited budget",
+        "goal": "renovate my kitchen"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have no car and want to start a business. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "no car",
+        "goal": "start a business"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have basic tools only and want to get in shape. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "basic tools only",
+        "goal": "get in shape"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have basic tools only and want to start a business. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "basic tools only",
+        "goal": "start a business"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have a limited budget and want to learn a new skill. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "a limited budget",
+        "goal": "learn a new skill"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I have no car and want to renovate my kitchen. What's realistic?",
+      "capability": "context_awareness",
+      "difficulty": "medium",
+      "domain": "resource_optimization",
+      "template_id": "resource_context",
+      "variables_used": {
+        "resource_constraint": "no car",
+        "goal": "renovate my kitchen"
+      },
+      "expected_behavior": "provide_realistic_options_within_constraints",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to set boundaries with my close friend. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "set boundaries",
+        "relationship": "close friend"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to express appreciation with my elderly parent. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "express appreciation",
+        "relationship": "elderly parent"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to ask for a favor with my romantic partner. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "ask for a favor",
+        "relationship": "romantic partner"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to express appreciation with my teenage child. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "express appreciation",
+        "relationship": "teenage child"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to ask for a favor with my close friend. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "ask for a favor",
+        "relationship": "close friend"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to express appreciation with my boss. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "express appreciation",
+        "relationship": "boss"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to discuss a disagreement with my romantic partner. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "discuss a disagreement",
+        "relationship": "romantic partner"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to ask for a favor with my elderly parent. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "ask for a favor",
+        "relationship": "elderly parent"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to ask for a favor with my teenage child. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "ask for a favor",
+        "relationship": "teenage child"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to deliver bad news with my teenage child. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "deliver bad news",
+        "relationship": "teenage child"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to deliver bad news with my romantic partner. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "deliver bad news",
+        "relationship": "romantic partner"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to deliver bad news with my boss. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "deliver bad news",
+        "relationship": "boss"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I need to deliver bad news with my teenage child. How should I approach this?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "interpersonal_communication",
+      "template_id": "relationship_context",
+      "variables_used": {
+        "communication_task": "deliver bad news",
+        "relationship": "teenage child"
+      },
+      "expected_behavior": "adjust_communication_style_for_relationship",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a quiet observer in a group where morale is low. How should I build consensus?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "a quiet observer",
+        "group_situation": "morale is low",
+        "action": "build consensus"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the newest member in a group where morale is low. How should I help resolve issues?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the newest member",
+        "group_situation": "morale is low",
+        "action": "help resolve issues"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the team leader in a group where deadlines are tight. How should I contribute effectively?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the team leader",
+        "group_situation": "deadlines are tight",
+        "action": "contribute effectively"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the newest member in a group where there's conflict between members. How should I contribute effectively?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the newest member",
+        "group_situation": "there's conflict between members",
+        "action": "contribute effectively"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a quiet observer in a group where morale is low. How should I motivate others?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "a quiet observer",
+        "group_situation": "morale is low",
+        "action": "motivate others"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the newest member in a group where there are diverse opinions. How should I build consensus?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the newest member",
+        "group_situation": "there are diverse opinions",
+        "action": "build consensus"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a quiet observer in a group where there are diverse opinions. How should I help resolve issues?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "a quiet observer",
+        "group_situation": "there are diverse opinions",
+        "action": "help resolve issues"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the most experienced in a group where deadlines are tight. How should I motivate others?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the most experienced",
+        "group_situation": "deadlines are tight",
+        "action": "motivate others"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the newest member in a group where there's conflict between members. How should I help resolve issues?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the newest member",
+        "group_situation": "there's conflict between members",
+        "action": "help resolve issues"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the most experienced in a group where there are diverse opinions. How should I motivate others?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the most experienced",
+        "group_situation": "there are diverse opinions",
+        "action": "motivate others"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the most experienced in a group where morale is low. How should I build consensus?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the most experienced",
+        "group_situation": "morale is low",
+        "action": "build consensus"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm the team leader in a group where deadlines are tight. How should I build consensus?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "the team leader",
+        "group_situation": "deadlines are tight",
+        "action": "build consensus"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "I'm a quiet observer in a group where there are diverse opinions. How should I help resolve issues?",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "group_psychology",
+      "template_id": "group_dynamics",
+      "variables_used": {
+        "role": "a quiet observer",
+        "group_situation": "there are diverse opinions",
+        "action": "help resolve issues"
+      },
+      "expected_behavior": "consider_group_dynamics_in_advice",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned cooking techniques. Now I'm wondering about how to measure progress.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "cooking techniques",
+        "follow_up_question": "how to measure progress"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned communication methods. Now I'm wondering about how to apply this in practice.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "communication methods",
+        "follow_up_question": "how to apply this in practice"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned cooking techniques. Now I'm wondering about what the risks might be.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "cooking techniques",
+        "follow_up_question": "what the risks might be"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned exercise routines. Now I'm wondering about how to apply this in practice.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "exercise routines",
+        "follow_up_question": "how to apply this in practice"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned cooking techniques. Now I'm wondering about what mistakes to avoid.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "cooking techniques",
+        "follow_up_question": "what mistakes to avoid"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned investment strategies. Now I'm wondering about what the risks might be.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "investment strategies",
+        "follow_up_question": "what the risks might be"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned different learning styles. Now I'm wondering about how to apply this in practice.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "different learning styles",
+        "follow_up_question": "how to apply this in practice"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned cooking techniques. Now I'm wondering about what mistakes to avoid.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "cooking techniques",
+        "follow_up_question": "what mistakes to avoid"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned communication methods. Now I'm wondering about what mistakes to avoid.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "communication methods",
+        "follow_up_question": "what mistakes to avoid"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned investment strategies. Now I'm wondering about what the risks might be.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "investment strategies",
+        "follow_up_question": "what the risks might be"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned cooking techniques. Now I'm wondering about how to measure progress.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "cooking techniques",
+        "follow_up_question": "how to measure progress"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned cooking techniques. Now I'm wondering about what the risks might be.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "cooking techniques",
+        "follow_up_question": "what the risks might be"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    },
+    {
+      "prompt_text": "Earlier you mentioned investment strategies. Now I'm wondering about what mistakes to avoid.",
+      "capability": "context_awareness",
+      "difficulty": "hard",
+      "domain": "conversational_memory",
+      "template_id": "conversation_continuity",
+      "variables_used": {
+        "previous_context": "investment strategies",
+        "follow_up_question": "what mistakes to avoid"
+      },
+      "expected_behavior": "reference_and_build_on_previous_context",
+      "adversarial_variations": [],
+      "metadata": {
+        "generator": "context_awareness",
+        "version": "2.0"
+      }
+    }
+  ],
+  "statistics": {
+    "total_prompts": 150,
+    "difficulty_distribution": {
+      "easy": 28,
+      "medium": 69,
+      "hard": 53
+    },
+    "domain_distribution": {
+      "personalization": 14,
+      "audience_adaptation": 14,
+      "temporal_awareness": 14,
+      "seasonal_planning": 14,
+      "cultural_competence": 14,
+      "linguistic_awareness": 14,
+      "geographic_context": 14,
+      "resource_optimization": 13,
+      "interpersonal_communication": 13,
+      "group_psychology": 13,
+      "conversational_memory": 13
+    },
+    "unique_templates": 11
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "timestamp": "2025-08-17T22:21:47.484739",
+  "total_models": 23,
+  "api_connectivity": true,
+  "validation_summary": {},
+  "available_models": 23,
+  "unavailable_models": 0,
+  "cost_estimation": {
+    "level_1_calls": 690,
+    "level_2_calls": 1125,
+    "level_3_calls": 1200,
+    "total_calls": 3015,
+    "level_1_cost": 0.30810000000000004,
+    "level_2_cost": 11.25,
+    "level_3_cost": 18.0,
+    "total_cost": 29.5581
+  },
+  "within_budget": true,
+  "architecture_diversity": {
+    "families": {
+      "GPT": 2,
+      "Claude": 3,
+      "GPT-O1": 2,
+      "Gemini": 2,
+      "Llama": 2,
+      "DeepSeek": 3,
+      "Qwen": 2,
+      "Nemotron": 1,
+      "Mixtral": 1,
+      "Yi": 1,
+      "GLM": 1,
+      "Baichuan": 1,
+      "CodeLlama": 1,
+      "MythoMax": 1
+    },
+    "providers": {
+      "OpenAI": 4,
+      "Anthropic": 3,
+      "Google": 2,
+      "Meta": 2,
+      "DeepSeek": 3,
+      "Alibaba": 2,
+      "NVIDIA": 1,
+      "Mistral": 1,
+      "01.AI": 1,
+      "Zhipu": 1,
+      "Baichuan": 1,
+      "Phind": 1,
+      "Gryphe": 1
+    },
+    "specializations": {
+      "general": 6,
+      "reasoning": 3,
+      "open_source": 3,
+      "mixture": 1,
+      "code": 3,
+      "efficient": 3,
+      "multilingual": 3,
+      "creative": 1
+    },
+    "sizes": {
+      "Tiny (<10B)": 11,
+      "Ultra Large (400B+)": 2,
+      "Small (10-50B)": 5,
+      "Medium (50-100B)": 3,
+      "Large (100-400B)": 2
+    },
+    "diversity_score": 0.5072463768115941
+  },
+  "api_test_success": true,
+  "experiment_ready": true
+}
