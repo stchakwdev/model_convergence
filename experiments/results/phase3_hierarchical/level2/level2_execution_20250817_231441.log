@@ -1,0 +1,4 @@
+2025-08-17 23:14:41,314 - INFO - Use pytorch device_name: mps
+2025-08-17 23:14:41,314 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-08-17 23:14:42,314 - INFO - Loading Level 2 prompts...
+2025-08-17 23:14:42,316 - ERROR - Experiment failed: 'str' object has no attribute 'get'

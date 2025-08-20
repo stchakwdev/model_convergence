@@ -1,31 +1,31 @@
 LEVEL 1 BEHAVIORAL SCREENING - SUMMARY REPORT
 ============================================================
 
-Experiment Period: 2025-08-17T22:24:17.163105 to 2025-08-17T22:24:17.193543
+Experiment Period: 2025-08-17T22:46:33.512110 to 2025-08-17T23:14:41.283689
 Models Tested: 23
 Prompts per Model: 30
 Total API Calls: 690
-Total Cost: $0.000
+Total Cost: $0.308
 
 CONVERGENCE ANALYSIS:
-  Mean Convergence: 0.865
-  Max Convergence:  0.904
-  Min Convergence:  0.764
-  Std Convergence:  0.052
+  Mean Convergence: 0.713
+  Max Convergence:  0.759
+  Min Convergence:  0.611
+  Std Convergence:  0.044
 
 TOP MODELS SELECTED FOR LEVEL 2:
-   1. openai/o1-preview: 0.904
-   2. deepseek/deepseek-v2.5: 0.904
-   3. nvidia/llama-3.1-nemotron-70b-instruct: 0.903
-   4. google/gemini-1.5-pro: 0.902
-   5. deepseek/deepseek-coder-v2-instruct: 0.902
-   6. anthropic/claude-3.5-sonnet: 0.901
-   7. openai/o1-mini: 0.901
-   8. mistralai/mixtral-8x22b-instruct: 0.896
-   9. meta-llama/llama-3.1-405b-instruct: 0.894
-  10. deepseek/deepseek-r1: 0.893
-  11. meta-llama/llama-3.1-70b-instruct: 0.888
-  12. anthropic/claude-3-opus: 0.888
-  13. openai/gpt-4o: 0.880
-  14. qwen/qwen-2.5-72b-instruct: 0.879
-  15. phind/phind-codellama-34b: 0.879
+   1. google/gemini-1.5-flash: 0.759
+   2. baichuan/baichuan2-192k: 0.759
+   3. deepseek/deepseek-v2.5: 0.759
+   4. phind/phind-codellama-34b: 0.759
+   5. google/gemini-1.5-pro: 0.759
+   6. 01-ai/yi-lightning: 0.756
+   7. zhipuai/glm-4-plus: 0.756
+   8. openai/o1-preview: 0.755
+   9. deepseek/deepseek-coder-v2-instruct: 0.753
+  10. qwen/qwen-2.5-coder-32b-instruct: 0.725
+  11. qwen/qwen-2.5-72b-instruct: 0.710
+  12. anthropic/claude-3.5-sonnet: 0.710
+  13. openai/gpt-4o: 0.707
+  14. meta-llama/llama-3.1-405b-instruct: 0.703
+  15. mistralai/mixtral-8x22b-instruct: 0.702

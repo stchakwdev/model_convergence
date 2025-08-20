@@ -1,23 +1,23 @@
-# Universal Alignment Patterns in Large Language Models
+# Exploring Potential Universal Patterns in AI Model Alignment
 
 [![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Experiment Status](https://img.shields.io/badge/experiment-running-orange.svg)](#live-experiment-status)
 
-## 🚀 Live Experiment: 3-Level Hierarchical Testing in Progress
+## 🔍 Current Exploration: Three-Level Analysis Framework
 
-**Real-time Universal Alignment Pattern analysis running across 23 cutting-edge AI models with 3,015 API calls and advanced statistical validation. Full system operational with OpenRouter integration - no mocks, no simulations, pure empirical research.**
+**Ongoing investigation into potential universal alignment patterns across AI models using a three-level hierarchical analysis approach. This is early-stage research with preliminary findings that require further validation.**
 
-## 🔬 Revolutionary Breakthrough: 3-Level Hierarchical Analysis Framework
+## 📊 Experimental Framework
 
-**The world's first production-ready system for measuring universal alignment patterns using a rigorous 3-level hierarchical testing protocol with advanced metrics including Mutual Information, Optimal Transport, Canonical Correlation Analysis, and hybrid semantic + KL divergence convergence analysis.**
+**An exploratory system for investigating potential universal alignment patterns using three-level analysis including behavioral convergence, computational metrics (Mutual Information, Optimal Transport), and mechanistic probing with hybrid semantic + KL divergence analysis.**
 
 ---
 
 ## The Water Transfer Printing Analogy
 
-This research investigates a compelling hypothesis: **All sufficiently capable AI models develop functionally equivalent internal representations for core capabilities**, analogous to water transfer printing where a pattern forms perfectly on any object dipped into it.
+This research explores an intriguing hypothesis: **Sufficiently capable AI models might develop similar internal representations for core capabilities**, analogous to how water transfer printing creates consistent patterns across different objects.
 
 <div align="center">
   <img src="https://via.placeholder.com/600x200/4CAF50/FFFFFF?text=Pattern+Emerges+on+Different+Objects" alt="Water Transfer Printing Analogy"/>
@@ -26,20 +26,30 @@ This research investigates a compelling hypothesis: **All sufficiently capable A
 
 ## Abstract
 
-Current AI safety research often treats each model architecture as unique, requiring separate safety analysis for every system. This repository presents **empirical evidence** that alignment features are actually **universal patterns** that emerge from the optimization process itself.
+Current AI safety research often treats each model architecture as unique, requiring separate safety analysis for every system. This repository investigates whether alignment features might be **universal patterns** that emerge from the optimization process itself.
 
-Using rigorous statistical methods including permutation tests and effect size calculations, we demonstrate cross-architectural convergence in:
+Using statistical methods including permutation tests and effect size calculations, we explore potential cross-architectural convergence in:
 
 - 🛡️ **Safety refusal boundaries** - Models refuse harmful requests at similar thresholds
 - ✅ **Truthfulness assessments** - Consistent fact vs. fiction distinctions  
 - 📋 **Instruction following protocols** - Similar command parsing and execution patterns
 - 🤔 **Uncertainty expression** - Convergent confidence calibration behaviors
 
-**This research has profound implications for AI safety**: if alignment features are universal, we can develop **transferable safety measures** and **predictable alignment properties** that work across all capable models.
+**If validated, this research could contribute to AI safety understanding**: universal alignment features might inform the development of transferable safety measures and more predictable alignment properties across capable models.
 
-## 🚀 Quick Start (5 Minutes)
+## ⚖️ Setting Expectations
 
-### Production System Setup
+This research is in its early stages. We approach these questions with:
+- **Scientific skepticism** - Our findings may be artifacts or coincidental
+- **Open curiosity** - The patterns we observe raise more questions than answers  
+- **Methodological rigor** - We strive for robust statistical validation
+- **Transparent limitations** - We clearly state what we don't yet understand
+
+We invite collaboration, critique, and alternative interpretations of our data. The goal is not to prove our hypothesis, but to rigorously test whether these patterns exist and what they might tell us about AI alignment.
+
+## 💻 Getting Started
+
+### Experimental Setup
 ```bash
 # Clone and setup
 git clone https://github.com/stchakwdev/universal_patterns
@@ -53,7 +63,7 @@ export OPENROUTER_API_KEY="your_key_here"
 
 ### Option 1: Quick Demo Analysis (~$1-3)
 ```bash
-# Run quick convergence analysis with proven models  
+# Run initial convergence analysis with tested models  
 python main.py --quick
 
 # Test specific working models only
@@ -65,11 +75,11 @@ python main.py --preset cost_optimized
 
 ### Option 2: Full Hierarchical Experiment (~$30)
 ```bash
-# Run complete 3-level hierarchical testing protocol
+# Run complete three-level experimental protocol  
 cd experiments
 python run_automated_experiment.py
 
-# Monitor real-time progress with advanced metrics
+# Monitor progress with experimental metrics
 python run_complete_hierarchical_experiment.py
 ```
 
@@ -82,12 +92,12 @@ jupyter notebook notebooks/01_hierarchical_analysis.ipynb
 ## 🔄 Live Experiment Status
 
 ### 🚀 Current: 3-Level Hierarchical Testing Protocol (Real-Time)
-**Status:** Level 1 Behavioral Screening in progress  
+**Status:** Level 1 Behavioral Analysis in progress  
 **Progress:** Model 6/23 (Llama-3.1-405b-instruct)  
 **Models Tested:** GPT-4o ✅, Claude-3.5-Sonnet ✅, Claude-3-Opus ✅  
-**API Calls:** 150+ completed successfully  
+**API Calls:** 150+ completed  
 **Cost:** $0.27 spent / $35.00 budget  
-**Duration:** 15 minutes elapsed / ~3 hours total  
+**Duration:** 15 minutes elapsed / ~3 hours estimated  
 
 **Working Models:**
 - ✅ openai/gpt-4o
@@ -112,16 +122,16 @@ Previous dual-metric analysis established measurement framework:
 | **Uncertainty Expression** | **28.7%** | **14.9%** | **20.1%** | 🟡 Preliminary |
 | **Context Awareness** | **26.3%** | **16.2%** | **19.8%** | 🟡 Preliminary |
 
-**Baseline Hybrid Convergence: 18.7%** (Semantic: 22.2%, Distributional: 16.4%)
+**Baseline Hybrid Convergence: 18.7%** (Semantic: 22.2%, Distributional: 16.4%) - *preliminary results requiring validation*
 
 ### 🎯 Expected Outcomes from Current Experiment
 **Advanced Statistical Power:** 23 models × 150 prompts = 3,450+ data points  
 **Target Significance:** p<0.001 with effect sizes >0.8  
-**Expected Convergence:** 45-75% with robust statistical validation
+**Expected Results:** 45-75% convergence (hypothesis under investigation)
 
-### 🧬 Revolutionary 3-Level Hierarchical Testing Protocol
+### 📊 Three-Level Hierarchical Analysis Protocol
 
-**World's First Production Implementation of Marr's Levels of Analysis for AI Safety:**
+**Experimental implementation of Marr's Levels of Analysis adapted for AI alignment research:**
 
 #### Level 1: Behavioral Analysis (Computational Level)
 - **What models output** - Response pattern convergence analysis
@@ -145,11 +155,11 @@ Previous dual-metric analysis established measurement framework:
 - **KL Divergence Analysis** (60% weight): Probability distribution comparison
 - **Statistical Validation**: Bootstrap confidence intervals, permutation testing
 
-**Revolutionary Insights:**
-- 📊 **Dual-metric superiority**: Combining semantic + distributional analysis reveals hidden patterns
-- 🧠 **Architecture-specific vs Universal**: Models agree more on content than probability patterns
-- 💡 **Methodological breakthrough**: First framework measuring both "what" and "how" of model behavior
-- 🔬 **Scientific foundation**: Information theory + semantic embeddings = robust convergence measurement
+**Initial Observations:**
+- 📊 **Dual-metric approach**: Combining semantic + distributional analysis may reveal different convergence patterns
+- 🧠 **Content vs. Distribution**: Models appear to agree more on content than probability patterns (preliminary finding)
+- 💡 **Methodological exploration**: Framework attempts to measure both "what" and "how" of model behavior
+- 🔬 **Technical foundation**: Information theory + semantic embeddings for convergence measurement
 
 ## 🧬 The Scientific Method
 
@@ -185,7 +195,7 @@ from universal_patterns import (
     model_registry                   # Centralized model configuration
 )
 
-# Revolutionary hybrid analysis with real 2025 models
+# Experimental dual-metric analysis with current models
 analyzer = HybridConvergenceAnalyzer()
 models = [
     OpenRouterModel("openai/gpt-oss-120b"),        # Open reasoning model
