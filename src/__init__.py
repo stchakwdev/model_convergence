@@ -14,7 +14,7 @@ Author: Samuel Chakwera
 
 __version__ = "0.1.0"
 __author__ = "Samuel Chakwera"
-__email__ = "samuel.chakwera@example.com"
+__email__ = "stchakwera@gmail.com"
 
 from .patterns import PatternDiscoveryEngine, ConvergenceAnalyzer, UniversalEvaluator
 from .models import ModelInterface
