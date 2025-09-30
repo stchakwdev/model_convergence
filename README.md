@@ -237,7 +237,7 @@ This is research software developed for academic purposes. Please use responsibl
 
 ## Acknowledgments
 
-This research was developed as part of an application to the **MATS Program** (ML Alignment & Theory Scholars). The approach draws inspiration from:
+This research explores universal patterns in AI alignment. The approach draws inspiration from:
 
 - Mechanistic interpretability research from Anthropic and other alignment organizations
 - Statistical methods from epidemiology and global health research
