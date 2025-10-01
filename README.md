@@ -79,8 +79,8 @@ See [EXPERIMENTS.md](EXPERIMENTS.md) for detailed results including:
 
 ```bash
 # Clone repository
-git clone https://github.com/stchakwdev/universal_patterns.git
-cd universal-alignment-patterns
+git clone https://github.com/stchakwdev/model_convergence.git
+cd model_convergence
 
 # Install dependencies
 pip install -r requirements.txt
@@ -218,7 +218,7 @@ If this work influences your research:
   author={Tchakwera, Samuel},
   year={2025},
   publisher={GitHub},
-  url={https://github.com/stchakwdev/universal_patterns},
+  url={https://github.com/stchakwdev/model_convergence},
   note={Exploratory research on universal alignment patterns}
 }
 ```
