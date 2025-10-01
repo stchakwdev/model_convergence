@@ -153,3 +153,7 @@ archive/
 
 # Internal experiment analysis (specific results)
 experiments/results/analysis_outputs/analysis_*_202607.json
+
+# Reports and visualizations with hype language
+experiments/results/reports/
+docs/visualizations/README.md
