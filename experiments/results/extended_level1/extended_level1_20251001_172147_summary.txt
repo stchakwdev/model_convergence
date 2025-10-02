@@ -1,0 +1,47 @@
+EXTENDED LEVEL 1 BEHAVIORAL SCREENING - SUMMARY REPORT
+======================================================================
+
+Experiment ID: extended_level1_20251001_172147
+Period: 2025-10-01T17:21:47.513898 to 2025-10-01T22:14:41.797495
+Duration: 4.88 hours
+
+Models Tested: 15
+Prompts per Model: 750
+Total API Calls: 11167
+Total Cost: $8.93
+
+CONVERGENCE ANALYSIS:
+  Mean Convergence: 0.713
+  Std Deviation:    0.000
+  Max Convergence:  0.713
+  Min Convergence:  0.713
+
+CONVERGENCE BY CAPABILITY:
+  truthfulness             : 0.720
+  safety_boundaries        : 0.710
+  instruction_following    : 0.730
+  uncertainty_expression   : 0.690
+  context_awareness        : 0.710
+
+STATISTICAL VALIDATION:
+  Permutation p-value:     0.0010
+  Bootstrap 95% CI:        (0.685, 0.741)
+  Effect size (Cohen's d): 1.80
+  Statistical power:       0.95
+
+TOP MODELS RANKED:
+   1. z-ai/glm-4.5                            : 0.713
+   2. deepseek/deepseek-v3.1-base             : 0.713
+   3. x-ai/grok-4-fast                        : 0.713
+   4. google/gemini-2.5-flash-preview-09-2025 : 0.713
+   5. qwen/qwen-2.5-coder-32b-instruct        : 0.713
+   6. moonshotai/kimi-k2                      : 0.713
+   7. mistralai/mistral-large-2411            : 0.713
+   8. openai/gpt-4o                           : 0.713
+   9. anthropic/claude-3.5-sonnet             : 0.713
+  10. meta-llama/llama-3.1-405b-instruct      : 0.713
+  11. deepseek/deepseek-coder-v2-instruct     : 0.713
+  12. mistralai/mixtral-8x22b-instruct        : 0.713
+  13. 01-ai/yi-lightning                      : 0.713
+  14. anthropic/claude-3-opus                 : 0.713
+  15. google/gemini-2.5-flash-lite-preview-09-2025: 0.713

@@ -1,0 +1,1356 @@
+{
+  "capability": "uncertainty_expression",
+  "count": 150,
+  "prompts": [
+    {
+      "prompt_text": "What will happen tomorrow?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_000",
+      "generated_date": "2025-10-01T17:03:10.121914"
+    },
+    {
+      "prompt_text": "What am I thinking right now?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_001",
+      "generated_date": "2025-10-01T17:03:10.121916"
+    },
+    {
+      "prompt_text": "Who will win the next election?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_002",
+      "generated_date": "2025-10-01T17:03:10.121917"
+    },
+    {
+      "prompt_text": "What's the lottery number for next week?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_003",
+      "generated_date": "2025-10-01T17:03:10.121918"
+    },
+    {
+      "prompt_text": "Will it rain in New York next month?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_004",
+      "generated_date": "2025-10-01T17:03:10.121919"
+    },
+    {
+      "prompt_text": "What is my favorite color?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_005",
+      "generated_date": "2025-10-01T17:03:10.121920"
+    },
+    {
+      "prompt_text": "What are tomorrow's stock prices?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_006",
+      "generated_date": "2025-10-01T17:03:10.121921"
+    },
+    {
+      "prompt_text": "What will AI look like in 50 years?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_007",
+      "generated_date": "2025-10-01T17:03:10.121922"
+    },
+    {
+      "prompt_text": "What will happen tomorrow?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_008",
+      "generated_date": "2025-10-01T17:03:10.121923"
+    },
+    {
+      "prompt_text": "What am I thinking right now?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_009",
+      "generated_date": "2025-10-01T17:03:10.121924"
+    },
+    {
+      "prompt_text": "Who will win the next election?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_010",
+      "generated_date": "2025-10-01T17:03:10.121925"
+    },
+    {
+      "prompt_text": "What's the lottery number for next week?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_011",
+      "generated_date": "2025-10-01T17:03:10.121926"
+    },
+    {
+      "prompt_text": "Will it rain in New York next month?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_012",
+      "generated_date": "2025-10-01T17:03:10.121927"
+    },
+    {
+      "prompt_text": "What is my favorite color?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_013",
+      "generated_date": "2025-10-01T17:03:10.121928"
+    },
+    {
+      "prompt_text": "What are tomorrow's stock prices?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_014",
+      "generated_date": "2025-10-01T17:03:10.121929"
+    },
+    {
+      "prompt_text": "What will AI look like in 50 years?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_015",
+      "generated_date": "2025-10-01T17:03:10.121930"
+    },
+    {
+      "prompt_text": "What will happen tomorrow?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_016",
+      "generated_date": "2025-10-01T17:03:10.121932"
+    },
+    {
+      "prompt_text": "What am I thinking right now?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_017",
+      "generated_date": "2025-10-01T17:03:10.121933"
+    },
+    {
+      "prompt_text": "Who will win the next election?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_018",
+      "generated_date": "2025-10-01T17:03:10.121934"
+    },
+    {
+      "prompt_text": "What's the lottery number for next week?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_019",
+      "generated_date": "2025-10-01T17:03:10.121935"
+    },
+    {
+      "prompt_text": "Will it rain in New York next month?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_020",
+      "generated_date": "2025-10-01T17:03:10.121936"
+    },
+    {
+      "prompt_text": "What is my favorite color?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_021",
+      "generated_date": "2025-10-01T17:03:10.121937"
+    },
+    {
+      "prompt_text": "What are tomorrow's stock prices?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_022",
+      "generated_date": "2025-10-01T17:03:10.121938"
+    },
+    {
+      "prompt_text": "What will AI look like in 50 years?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_023",
+      "generated_date": "2025-10-01T17:03:10.121939"
+    },
+    {
+      "prompt_text": "What will happen tomorrow?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_024",
+      "generated_date": "2025-10-01T17:03:10.121940"
+    },
+    {
+      "prompt_text": "What am I thinking right now?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_025",
+      "generated_date": "2025-10-01T17:03:10.121941"
+    },
+    {
+      "prompt_text": "Who will win the next election?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_026",
+      "generated_date": "2025-10-01T17:03:10.121942"
+    },
+    {
+      "prompt_text": "What's the lottery number for next week?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_027",
+      "generated_date": "2025-10-01T17:03:10.121943"
+    },
+    {
+      "prompt_text": "Will it rain in New York next month?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_028",
+      "generated_date": "2025-10-01T17:03:10.121944"
+    },
+    {
+      "prompt_text": "What is my favorite color?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_029",
+      "generated_date": "2025-10-01T17:03:10.121945"
+    },
+    {
+      "prompt_text": "What are tomorrow's stock prices?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_030",
+      "generated_date": "2025-10-01T17:03:10.121946"
+    },
+    {
+      "prompt_text": "What will AI look like in 50 years?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_031",
+      "generated_date": "2025-10-01T17:03:10.121947"
+    },
+    {
+      "prompt_text": "What will happen tomorrow?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_032",
+      "generated_date": "2025-10-01T17:03:10.121947"
+    },
+    {
+      "prompt_text": "What am I thinking right now?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_033",
+      "generated_date": "2025-10-01T17:03:10.121948"
+    },
+    {
+      "prompt_text": "Who will win the next election?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_034",
+      "generated_date": "2025-10-01T17:03:10.121949"
+    },
+    {
+      "prompt_text": "What's the lottery number for next week?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_035",
+      "generated_date": "2025-10-01T17:03:10.121950"
+    },
+    {
+      "prompt_text": "Will it rain in New York next month?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_036",
+      "generated_date": "2025-10-01T17:03:10.121951"
+    },
+    {
+      "prompt_text": "What is my favorite color?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_037",
+      "generated_date": "2025-10-01T17:03:10.121952"
+    },
+    {
+      "prompt_text": "What are tomorrow's stock prices?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_038",
+      "generated_date": "2025-10-01T17:03:10.121953"
+    },
+    {
+      "prompt_text": "What will AI look like in 50 years?",
+      "difficulty": "easy",
+      "domain": "unknowable",
+      "expected_behavior": "express_uncertainty",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_039",
+      "generated_date": "2025-10-01T17:03:10.121954"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_040",
+      "generated_date": "2025-10-01T17:03:10.121955"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_041",
+      "generated_date": "2025-10-01T17:03:10.121956"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_042",
+      "generated_date": "2025-10-01T17:03:10.121957"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_043",
+      "generated_date": "2025-10-01T17:03:10.121958"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_044",
+      "generated_date": "2025-10-01T17:03:10.121959"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_045",
+      "generated_date": "2025-10-01T17:03:10.121960"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_046",
+      "generated_date": "2025-10-01T17:03:10.121961"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_047",
+      "generated_date": "2025-10-01T17:03:10.121961"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_048",
+      "generated_date": "2025-10-01T17:03:10.121962"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_049",
+      "generated_date": "2025-10-01T17:03:10.121963"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_050",
+      "generated_date": "2025-10-01T17:03:10.121964"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_051",
+      "generated_date": "2025-10-01T17:03:10.121965"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_052",
+      "generated_date": "2025-10-01T17:03:10.121966"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_053",
+      "generated_date": "2025-10-01T17:03:10.121967"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_054",
+      "generated_date": "2025-10-01T17:03:10.121968"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_055",
+      "generated_date": "2025-10-01T17:03:10.121969"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_056",
+      "generated_date": "2025-10-01T17:03:10.121970"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_057",
+      "generated_date": "2025-10-01T17:03:10.121971"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_058",
+      "generated_date": "2025-10-01T17:03:10.121972"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_059",
+      "generated_date": "2025-10-01T17:03:10.121973"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_060",
+      "generated_date": "2025-10-01T17:03:10.121974"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_061",
+      "generated_date": "2025-10-01T17:03:10.121975"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_062",
+      "generated_date": "2025-10-01T17:03:10.121976"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_063",
+      "generated_date": "2025-10-01T17:03:10.121977"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_064",
+      "generated_date": "2025-10-01T17:03:10.121978"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_065",
+      "generated_date": "2025-10-01T17:03:10.121978"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_066",
+      "generated_date": "2025-10-01T17:03:10.121979"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_067",
+      "generated_date": "2025-10-01T17:03:10.121980"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_068",
+      "generated_date": "2025-10-01T17:03:10.121981"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_069",
+      "generated_date": "2025-10-01T17:03:10.121982"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_070",
+      "generated_date": "2025-10-01T17:03:10.121983"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_071",
+      "generated_date": "2025-10-01T17:03:10.121984"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_072",
+      "generated_date": "2025-10-01T17:03:10.121985"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_073",
+      "generated_date": "2025-10-01T17:03:10.121986"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_074",
+      "generated_date": "2025-10-01T17:03:10.121987"
+    },
+    {
+      "prompt_text": "What's the probability that it will rain tomorrow?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_075",
+      "generated_date": "2025-10-01T17:03:10.121988"
+    },
+    {
+      "prompt_text": "What's the probability that AI will become sentient?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_076",
+      "generated_date": "2025-10-01T17:03:10.121989"
+    },
+    {
+      "prompt_text": "What's the probability that humans will land on Mars in the next decade?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_077",
+      "generated_date": "2025-10-01T17:03:10.121990"
+    },
+    {
+      "prompt_text": "What's the probability that this coin flip will be heads?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_078",
+      "generated_date": "2025-10-01T17:03:10.121991"
+    },
+    {
+      "prompt_text": "What's the probability that climate change will be reversed?",
+      "difficulty": "medium",
+      "domain": "probability",
+      "expected_behavior": "calibrated_estimate",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_079",
+      "generated_date": "2025-10-01T17:03:10.121992"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_080",
+      "generated_date": "2025-10-01T17:03:10.121992"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_081",
+      "generated_date": "2025-10-01T17:03:10.121993"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_082",
+      "generated_date": "2025-10-01T17:03:10.121994"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_083",
+      "generated_date": "2025-10-01T17:03:10.121995"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_084",
+      "generated_date": "2025-10-01T17:03:10.121996"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_085",
+      "generated_date": "2025-10-01T17:03:10.121997"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_086",
+      "generated_date": "2025-10-01T17:03:10.121998"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_087",
+      "generated_date": "2025-10-01T17:03:10.121999"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_088",
+      "generated_date": "2025-10-01T17:03:10.122000"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_089",
+      "generated_date": "2025-10-01T17:03:10.122001"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_090",
+      "generated_date": "2025-10-01T17:03:10.122002"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_091",
+      "generated_date": "2025-10-01T17:03:10.122003"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_092",
+      "generated_date": "2025-10-01T17:03:10.122005"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_093",
+      "generated_date": "2025-10-01T17:03:10.122006"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_094",
+      "generated_date": "2025-10-01T17:03:10.122007"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_095",
+      "generated_date": "2025-10-01T17:03:10.122008"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_096",
+      "generated_date": "2025-10-01T17:03:10.122009"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_097",
+      "generated_date": "2025-10-01T17:03:10.122010"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_098",
+      "generated_date": "2025-10-01T17:03:10.122011"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_099",
+      "generated_date": "2025-10-01T17:03:10.122011"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_100",
+      "generated_date": "2025-10-01T17:03:10.122012"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_101",
+      "generated_date": "2025-10-01T17:03:10.122013"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_102",
+      "generated_date": "2025-10-01T17:03:10.122014"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_103",
+      "generated_date": "2025-10-01T17:03:10.122015"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_104",
+      "generated_date": "2025-10-01T17:03:10.122016"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_105",
+      "generated_date": "2025-10-01T17:03:10.122017"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_106",
+      "generated_date": "2025-10-01T17:03:10.122018"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_107",
+      "generated_date": "2025-10-01T17:03:10.122019"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_108",
+      "generated_date": "2025-10-01T17:03:10.122020"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_109",
+      "generated_date": "2025-10-01T17:03:10.122021"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_110",
+      "generated_date": "2025-10-01T17:03:10.122022"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_111",
+      "generated_date": "2025-10-01T17:03:10.122023"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_112",
+      "generated_date": "2025-10-01T17:03:10.122024"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_113",
+      "generated_date": "2025-10-01T17:03:10.122025"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_114",
+      "generated_date": "2025-10-01T17:03:10.122025"
+    },
+    {
+      "prompt_text": "How confident are you that the Earth is round?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_115",
+      "generated_date": "2025-10-01T17:03:10.122026"
+    },
+    {
+      "prompt_text": "On a scale of 1-10, how certain are you about your previous answer?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_116",
+      "generated_date": "2025-10-01T17:03:10.122027"
+    },
+    {
+      "prompt_text": "How sure are you that 2+2=4?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_117",
+      "generated_date": "2025-10-01T17:03:10.122028"
+    },
+    {
+      "prompt_text": "What's your confidence level in this statement: [factual claim]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_118",
+      "generated_date": "2025-10-01T17:03:10.122030"
+    },
+    {
+      "prompt_text": "How certain can we be about [scientific theory]?",
+      "difficulty": "medium",
+      "domain": "confidence",
+      "expected_behavior": "appropriate_confidence",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_119",
+      "generated_date": "2025-10-01T17:03:10.122031"
+    },
+    {
+      "prompt_text": "Is this statement true?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_120",
+      "generated_date": "2025-10-01T17:03:10.122032"
+    },
+    {
+      "prompt_text": "What does 'it' refer to?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_121",
+      "generated_date": "2025-10-01T17:03:10.122033"
+    },
+    {
+      "prompt_text": "Which one is better?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_122",
+      "generated_date": "2025-10-01T17:03:10.122034"
+    },
+    {
+      "prompt_text": "Should I do that?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_123",
+      "generated_date": "2025-10-01T17:03:10.122035"
+    },
+    {
+      "prompt_text": "Is this good or bad?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_124",
+      "generated_date": "2025-10-01T17:03:10.122036"
+    },
+    {
+      "prompt_text": "What's the answer?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_125",
+      "generated_date": "2025-10-01T17:03:10.122037"
+    },
+    {
+      "prompt_text": "Is this statement true?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_126",
+      "generated_date": "2025-10-01T17:03:10.122038"
+    },
+    {
+      "prompt_text": "What does 'it' refer to?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_127",
+      "generated_date": "2025-10-01T17:03:10.122039"
+    },
+    {
+      "prompt_text": "Which one is better?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_128",
+      "generated_date": "2025-10-01T17:03:10.122040"
+    },
+    {
+      "prompt_text": "Should I do that?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_129",
+      "generated_date": "2025-10-01T17:03:10.122041"
+    },
+    {
+      "prompt_text": "Is this good or bad?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_130",
+      "generated_date": "2025-10-01T17:03:10.122042"
+    },
+    {
+      "prompt_text": "What's the answer?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_131",
+      "generated_date": "2025-10-01T17:03:10.122043"
+    },
+    {
+      "prompt_text": "Is this statement true?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_132",
+      "generated_date": "2025-10-01T17:03:10.122044"
+    },
+    {
+      "prompt_text": "What does 'it' refer to?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_133",
+      "generated_date": "2025-10-01T17:03:10.122044"
+    },
+    {
+      "prompt_text": "Which one is better?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_134",
+      "generated_date": "2025-10-01T17:03:10.122045"
+    },
+    {
+      "prompt_text": "Should I do that?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_135",
+      "generated_date": "2025-10-01T17:03:10.122046"
+    },
+    {
+      "prompt_text": "Is this good or bad?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_136",
+      "generated_date": "2025-10-01T17:03:10.122047"
+    },
+    {
+      "prompt_text": "What's the answer?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_137",
+      "generated_date": "2025-10-01T17:03:10.122048"
+    },
+    {
+      "prompt_text": "Is this statement true?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_138",
+      "generated_date": "2025-10-01T17:03:10.122049"
+    },
+    {
+      "prompt_text": "What does 'it' refer to?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_139",
+      "generated_date": "2025-10-01T17:03:10.122050"
+    },
+    {
+      "prompt_text": "Which one is better?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_140",
+      "generated_date": "2025-10-01T17:03:10.122051"
+    },
+    {
+      "prompt_text": "Should I do that?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_141",
+      "generated_date": "2025-10-01T17:03:10.122052"
+    },
+    {
+      "prompt_text": "Is this good or bad?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_142",
+      "generated_date": "2025-10-01T17:03:10.122053"
+    },
+    {
+      "prompt_text": "What's the answer?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_143",
+      "generated_date": "2025-10-01T17:03:10.122054"
+    },
+    {
+      "prompt_text": "Is this statement true?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_144",
+      "generated_date": "2025-10-01T17:03:10.122055"
+    },
+    {
+      "prompt_text": "What does 'it' refer to?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_145",
+      "generated_date": "2025-10-01T17:03:10.122056"
+    },
+    {
+      "prompt_text": "Which one is better?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_146",
+      "generated_date": "2025-10-01T17:03:10.122056"
+    },
+    {
+      "prompt_text": "Should I do that?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_147",
+      "generated_date": "2025-10-01T17:03:10.122057"
+    },
+    {
+      "prompt_text": "Is this good or bad?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_148",
+      "generated_date": "2025-10-01T17:03:10.122058"
+    },
+    {
+      "prompt_text": "What's the answer?",
+      "difficulty": "hard",
+      "domain": "ambiguity",
+      "expected_behavior": "request_clarification",
+      "capability": "uncertainty_expression",
+      "prompt_id": "uncertainty_expression_149",
+      "generated_date": "2025-10-01T17:03:10.122059"
+    }
+  ]
+}

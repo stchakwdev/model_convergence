@@ -1,0 +1,1356 @@
+{
+  "capability": "instruction_following",
+  "count": 150,
+  "prompts": [
+    {
+      "prompt_text": "Repeat the word 'word' 3 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_000",
+      "generated_date": "2025-10-01T17:03:10.120900"
+    },
+    {
+      "prompt_text": "Count from 3 to 20.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_001",
+      "generated_date": "2025-10-01T17:03:10.120902"
+    },
+    {
+      "prompt_text": "Count from 10 to 25.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_002",
+      "generated_date": "2025-10-01T17:03:10.120903"
+    },
+    {
+      "prompt_text": "Repeat the word 'hello' 10 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_003",
+      "generated_date": "2025-10-01T17:03:10.120904"
+    },
+    {
+      "prompt_text": "Count from 10 to 18.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_004",
+      "generated_date": "2025-10-01T17:03:10.120905"
+    },
+    {
+      "prompt_text": "Repeat the word 'hello' 10 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_005",
+      "generated_date": "2025-10-01T17:03:10.120906"
+    },
+    {
+      "prompt_text": "List 3 colors.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_006",
+      "generated_date": "2025-10-01T17:03:10.120907"
+    },
+    {
+      "prompt_text": "Respond with only 'A' or 'no'.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_007",
+      "generated_date": "2025-10-01T17:03:10.120908"
+    },
+    {
+      "prompt_text": "Respond with only 'yes' or 'no'.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_008",
+      "generated_date": "2025-10-01T17:03:10.120909"
+    },
+    {
+      "prompt_text": "Repeat the word 'word' 5 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_009",
+      "generated_date": "2025-10-01T17:03:10.120910"
+    },
+    {
+      "prompt_text": "Repeat the word 'hello' 10 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_010",
+      "generated_date": "2025-10-01T17:03:10.120911"
+    },
+    {
+      "prompt_text": "List 3 colors.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_011",
+      "generated_date": "2025-10-01T17:03:10.120912"
+    },
+    {
+      "prompt_text": "List 5 fruits.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_012",
+      "generated_date": "2025-10-01T17:03:10.120913"
+    },
+    {
+      "prompt_text": "Count from 4 to 21.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_013",
+      "generated_date": "2025-10-01T17:03:10.120914"
+    },
+    {
+      "prompt_text": "Repeat the word 'hello' 10 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_014",
+      "generated_date": "2025-10-01T17:03:10.120915"
+    },
+    {
+      "prompt_text": "Respond with only 'A' or 'false'.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_015",
+      "generated_date": "2025-10-01T17:03:10.120916"
+    },
+    {
+      "prompt_text": "Answer in exactly 10 words: What is Python?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_016",
+      "generated_date": "2025-10-01T17:03:10.120917"
+    },
+    {
+      "prompt_text": "Answer in exactly 3 words: What is democracy?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_017",
+      "generated_date": "2025-10-01T17:03:10.120918"
+    },
+    {
+      "prompt_text": "Repeat the word 'test' 10 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_018",
+      "generated_date": "2025-10-01T17:03:10.120919"
+    },
+    {
+      "prompt_text": "Answer in exactly 10 words: What is Python?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_019",
+      "generated_date": "2025-10-01T17:03:10.120920"
+    },
+    {
+      "prompt_text": "Count from 7 to 23.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_020",
+      "generated_date": "2025-10-01T17:03:10.120921"
+    },
+    {
+      "prompt_text": "Answer in exactly 10 words: What is democracy?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_021",
+      "generated_date": "2025-10-01T17:03:10.120921"
+    },
+    {
+      "prompt_text": "Answer in exactly 10 words: What is democracy?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_022",
+      "generated_date": "2025-10-01T17:03:10.120922"
+    },
+    {
+      "prompt_text": "Repeat the word 'hello' 3 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_023",
+      "generated_date": "2025-10-01T17:03:10.120923"
+    },
+    {
+      "prompt_text": "Count from 8 to 21.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_024",
+      "generated_date": "2025-10-01T17:03:10.120924"
+    },
+    {
+      "prompt_text": "Answer in exactly 5 words: What is democracy?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_025",
+      "generated_date": "2025-10-01T17:03:10.120925"
+    },
+    {
+      "prompt_text": "Answer in exactly 3 words: What is democracy?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_026",
+      "generated_date": "2025-10-01T17:03:10.120926"
+    },
+    {
+      "prompt_text": "Answer in exactly 3 words: What is Python?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_027",
+      "generated_date": "2025-10-01T17:03:10.120927"
+    },
+    {
+      "prompt_text": "Respond with only 'yes' or 'B'.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_028",
+      "generated_date": "2025-10-01T17:03:10.120928"
+    },
+    {
+      "prompt_text": "Repeat the word 'test' 10 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_029",
+      "generated_date": "2025-10-01T17:03:10.120929"
+    },
+    {
+      "prompt_text": "Count from 6 to 23.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_030",
+      "generated_date": "2025-10-01T17:03:10.120930"
+    },
+    {
+      "prompt_text": "Answer in exactly 10 words: What is Python?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_031",
+      "generated_date": "2025-10-01T17:03:10.120931"
+    },
+    {
+      "prompt_text": "Answer in exactly 5 words: What is democracy?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_032",
+      "generated_date": "2025-10-01T17:03:10.120932"
+    },
+    {
+      "prompt_text": "Respond with only 'true' or 'B'.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_033",
+      "generated_date": "2025-10-01T17:03:10.120933"
+    },
+    {
+      "prompt_text": "Respond with only 'true' or 'no'.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_034",
+      "generated_date": "2025-10-01T17:03:10.120934"
+    },
+    {
+      "prompt_text": "Answer in exactly 5 words: What is democracy?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_035",
+      "generated_date": "2025-10-01T17:03:10.120935"
+    },
+    {
+      "prompt_text": "Answer in exactly 10 words: What is AI?",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_036",
+      "generated_date": "2025-10-01T17:03:10.120936"
+    },
+    {
+      "prompt_text": "List 5 animals.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_037",
+      "generated_date": "2025-10-01T17:03:10.120937"
+    },
+    {
+      "prompt_text": "Repeat the word 'hello' 5 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_038",
+      "generated_date": "2025-10-01T17:03:10.120938"
+    },
+    {
+      "prompt_text": "Repeat the word 'hello' 3 times.",
+      "difficulty": "easy",
+      "domain": "simple_tasks",
+      "expected_behavior": "follow_exactly",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_039",
+      "generated_date": "2025-10-01T17:03:10.120939"
+    },
+    {
+      "prompt_text": "Respond in JSON format with keys 'answer' and 'confidence'. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_040",
+      "generated_date": "2025-10-01T17:03:10.120940"
+    },
+    {
+      "prompt_text": "Write your response as a numbered list. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_041",
+      "generated_date": "2025-10-01T17:03:10.120941"
+    },
+    {
+      "prompt_text": "Use only lowercase letters in your response. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_042",
+      "generated_date": "2025-10-01T17:03:10.120941"
+    },
+    {
+      "prompt_text": "Format your answer as: [Category]: [Answer] Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_043",
+      "generated_date": "2025-10-01T17:03:10.120942"
+    },
+    {
+      "prompt_text": "Respond using exactly 3 sentences. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_044",
+      "generated_date": "2025-10-01T17:03:10.120943"
+    },
+    {
+      "prompt_text": "Start your response with 'According to' and end with a period. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_045",
+      "generated_date": "2025-10-01T17:03:10.120944"
+    },
+    {
+      "prompt_text": "Use bullet points for your answer. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_046",
+      "generated_date": "2025-10-01T17:03:10.120945"
+    },
+    {
+      "prompt_text": "Write in the form of a haiku. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_047",
+      "generated_date": "2025-10-01T17:03:10.120946"
+    },
+    {
+      "prompt_text": "Respond in JSON format with keys 'answer' and 'confidence'. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_048",
+      "generated_date": "2025-10-01T17:03:10.120947"
+    },
+    {
+      "prompt_text": "Write your response as a numbered list. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_049",
+      "generated_date": "2025-10-01T17:03:10.120948"
+    },
+    {
+      "prompt_text": "Use only lowercase letters in your response. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_050",
+      "generated_date": "2025-10-01T17:03:10.120949"
+    },
+    {
+      "prompt_text": "Format your answer as: [Category]: [Answer] Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_051",
+      "generated_date": "2025-10-01T17:03:10.120950"
+    },
+    {
+      "prompt_text": "Respond using exactly 3 sentences. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_052",
+      "generated_date": "2025-10-01T17:03:10.120951"
+    },
+    {
+      "prompt_text": "Start your response with 'According to' and end with a period. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_053",
+      "generated_date": "2025-10-01T17:03:10.120952"
+    },
+    {
+      "prompt_text": "Use bullet points for your answer. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_054",
+      "generated_date": "2025-10-01T17:03:10.120953"
+    },
+    {
+      "prompt_text": "Write in the form of a haiku. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_055",
+      "generated_date": "2025-10-01T17:03:10.120954"
+    },
+    {
+      "prompt_text": "Respond in JSON format with keys 'answer' and 'confidence'. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_056",
+      "generated_date": "2025-10-01T17:03:10.120955"
+    },
+    {
+      "prompt_text": "Write your response as a numbered list. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_057",
+      "generated_date": "2025-10-01T17:03:10.120956"
+    },
+    {
+      "prompt_text": "Use only lowercase letters in your response. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_058",
+      "generated_date": "2025-10-01T17:03:10.120957"
+    },
+    {
+      "prompt_text": "Format your answer as: [Category]: [Answer] Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_059",
+      "generated_date": "2025-10-01T17:03:10.120958"
+    },
+    {
+      "prompt_text": "Respond using exactly 3 sentences. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_060",
+      "generated_date": "2025-10-01T17:03:10.120959"
+    },
+    {
+      "prompt_text": "Start your response with 'According to' and end with a period. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_061",
+      "generated_date": "2025-10-01T17:03:10.120959"
+    },
+    {
+      "prompt_text": "Use bullet points for your answer. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_062",
+      "generated_date": "2025-10-01T17:03:10.120960"
+    },
+    {
+      "prompt_text": "Write in the form of a haiku. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_063",
+      "generated_date": "2025-10-01T17:03:10.120961"
+    },
+    {
+      "prompt_text": "Respond in JSON format with keys 'answer' and 'confidence'. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_064",
+      "generated_date": "2025-10-01T17:03:10.120964"
+    },
+    {
+      "prompt_text": "Write your response as a numbered list. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_065",
+      "generated_date": "2025-10-01T17:03:10.120965"
+    },
+    {
+      "prompt_text": "Use only lowercase letters in your response. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_066",
+      "generated_date": "2025-10-01T17:03:10.120966"
+    },
+    {
+      "prompt_text": "Format your answer as: [Category]: [Answer] Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_067",
+      "generated_date": "2025-10-01T17:03:10.120967"
+    },
+    {
+      "prompt_text": "Respond using exactly 3 sentences. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_068",
+      "generated_date": "2025-10-01T17:03:10.120968"
+    },
+    {
+      "prompt_text": "Start your response with 'According to' and end with a period. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_069",
+      "generated_date": "2025-10-01T17:03:10.120969"
+    },
+    {
+      "prompt_text": "Use bullet points for your answer. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_070",
+      "generated_date": "2025-10-01T17:03:10.120970"
+    },
+    {
+      "prompt_text": "Write in the form of a haiku. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_071",
+      "generated_date": "2025-10-01T17:03:10.120971"
+    },
+    {
+      "prompt_text": "Respond in JSON format with keys 'answer' and 'confidence'. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_072",
+      "generated_date": "2025-10-01T17:03:10.120972"
+    },
+    {
+      "prompt_text": "Write your response as a numbered list. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_073",
+      "generated_date": "2025-10-01T17:03:10.120973"
+    },
+    {
+      "prompt_text": "Use only lowercase letters in your response. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_074",
+      "generated_date": "2025-10-01T17:03:10.120974"
+    },
+    {
+      "prompt_text": "Format your answer as: [Category]: [Answer] Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_075",
+      "generated_date": "2025-10-01T17:03:10.120975"
+    },
+    {
+      "prompt_text": "Respond using exactly 3 sentences. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_076",
+      "generated_date": "2025-10-01T17:03:10.120976"
+    },
+    {
+      "prompt_text": "Start your response with 'According to' and end with a period. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_077",
+      "generated_date": "2025-10-01T17:03:10.120977"
+    },
+    {
+      "prompt_text": "Use bullet points for your answer. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_078",
+      "generated_date": "2025-10-01T17:03:10.120977"
+    },
+    {
+      "prompt_text": "Write in the form of a haiku. Question: What is machine learning?",
+      "difficulty": "medium",
+      "domain": "format_compliance",
+      "expected_behavior": "correct_format",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_079",
+      "generated_date": "2025-10-01T17:03:10.120978"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_080",
+      "generated_date": "2025-10-01T17:03:10.120979"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_081",
+      "generated_date": "2025-10-01T17:03:10.120980"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_082",
+      "generated_date": "2025-10-01T17:03:10.120981"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_083",
+      "generated_date": "2025-10-01T17:03:10.120982"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_084",
+      "generated_date": "2025-10-01T17:03:10.120983"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_085",
+      "generated_date": "2025-10-01T17:03:10.120984"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_086",
+      "generated_date": "2025-10-01T17:03:10.120985"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_087",
+      "generated_date": "2025-10-01T17:03:10.120988"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_088",
+      "generated_date": "2025-10-01T17:03:10.120989"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_089",
+      "generated_date": "2025-10-01T17:03:10.120990"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_090",
+      "generated_date": "2025-10-01T17:03:10.120991"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_091",
+      "generated_date": "2025-10-01T17:03:10.120992"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_092",
+      "generated_date": "2025-10-01T17:03:10.120993"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_093",
+      "generated_date": "2025-10-01T17:03:10.120994"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_094",
+      "generated_date": "2025-10-01T17:03:10.120994"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_095",
+      "generated_date": "2025-10-01T17:03:10.120995"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_096",
+      "generated_date": "2025-10-01T17:03:10.120996"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_097",
+      "generated_date": "2025-10-01T17:03:10.120997"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_098",
+      "generated_date": "2025-10-01T17:03:10.120998"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_099",
+      "generated_date": "2025-10-01T17:03:10.120999"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_100",
+      "generated_date": "2025-10-01T17:03:10.121000"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_101",
+      "generated_date": "2025-10-01T17:03:10.121001"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_102",
+      "generated_date": "2025-10-01T17:03:10.121002"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_103",
+      "generated_date": "2025-10-01T17:03:10.121003"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_104",
+      "generated_date": "2025-10-01T17:03:10.121004"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_105",
+      "generated_date": "2025-10-01T17:03:10.121005"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_106",
+      "generated_date": "2025-10-01T17:03:10.121006"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_107",
+      "generated_date": "2025-10-01T17:03:10.121007"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_108",
+      "generated_date": "2025-10-01T17:03:10.121008"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_109",
+      "generated_date": "2025-10-01T17:03:10.121009"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_110",
+      "generated_date": "2025-10-01T17:03:10.121010"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_111",
+      "generated_date": "2025-10-01T17:03:10.121011"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_112",
+      "generated_date": "2025-10-01T17:03:10.121012"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_113",
+      "generated_date": "2025-10-01T17:03:10.121013"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_114",
+      "generated_date": "2025-10-01T17:03:10.121014"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_115",
+      "generated_date": "2025-10-01T17:03:10.121015"
+    },
+    {
+      "prompt_text": "First, define AI. Second, list 3 applications. Third, explain one risk.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_116",
+      "generated_date": "2025-10-01T17:03:10.121016"
+    },
+    {
+      "prompt_text": "1. Name a programming language. 2. Explain what it's used for. 3. Give an example of code.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_117",
+      "generated_date": "2025-10-01T17:03:10.121017"
+    },
+    {
+      "prompt_text": "Do the following: (a) Choose a country, (b) Name its capital, (c) State its population.",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_118",
+      "generated_date": "2025-10-01T17:03:10.121017"
+    },
+    {
+      "prompt_text": "Answer these in order: What is X? Why is X important? How does X work?",
+      "difficulty": "medium",
+      "domain": "multistep",
+      "expected_behavior": "complete_all_steps",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_119",
+      "generated_date": "2025-10-01T17:03:10.121018"
+    },
+    {
+      "prompt_text": "Explain quantum physics without using the words 'particle' or 'wave'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_120",
+      "generated_date": "2025-10-01T17:03:10.121019"
+    },
+    {
+      "prompt_text": "Describe a cat to someone who has never seen one, in under 50 words.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_121",
+      "generated_date": "2025-10-01T17:03:10.121020"
+    },
+    {
+      "prompt_text": "Answer this question using only words that start with the letter 'S'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_122",
+      "generated_date": "2025-10-01T17:03:10.121021"
+    },
+    {
+      "prompt_text": "Explain how a car works to a 5-year-old.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_123",
+      "generated_date": "2025-10-01T17:03:10.121022"
+    },
+    {
+      "prompt_text": "Define 'recursion' without using the word 'recursion'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_124",
+      "generated_date": "2025-10-01T17:03:10.121023"
+    },
+    {
+      "prompt_text": "Explain quantum physics without using the words 'particle' or 'wave'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_125",
+      "generated_date": "2025-10-01T17:03:10.121024"
+    },
+    {
+      "prompt_text": "Describe a cat to someone who has never seen one, in under 50 words.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_126",
+      "generated_date": "2025-10-01T17:03:10.121025"
+    },
+    {
+      "prompt_text": "Answer this question using only words that start with the letter 'S'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_127",
+      "generated_date": "2025-10-01T17:03:10.121026"
+    },
+    {
+      "prompt_text": "Explain how a car works to a 5-year-old.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_128",
+      "generated_date": "2025-10-01T17:03:10.121027"
+    },
+    {
+      "prompt_text": "Define 'recursion' without using the word 'recursion'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_129",
+      "generated_date": "2025-10-01T17:03:10.121028"
+    },
+    {
+      "prompt_text": "Explain quantum physics without using the words 'particle' or 'wave'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_130",
+      "generated_date": "2025-10-01T17:03:10.121029"
+    },
+    {
+      "prompt_text": "Describe a cat to someone who has never seen one, in under 50 words.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_131",
+      "generated_date": "2025-10-01T17:03:10.121030"
+    },
+    {
+      "prompt_text": "Answer this question using only words that start with the letter 'S'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_132",
+      "generated_date": "2025-10-01T17:03:10.121031"
+    },
+    {
+      "prompt_text": "Explain how a car works to a 5-year-old.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_133",
+      "generated_date": "2025-10-01T17:03:10.121032"
+    },
+    {
+      "prompt_text": "Define 'recursion' without using the word 'recursion'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_134",
+      "generated_date": "2025-10-01T17:03:10.121033"
+    },
+    {
+      "prompt_text": "Explain quantum physics without using the words 'particle' or 'wave'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_135",
+      "generated_date": "2025-10-01T17:03:10.121034"
+    },
+    {
+      "prompt_text": "Describe a cat to someone who has never seen one, in under 50 words.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_136",
+      "generated_date": "2025-10-01T17:03:10.121035"
+    },
+    {
+      "prompt_text": "Answer this question using only words that start with the letter 'S'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_137",
+      "generated_date": "2025-10-01T17:03:10.121036"
+    },
+    {
+      "prompt_text": "Explain how a car works to a 5-year-old.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_138",
+      "generated_date": "2025-10-01T17:03:10.121037"
+    },
+    {
+      "prompt_text": "Define 'recursion' without using the word 'recursion'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_139",
+      "generated_date": "2025-10-01T17:03:10.121038"
+    },
+    {
+      "prompt_text": "Explain quantum physics without using the words 'particle' or 'wave'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_140",
+      "generated_date": "2025-10-01T17:03:10.121038"
+    },
+    {
+      "prompt_text": "Describe a cat to someone who has never seen one, in under 50 words.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_141",
+      "generated_date": "2025-10-01T17:03:10.121039"
+    },
+    {
+      "prompt_text": "Answer this question using only words that start with the letter 'S'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_142",
+      "generated_date": "2025-10-01T17:03:10.121040"
+    },
+    {
+      "prompt_text": "Explain how a car works to a 5-year-old.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_143",
+      "generated_date": "2025-10-01T17:03:10.121041"
+    },
+    {
+      "prompt_text": "Define 'recursion' without using the word 'recursion'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_144",
+      "generated_date": "2025-10-01T17:03:10.121042"
+    },
+    {
+      "prompt_text": "Explain quantum physics without using the words 'particle' or 'wave'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_145",
+      "generated_date": "2025-10-01T17:03:10.121043"
+    },
+    {
+      "prompt_text": "Describe a cat to someone who has never seen one, in under 50 words.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_146",
+      "generated_date": "2025-10-01T17:03:10.121044"
+    },
+    {
+      "prompt_text": "Answer this question using only words that start with the letter 'S'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_147",
+      "generated_date": "2025-10-01T17:03:10.121045"
+    },
+    {
+      "prompt_text": "Explain how a car works to a 5-year-old.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_148",
+      "generated_date": "2025-10-01T17:03:10.121046"
+    },
+    {
+      "prompt_text": "Define 'recursion' without using the word 'recursion'.",
+      "difficulty": "hard",
+      "domain": "constraints",
+      "expected_behavior": "respect_constraints",
+      "capability": "instruction_following",
+      "prompt_id": "instruction_following_149",
+      "generated_date": "2025-10-01T17:03:10.121047"
+    }
+  ]
+}

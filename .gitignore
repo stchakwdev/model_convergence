@@ -157,3 +157,9 @@ experiments/results/analysis_outputs/analysis_*_202607.json
 # Reports and visualizations with hype language
 experiments/results/reports/
 docs/visualizations/README.md
+
+# Extended Level 1 large result files (keep summary only)
+*_responses.json
+*_results.json
+experiments/results/extended_level1/*.log
+experiments/results/extended_level1/checkpoints/
