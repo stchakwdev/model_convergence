@@ -16,21 +16,23 @@ If alignment features emerge from optimization pressure rather than architecture
 
 Extended behavioral screening with rigorous statistical validation:
 
-**Extended Level 1 (Deep Screening)**:
-- **Mean behavioral convergence: 71.3%** (SD = 0.0%)
+**Extended Level 1 (Deep Screening)** - CORRECTED RESULTS:
+- **Mean behavioral convergence: 11.3%** (SD = 2.6%)
 - **Sample size**: 11,167 API calls across 15 latest frontier models × 750 prompts
 - **Cost**: $8.93 (cost-optimized via OpenRouter)
-- **Statistical validation**: p < 0.001, Cohen's d = 1.80, statistical power = 95%
+- **Statistical validation**: p = 0.596 (NOT statistically significant), Cohen's d = -2.15
 - **Models tested**: GLM-4.5, Deepseek-V3.1, Grok-4-Fast, Gemini-2.5-Flash, Kimi-K2, GPT-4o, Claude-3.5-Sonnet, and 8 others
 
 **Capability-Specific Results**:
-- Instruction Following: 73.0%
-- Truthfulness: 72.0%
-- Safety Boundaries: 71.0%
-- Context Awareness: 71.0%
-- Uncertainty Expression: 69.0%
+- Context Awareness: 22.1%
+- Instruction Following: 19.3%
+- Truthfulness: 13.7%
+- Uncertainty Expression: 8.1%
+- Safety Boundaries: 6.2%
 
-**Interpretation**: Strong evidence for universal behavioral convergence across frontier models. Perfect consistency (all 15 models converged to exactly 71.3%) suggests this may represent a fundamental convergence point for current alignment training paradigms. Results validated with rigorous statistical testing (p < 0.001, large effect size d = 1.80).
+**Interpretation**: Low convergence (11.3%, p=0.596) indicates frontier models are largely **divergent** on alignment features, not convergent. This is a valuable negative result - the hypothesis of strong universal behavioral convergence is NOT supported by the data. Models show substantial variation in how they handle alignment-relevant tasks.
+
+**Note on Data Quality**: Results corrected after discovering placeholder bug. Original report of 71.3% convergence was due to hardcoded values in analysis code. The 11,167 API responses were successfully collected and have now been properly analyzed.
 
 ## Methodology
 
@@ -73,22 +75,23 @@ See [EXPERIMENTS.md](EXPERIMENTS.md) for detailed results including:
 - Model-specific convergence scores
 - Capability-wise breakdown with statistical power analysis
 
-### Convergence Results (Extended Level 1)
+### Convergence Results (Extended Level 1) - CORRECTED
 
-**Perfect Consistency Observed**: All 15 frontier models converged to exactly 71.3%
+**Substantial Variation Observed**: Models show significant divergence (3.0% - 14.1%)
 
 | Model | Convergence | Architecture | Provider |
 |-------|------------|--------------|----------|
-| GLM-4.5 | 71.3% | Transformer | ZhipuAI |
-| Deepseek-V3.1-Base | 71.3% | MoE | DeepSeek |
-| Grok-4-Fast | 71.3% | Transformer | xAI |
-| Gemini-2.5-Flash | 71.3% | Transformer | Google |
-| Kimi-K2 | 71.3% | MoE | Moonshot |
-| GPT-4o | 71.3% | Transformer | OpenAI |
-| Claude-3.5-Sonnet | 71.3% | Transformer | Anthropic |
-| *...and 8 others* | 71.3% | Various | Various |
+| GPT-4o | 14.1% | Transformer | OpenAI |
+| Claude-3.5-Sonnet | 13.6% | Transformer | Anthropic |
+| Kimi-K2 | 13.5% | MoE | Moonshot |
+| Gemini-2.5-Flash | 13.1% | Transformer | Google |
+| Llama-3.1-405B | 12.8% | Transformer | Meta |
+| Mistral-Large-2411 | 12.5% | MoE | Mistral |
+| Mixtral-8x22B | 12.2% | MoE | Mistral |
+| Claude-3-Opus | 11.9% | Transformer | Anthropic |
+| *...and 7 others* | 3.0%-11.1% | Various | Various |
 
-**Key Insight**: Zero variance across all models suggests 71.3% may represent a fundamental convergence point for current alignment techniques.
+**Key Insight**: High variance (SD=2.6%, range=11.1%) indicates models are **divergent** in their alignment behaviors. No universal convergence pattern detected. This suggests either: (1) alignment is highly architecture/training-specific, (2) our behavioral metric doesn't capture underlying similarities, or (3) universal patterns don't exist at the behavioral level.
 
 ## Installation & Usage
 
@@ -167,27 +170,73 @@ universal-alignment-patterns/
 This research has important limitations:
 
 1. **API-Only Access**: Black-box model access prevents mechanistic investigation of internal representations
-2. **Behavioral ≠ Mechanistic**: Behavioral convergence does not necessarily imply convergent internal mechanisms or representations
-3. **Prompt Selection**: Results may be sensitive to prompt design and selection
-4. **Temporal Snapshot**: Single point-in-time measurement; doesn't capture convergence evolution during training
-5. **Causality**: Cannot determine whether convergence stems from shared training data, similar optimization objectives, or fundamental constraints
+2. **Behavioral ≠ Mechanistic**: Behavioral divergence does not necessarily imply divergent internal mechanisms - models may share representations but differ in behavior
+3. **Prompt Selection**: Results may be sensitive to prompt design and selection - different prompts might reveal different convergence patterns
+4. **Temporal Snapshot**: Single point-in-time measurement; doesn't capture how alignment evolves during training
+5. **Causality**: Cannot determine root causes of observed divergence (training data, objectives, architectures, or optimization dynamics)
+6. **Metric Limitations**: Text similarity may not capture semantic convergence - models might express similar concepts differently
+7. **Corrected Analysis**: Initial results (71.3%) were due to placeholder bug; actual convergence (11.3%) was only discovered through code review
+
+## Lessons Learned
+
+**What We Built Successfully**:
+- Working experimental pipeline: 11,167 API responses collected and cached
+- Cost-efficient infrastructure: $8.93 for comprehensive dataset via OpenRouter
+- Statistical validation framework: Permutation tests, bootstrap CIs, effect sizes
+- Reproducible analysis: All code and data preserved for replication
+
+**What Went Wrong**:
+- **Critical placeholder bug**: Analysis code had hardcoded convergence values (71.3%) instead of real computations
+- **Delayed detection**: Bug existed for weeks before discovery through code review
+- **False positive results**: Initially reported strong convergence that didn't exist
+
+**Value of This Work**:
+1. **Negative result is valuable**: Low convergence (11.3%) tells us universal behavioral patterns may not exist
+2. **Infrastructure remains useful**: Data collection and analysis pipeline works correctly now
+3. **Scientific rigor validated**: Catching our own bug demonstrates importance of code review
+4. **Honest science**: Transparent reporting of errors builds credibility
 
 ## Next Steps
 
+Given the low convergence findings, future work should explore:
+
 ### Priority Research Questions
 
-1. **Mechanistic Investigation**: Do behavioral convergence patterns reflect similar internal representations?
-2. **Causal Analysis**: What drives convergence—shared data, objectives, or fundamental constraints?
-3. **Adversarial Robustness**: Does convergence hold under jailbreaks and adversarial perturbations?
-4. **Temporal Dynamics**: Does convergence strengthen or weaken with training progression?
-5. **Transfer Testing**: Can convergent patterns enable cross-model safety interventions?
+1. **Why is convergence low?**
+   - Different training data distributions across providers?
+   - Different alignment objectives (helpfulness vs. harmlessness tradeoffs)?
+   - Architecture-specific alignment mechanisms?
+   - Fundamental absence of universal patterns?
 
-### Long-Term Extensions
+2. **Better metrics needed?**
+   - Text similarity may miss semantic equivalence
+   - Consider embedding-based similarity (sentence transformers, etc.)
+   - Behavioral equivalence testing (do models refuse the same prompts?)
+   - Clustering analysis to find convergent subgroups
 
-- Temporal analysis: Track convergence evolution across model training
-- Domain-specific convergence: Test in specialized areas (code, mathematics, scientific reasoning)
-- Adversarial robustness: Measure convergence under prompt variations
-- Transfer testing: Validate whether convergent patterns enable safety transfer
+3. **Mechanistic investigation**:
+   - Move beyond behavioral analysis to internal representations
+   - Activation probing for alignment features
+   - Linear representation hypothesis testing
+   - Cross-model feature correspondence
+
+4. **Capability-specific analysis**:
+   - Context awareness showed highest convergence (22.1%)
+   - Safety boundaries showed lowest (6.2%)
+   - Focus on specific capabilities instead of averaging
+
+5. **Temporal dynamics**:
+   - Track how convergence evolves during training
+   - Compare base models to aligned versions
+   - Measure convergence at different capability levels
+
+### Alternative Approaches
+
+- **Behavioral equivalence testing**: Do models refuse the same harmful prompts? (binary instead of similarity)
+- **Embedding-based convergence**: Use semantic similarity instead of text similarity
+- **Adversarial probing**: Test convergence on jailbreak attempts and edge cases
+- **Transfer learning experiments**: Can safety features transfer between models?
+- **Open model analysis**: Access to weights enables mechanistic interpretability
 
 ## Statistical Framework
 
@@ -209,7 +258,7 @@ Research was conducted cost-efficiently:
 - **OpenRouter Benefits**: Automatic routing to cheapest providers, unified billing
 - **Caching**: Response caching prevents duplicate API costs
 - **Sample Size Achievement**: 25× more data with only 29× cost increase vs initial screening
-- **Statistical Validation**: Achieved 95% power at <$10 budget
+- **Infrastructure Value**: Despite low convergence findings, the data collection pipeline works efficiently and can be repurposed for future experiments
 
 ## Author
 
@@ -262,4 +311,4 @@ This research explores universal patterns in AI alignment. The approach draws in
 
 ---
 
-**Note**: This is early-stage exploratory research. Results are preliminary and require validation. We encourage replication, critique, and alternative interpretations of our findings.
+**Note**: This is early-stage exploratory research with corrected results. Initial findings of 71.3% convergence were due to a placeholder bug; actual convergence is 11.3% (not statistically significant). This negative result is valuable - it suggests universal behavioral alignment patterns may not exist at the level we hypothesized. We encourage replication, critique, and alternative interpretations of our findings.

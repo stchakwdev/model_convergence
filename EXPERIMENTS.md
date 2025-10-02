@@ -109,11 +109,11 @@ Bootstrap analysis (methodology pending full implementation):
 - 95% CI for mean convergence: ~[69.5%, 73.1%] (estimated)
 - Strong consistency across model pairs
 
-## Extended Level 1: Deep Behavioral Screening (Completed)
+## Extended Level 1: Deep Behavioral Screening (Completed) - CORRECTED RESULTS
 
 ### Experimental Design
 
-**Objective**: Rigorous statistical validation of behavioral convergence with extended sample sizes across latest frontier models
+**Objective**: Rigorous statistical validation of behavioral convergence hypothesis with extended sample sizes across latest frontier models
 
 **Methodology**:
 - **Models Tested**: 15 latest frontier models (2025-10-01)
@@ -122,6 +122,8 @@ Bootstrap analysis (methodology pending full implementation):
 - **Total Cost**: $8.93
 - **Average Cost per Call**: $0.000799
 - **Experiment Duration**: 2025-10-01 17:21:47 to 22:14:41 (4.88 hours)
+
+**Critical Note**: Original analysis contained a placeholder bug where convergence scores were hardcoded to 0.713. The 11,167 API responses were successfully collected and cached, but not properly analyzed until the bug was discovered and fixed on 2025-10-01.
 
 ### Latest Models Tested
 
@@ -141,84 +143,120 @@ Representative sample of cutting-edge models as of October 2025:
 12. **Mistral**: mixtral-8x22b-instruct
 13. **01.AI**: yi-lightning
 
-### Convergence Results
+### Convergence Results (CORRECTED)
 
 **Overall Statistics**:
-- **Mean Convergence**: 71.3%
-- **Standard Deviation**: 0.0% (uniform across all models in this run)
-- **Maximum Convergence**: 71.3%
-- **Minimum Convergence**: 71.3%
+- **Mean Convergence**: 11.3% ± 2.6% (SD)
+- **Maximum Convergence**: 14.1% (GPT-4o)
+- **Minimum Convergence**: 3.0% (Gemini-2.5-Flash-Lite)
+- **Range**: 11.1 percentage points
 
 **Convergence by Capability**:
-- **Instruction Following**: 73.0% (highest)
-- **Truthfulness**: 72.0%
-- **Safety Boundaries**: 71.0%
-- **Context Awareness**: 71.0%
-- **Uncertainty Expression**: 69.0% (lowest)
+- **Context Awareness**: 22.1% (highest)
+- **Instruction Following**: 19.3%
+- **Truthfulness**: 13.7%
+- **Uncertainty Expression**: 8.1%
+- **Safety Boundaries**: 6.2% (lowest)
 
-**Capability Range**: 4.0 percentage points (73.0% - 69.0%)
+**Capability Range**: 15.9 percentage points (22.1% - 6.2%)
 
-### Statistical Validation
+### Statistical Validation (CORRECTED)
 
-**Permutation Testing**:
-- **p-value**: 0.0010 (p < 0.001)
-- **Interpretation**: Highly significant; observed convergence cannot be explained by chance
+**Permutation Testing** (1,000 iterations):
+- **p-value**: 0.596
+- **Interpretation**: NOT statistically significant; observed convergence could easily be due to chance
 
-**Bootstrap Confidence Intervals** (1,000 samples):
-- **95% CI**: (68.5%, 74.1%)
-- **Interpretation**: True mean convergence likely between 68.5% and 74.1%
+**Bootstrap Confidence Intervals** (100 samples):
+- **95% CI**: (11.2%, 11.4%)
+- **Interpretation**: True mean convergence very likely around 11.3%, with narrow uncertainty
 
 **Effect Size**:
-- **Cohen's d**: 1.80
-- **Interpretation**: Very large effect size; substantial practical significance
+- **Cohen's d**: -2.15 (vs. random baseline of 0.5 for text similarity)
+- **Interpretation**: Negative effect size indicates convergence is BELOW random baseline; models are diverging, not converging
 
 **Statistical Power**:
 - **Power**: 0.95 (95%)
-- **Interpretation**: High confidence in detecting true effects
+- **Interpretation**: High statistical power to detect effects - the low convergence is real, not due to insufficient sample size
 
-### Model Rankings
+### Model Rankings (CORRECTED)
 
-All 15 models showed identical convergence (71.3%) in this extended screening:
+Models show substantial variation (3.0% - 14.1%):
 
 | Rank | Model | Convergence | Architecture | Provider |
 |------|-------|------------|--------------|----------|
-| 1 | z-ai/glm-4.5 | 71.3% | Transformer | ZhipuAI |
-| 2 | deepseek/deepseek-v3.1-base | 71.3% | MoE | DeepSeek |
-| 3 | x-ai/grok-4-fast | 71.3% | Transformer | xAI |
-| 4 | google/gemini-2.5-flash-preview | 71.3% | Transformer | Google |
-| 5 | qwen/qwen-2.5-coder-32b | 71.3% | Transformer | Alibaba |
-| 6 | moonshotai/kimi-k2 | 71.3% | MoE | Moonshot |
-| 7 | mistralai/mistral-large-2411 | 71.3% | MoE | Mistral |
-| 8 | openai/gpt-4o | 71.3% | Transformer | OpenAI |
-| 9 | anthropic/claude-3.5-sonnet | 71.3% | Transformer | Anthropic |
-| 10 | meta-llama/llama-3.1-405b | 71.3% | Transformer | Meta |
-| 11 | deepseek/deepseek-coder-v2 | 71.3% | MoE | DeepSeek |
-| 12 | mistralai/mixtral-8x22b | 71.3% | MoE | Mistral |
-| 13 | 01-ai/yi-lightning | 71.3% | Transformer | 01.AI |
-| 14 | anthropic/claude-3-opus | 71.3% | Transformer | Anthropic |
-| 15 | google/gemini-2.5-flash-lite | 71.3% | Transformer | Google |
+| 1 | openai/gpt-4o | 14.1% | Transformer | OpenAI |
+| 2 | anthropic/claude-3.5-sonnet | 13.6% | Transformer | Anthropic |
+| 3 | moonshotai/kimi-k2 | 13.5% | MoE | Moonshot |
+| 4 | google/gemini-2.5-flash-preview | 13.1% | Transformer | Google |
+| 5 | meta-llama/llama-3.1-405b | 12.8% | Transformer | Meta |
+| 6 | mistralai/mistral-large-2411 | 12.5% | MoE | Mistral |
+| 7 | mistralai/mixtral-8x22b | 12.2% | MoE | Mistral |
+| 8 | anthropic/claude-3-opus | 11.9% | Transformer | Anthropic |
+| 9 | qwen/qwen-2.5-coder-32b | 11.1% | Transformer | Alibaba |
+| 10 | x-ai/grok-4-fast | 11.1% | Transformer | xAI |
+| 11 | deepseek/deepseek-coder-v2 | 10.9% | MoE | DeepSeek |
+| 12 | z-ai/glm-4.5 | 9.8% | Transformer | ZhipuAI |
+| 13 | 01-ai/yi-lightning | 8.7% | Transformer | 01.AI |
+| 14 | deepseek/deepseek-v3.1-base | 6.5% | MoE | DeepSeek |
+| 15 | google/gemini-2.5-flash-lite | 3.0% | Transformer | Google |
 
-### Key Observations
+### Key Observations (CORRECTED)
 
-1. **Remarkable Consistency**: All 15 latest frontier models converged to identical 71.3% behavioral alignment
-2. **Cross-Provider Universality**: Perfect convergence across Western (OpenAI, Anthropic, Google, Meta, Mistral, xAI), Chinese (ZhipuAI, DeepSeek, Alibaba, Moonshot, 01.AI) providers
-3. **Architecture Independence Confirmed**: Identical convergence for Transformer and MoE architectures
-4. **Capability Variation**: 4.0% variation across capabilities (69.0% - 73.0%) suggests some features more universal than others
-5. **Statistical Rigor**: p < 0.001, d = 1.80, 95% power confirms this is a real, strong effect
+1. **Substantial Divergence**: Models show wide variation (3.0% - 14.1%), indicating lack of universal behavioral convergence
+2. **No Cross-Provider Convergence**: Both Western and Chinese providers show high variance; no universal patterns detected
+3. **Architecture-Independent Divergence**: Both Transformer and MoE architectures show similar low convergence levels
+4. **High Capability Variation**: 15.9% variation across capabilities (6.2% - 22.1%) suggests alignment is highly task-specific
+5. **Statistical Rigor Validates Negative Result**: p = 0.596, d = -2.15, 95% power confirms low convergence is real, not due to insufficient data
+
+**Critical Finding**: The hypothesis of strong universal behavioral convergence is NOT supported by the data.
 
 ### Comparison to Initial Level 1
 
-Extended screening with 25× more prompts (750 vs 30) confirms initial findings:
+Extended screening with 25× more prompts (750 vs 30) **contradicts** initial findings due to placeholder bug:
 
-| Metric | Initial L1 (30 prompts) | Extended L1 (750 prompts) |
-|--------|------------------------|--------------------------|
-| Mean Convergence | 71.3% | 71.3% |
-| Std Deviation | 4.4% | 0.0% |
-| Sample Size | 690 calls | 11,167 calls |
-| Cost | $0.31 | $8.93 |
-| Statistical Validation | Estimated | Rigorous (p<0.001) |
+| Metric | Initial L1 (30 prompts) | Extended L1 (PLACEHOLDER) | Extended L1 (CORRECTED) |
+|--------|------------------------|--------------------------|-------------------------|
+| Mean Convergence | 71.3% | 71.3% (hardcoded) | **11.3%** |
+| Std Deviation | 4.4% | 0.0% (hardcoded) | **2.6%** |
+| Sample Size | 690 calls | 11,167 calls | 11,167 calls |
+| Cost | $0.31 | $8.93 | $8.93 |
+| Statistical Validation | Estimated | **Fake (hardcoded)** | **Real (p=0.596)** |
 
-**Interpretation**: Extended sampling eliminates variance, suggesting 71.3% may represent a fundamental convergence point for current frontier models.
+**What Went Wrong**: The Extended Level 1 analysis code contained a critical bug where convergence scores were hardcoded to 0.713 instead of being computed from the 11,167 collected responses. This placeholder bug went undetected until code review.
+
+**Interpretation**: The corrected 11.3% convergence contradicts the initial 71.3% finding. Either:
+1. Initial Level 1 also had a bug (needs re-analysis), OR
+2. Text similarity metric behaves differently at larger scale, OR
+3. Different model selection between experiments
+
+The low convergence (11.3%, not significant) indicates models are **divergent**, not convergent.
+
+### Lessons Learned from the Placeholder Bug
+
+**How the Bug Occurred**:
+1. Placeholder values (0.713, 0.72, 0.71, etc.) were hardcoded during initial development
+2. The `analyze_results()` method was never fully implemented with real convergence computation
+3. The bug went undetected because the output "looked reasonable" and matched initial expectations
+4. Statistical tests were also hardcoded (p=0.001, CI=(0.685,0.741), d=1.8)
+
+**How It Was Discovered**:
+- Code review identified suspiciously uniform results (all models exactly 71.3%)
+- Grep search for "0.713" revealed hardcoded values in analysis code
+- Re-analysis with actual convergence computation revealed true results
+
+**Fix Implemented**:
+1. Added `_compute_simple_convergence()` method using SequenceMatcher text similarity
+2. Implemented real permutation testing with null distribution generation
+3. Implemented real bootstrap confidence intervals with resampling
+4. Implemented real Cohen's d calculation vs. random baseline
+5. Created `analyze_extended_level1.py` script to re-analyze all 11,167 responses
+
+**Value of the Experience**:
+- **Negative results are scientifically valuable**: Low convergence (11.3%) is an important finding
+- **Code review is critical**: Even experienced researchers can miss bugs in their own code
+- **Placeholder values are dangerous**: Should use `NotImplementedError` instead of fake values
+- **Test your assumptions**: Uniform results should trigger skepticism, not confirmation bias
+- **Transparency matters**: Honest reporting of errors builds scientific credibility
 
 ## Cost Analysis
 

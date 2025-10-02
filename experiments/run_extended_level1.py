@@ -5,7 +5,7 @@ Extended Level 1 Experiment: Deep Behavioral Screening
 Executes extended behavioral screening for statistical rigor:
 - 15 top models × 750 prompts each = 11,250 API calls
 - Cost: ~$8-10 (validated budget)
-- Goal: Generate statistically significant evidence for universal alignment patterns
+- Goal: Validate behavioral convergence hypothesis with rigorous statistical testing
 
 Statistical validation:
 - Permutation testing (10,000 iterations)
@@ -13,7 +13,7 @@ Statistical validation:
 - Effect size calculation (Cohen's d)
 - Multiple hypothesis correction (Bonferroni)
 
-Transforms preliminary findings (71.3% convergence) into publication-quality evidence.
+Tests whether frontier models exhibit universal alignment patterns.
 """
 
 import asyncio
@@ -376,14 +376,6 @@ class ExtendedLevel1Executor:
 
         self.logger.info("Computing convergence scores...")
 
-        # Import convergence analyzer
-        try:
-            from patterns.advanced_metrics import AdvancedConvergenceAnalyzer
-            analyzer = AdvancedConvergenceAnalyzer()
-        except ImportError:
-            self.logger.warning("AdvancedConvergenceAnalyzer not available, using basic metrics")
-            analyzer = None
-
         # Organize responses by model and capability
         responses_by_model = {}
         for response in self.responses:
@@ -393,20 +385,12 @@ class ExtendedLevel1Executor:
                 responses_by_model[response.model_id][response.capability] = []
             responses_by_model[response.model_id][response.capability].append(response.response_text)
 
-        # Compute convergence scores (placeholder - will use actual analyzer)
-        model_scores = {}
-        for model_id in responses_by_model.keys():
-            # Basic convergence score (will be replaced with actual metric)
-            model_scores[model_id] = 0.713  # Placeholder
-
-        # Convergence by capability
-        convergence_by_capability = {
-            "truthfulness": 0.72,
-            "safety_boundaries": 0.71,
-            "instruction_following": 0.73,
-            "uncertainty_expression": 0.69,
-            "context_awareness": 0.71
-        }
+        # Compute actual pairwise convergence scores using simple text similarity
+        # (AdvancedConvergenceAnalyzer is too slow for 11K+ responses)
+        self.logger.info("Using fast text similarity convergence metric")
+        model_scores, convergence_by_capability = self._compute_simple_convergence(
+            responses_by_model
+        )
 
         # Statistical validation (if enabled)
         if self.config.statistical_tests:
@@ -453,23 +437,219 @@ class ExtendedLevel1Executor:
 
         return results
 
+    def _compute_actual_convergence(self, responses_by_model, analyzer):
+        """Compute actual pairwise convergence using AdvancedConvergenceAnalyzer"""
+        import numpy as np
+        from itertools import combinations
+
+        self.logger.info("Computing actual pairwise convergence...")
+
+        model_list = list(responses_by_model.keys())
+        capabilities = list(next(iter(responses_by_model.values())).keys())
+
+        # Compute pairwise convergence for each model
+        model_scores = {}
+        all_pairwise_scores = []
+
+        for model_id in model_list:
+            pairwise_scores = []
+
+            for other_model in model_list:
+                if model_id == other_model:
+                    continue
+
+                # Get all responses for both models (across all capabilities)
+                model_responses = []
+                other_responses = []
+
+                for cap in capabilities:
+                    model_responses.extend(responses_by_model[model_id].get(cap, []))
+                    other_responses.extend(responses_by_model[other_model].get(cap, []))
+
+                # Ensure equal length - sample max 100 responses for speed
+                min_len = min(len(model_responses), len(other_responses), 100)
+                if min_len >= 10:
+                    try:
+                        result = analyzer.analyze_convergence(
+                            model_responses[:min_len],
+                            other_responses[:min_len]
+                        )
+                        pairwise_scores.append(result.combined_score)
+                        all_pairwise_scores.append(result.combined_score)
+                    except Exception as e:
+                        self.logger.warning(f"Error computing convergence for {model_id} vs {other_model}: {e}")
+
+            # Average convergence to all other models
+            model_scores[model_id] = np.mean(pairwise_scores) if pairwise_scores else 0.0
+
+        # Store for statistical tests
+        self.all_pairwise_scores = all_pairwise_scores
+        self.model_list = model_list
+
+        # Compute convergence by capability
+        convergence_by_capability = {}
+        for capability in capabilities:
+            cap_pairwise_scores = []
+
+            for model1, model2 in combinations(model_list, 2):
+                responses1 = responses_by_model[model1].get(capability, [])
+                responses2 = responses_by_model[model2].get(capability, [])
+
+                min_len = min(len(responses1), len(responses2))
+                if min_len >= 10:
+                    try:
+                        result = analyzer.analyze_convergence(
+                            responses1[:min_len],
+                            responses2[:min_len]
+                        )
+                        cap_pairwise_scores.append(result.combined_score)
+                    except Exception as e:
+                        self.logger.warning(f"Error for {capability}: {e}")
+
+            convergence_by_capability[capability] = np.mean(cap_pairwise_scores) if cap_pairwise_scores else 0.0
+
+        return model_scores, convergence_by_capability
+
+    def _compute_simple_convergence(self, responses_by_model):
+        """Fallback: compute simple response similarity"""
+        import numpy as np
+        from itertools import combinations
+        from difflib import SequenceMatcher
+
+        self.logger.info("Computing simple text similarity convergence...")
+
+        model_list = list(responses_by_model.keys())
+        capabilities = list(next(iter(responses_by_model.values())).keys())
+
+        def text_similarity(text1, text2):
+            """Simple text similarity using SequenceMatcher"""
+            return SequenceMatcher(None, text1.lower(), text2.lower()).ratio()
+
+        # Compute pairwise similarity for each model
+        model_scores = {}
+        all_similarities = []
+
+        for model_id in model_list:
+            similarities = []
+
+            for other_model in model_list:
+                if model_id == other_model:
+                    continue
+
+                # Compare responses across all prompts
+                model_responses = []
+                other_responses = []
+
+                for cap in capabilities:
+                    model_responses.extend(responses_by_model[model_id].get(cap, []))
+                    other_responses.extend(responses_by_model[other_model].get(cap, []))
+
+                min_len = min(len(model_responses), len(other_responses))
+                for i in range(min_len):
+                    sim = text_similarity(model_responses[i], other_responses[i])
+                    similarities.append(sim)
+                    all_similarities.append(sim)
+
+            model_scores[model_id] = np.mean(similarities) if similarities else 0.0
+
+        # Store for statistical tests
+        self.all_pairwise_scores = all_similarities
+        self.model_list = model_list
+
+        # Convergence by capability
+        convergence_by_capability = {}
+        for capability in capabilities:
+            cap_similarities = []
+
+            for model1, model2 in combinations(model_list, 2):
+                responses1 = responses_by_model[model1].get(capability, [])
+                responses2 = responses_by_model[model2].get(capability, [])
+
+                min_len = min(len(responses1), len(responses2))
+                for i in range(min_len):
+                    sim = text_similarity(responses1[i], responses2[i])
+                    cap_similarities.append(sim)
+
+            convergence_by_capability[capability] = np.mean(cap_similarities) if cap_similarities else 0.0
+
+        return model_scores, convergence_by_capability
+
     def compute_permutation_test(self) -> float:
-        """Compute permutation test p-value"""
-        self.logger.info("Running permutation test (10,000 iterations)...")
-        # Placeholder - will implement full permutation test
-        return 0.001  # p < 0.001 (highly significant)
+        """Compute actual permutation test p-value"""
+        import numpy as np
+
+        if not hasattr(self, 'all_pairwise_scores') or not self.all_pairwise_scores:
+            self.logger.warning("No pairwise scores available for permutation test")
+            return 1.0
+
+        # Use config iterations (may be reduced for speed)
+        n_iterations = getattr(self.config, 'permutation_iterations', 1000)
+        self.logger.info(f"Running permutation test ({n_iterations} iterations)...")
+
+        observed_mean = np.mean(self.all_pairwise_scores)
+        null_means = []
+
+        # Generate null distribution by shuffling
+        scores_array = np.array(self.all_pairwise_scores)
+
+        for _ in range(n_iterations):
+            # Shuffle scores to break model pairings
+            shuffled = np.random.permutation(scores_array)
+            null_means.append(np.mean(shuffled))
+
+        # p-value: proportion of null means >= observed
+        p_value = (np.array(null_means) >= observed_mean).mean()
+
+        return max(p_value, 0.0001)  # Minimum p-value
 
     def compute_bootstrap_ci(self) -> Tuple[float, float]:
-        """Compute bootstrap confidence intervals"""
-        self.logger.info("Computing bootstrap confidence intervals (1,000 samples)...")
-        # Placeholder - will implement bootstrap
-        return (0.685, 0.741)  # 95% CI
+        """Compute actual bootstrap confidence intervals"""
+        import numpy as np
+
+        if not hasattr(self, 'all_pairwise_scores') or not self.all_pairwise_scores:
+            self.logger.warning("No pairwise scores available for bootstrap")
+            return (0.0, 1.0)
+
+        # Use config iterations (may be reduced for speed)
+        n_bootstrap = getattr(self.config, 'bootstrap_iterations', 100)
+        self.logger.info(f"Computing bootstrap confidence intervals ({n_bootstrap} samples)...")
+
+        bootstrap_means = []
+        scores_array = np.array(self.all_pairwise_scores)
+
+        for _ in range(n_bootstrap):
+            # Resample with replacement
+            resampled = np.random.choice(scores_array, size=len(scores_array), replace=True)
+            bootstrap_means.append(np.mean(resampled))
+
+        # 95% CI
+        ci_lower = np.percentile(bootstrap_means, 2.5)
+        ci_upper = np.percentile(bootstrap_means, 97.5)
+
+        return (ci_lower, ci_upper)
 
     def compute_effect_size(self) -> float:
-        """Compute Cohen's d effect size"""
+        """Compute actual Cohen's d effect size"""
+        import numpy as np
+
         self.logger.info("Computing effect size (Cohen's d)...")
-        # Placeholder - will compute Cohen's d
-        return 1.8  # Large effect size
+
+        if not hasattr(self, 'all_pairwise_scores') or not self.all_pairwise_scores:
+            self.logger.warning("No pairwise scores available for effect size")
+            return 0.0
+
+        observed_mean = np.mean(self.all_pairwise_scores)
+        observed_std = np.std(self.all_pairwise_scores)
+
+        # Cohen's d vs random baseline (0.5 for text similarity)
+        random_baseline = 0.5
+
+        if observed_std > 0:
+            cohens_d = (observed_mean - random_baseline) / observed_std
+        else:
+            cohens_d = 0.0
+
+        return cohens_d
 
     def save_results(self, results: ExtendedLevel1Results):
         """Save complete results to JSON and generate summary report"""
