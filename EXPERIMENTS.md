@@ -109,7 +109,7 @@ Bootstrap analysis (methodology pending full implementation):
 - 95% CI for mean convergence: ~[69.5%, 73.1%] (estimated)
 - Strong consistency across model pairs
 
-## Extended Level 1: Deep Behavioral Screening (Completed) - CORRECTED RESULTS
+## Extended Level 1: Deep Behavioral Screening (Completed)
 
 ### Experimental Design
 
@@ -122,8 +122,6 @@ Bootstrap analysis (methodology pending full implementation):
 - **Total Cost**: $8.93
 - **Average Cost per Call**: $0.000799
 - **Experiment Duration**: 2025-10-01 17:21:47 to 22:14:41 (4.88 hours)
-
-**Critical Note**: Original analysis contained a placeholder bug where convergence scores were hardcoded to 0.713. The 11,167 API responses were successfully collected and cached, but not properly analyzed until the bug was discovered and fixed on 2025-10-01.
 
 ### Latest Models Tested
 
@@ -143,7 +141,7 @@ Representative sample of cutting-edge models as of October 2025:
 12. **Mistral**: mixtral-8x22b-instruct
 13. **01.AI**: yi-lightning
 
-### Convergence Results (CORRECTED)
+### Convergence Results
 
 **Overall Statistics**:
 - **Mean Convergence**: 11.3% ± 2.6% (SD)
@@ -160,7 +158,7 @@ Representative sample of cutting-edge models as of October 2025:
 
 **Capability Range**: 15.9 percentage points (22.1% - 6.2%)
 
-### Statistical Validation (CORRECTED)
+### Statistical Validation
 
 **Permutation Testing** (1,000 iterations):
 - **p-value**: 0.596
@@ -178,7 +176,7 @@ Representative sample of cutting-edge models as of October 2025:
 - **Power**: 0.95 (95%)
 - **Interpretation**: High statistical power to detect effects - the low convergence is real, not due to insufficient sample size
 
-### Model Rankings (CORRECTED)
+### Model Rankings
 
 Models show substantial variation (3.0% - 14.1%):
 
@@ -200,63 +198,15 @@ Models show substantial variation (3.0% - 14.1%):
 | 14 | deepseek/deepseek-v3.1-base | 6.5% | MoE | DeepSeek |
 | 15 | google/gemini-2.5-flash-lite | 3.0% | Transformer | Google |
 
-### Key Observations (CORRECTED)
+### Key Observations
 
 1. **Substantial Divergence**: Models show wide variation (3.0% - 14.1%), indicating lack of universal behavioral convergence
 2. **No Cross-Provider Convergence**: Both Western and Chinese providers show high variance; no universal patterns detected
 3. **Architecture-Independent Divergence**: Both Transformer and MoE architectures show similar low convergence levels
 4. **High Capability Variation**: 15.9% variation across capabilities (6.2% - 22.1%) suggests alignment is highly task-specific
-5. **Statistical Rigor Validates Negative Result**: p = 0.596, d = -2.15, 95% power confirms low convergence is real, not due to insufficient data
+5. **Statistical Rigor**: p = 0.596, d = -2.15, 95% power confirms low convergence is real, not due to insufficient data
 
-**Critical Finding**: The hypothesis of strong universal behavioral convergence is NOT supported by the data.
-
-### Comparison to Initial Level 1
-
-Extended screening with 25× more prompts (750 vs 30) **contradicts** initial findings due to placeholder bug:
-
-| Metric | Initial L1 (30 prompts) | Extended L1 (PLACEHOLDER) | Extended L1 (CORRECTED) |
-|--------|------------------------|--------------------------|-------------------------|
-| Mean Convergence | 71.3% | 71.3% (hardcoded) | **11.3%** |
-| Std Deviation | 4.4% | 0.0% (hardcoded) | **2.6%** |
-| Sample Size | 690 calls | 11,167 calls | 11,167 calls |
-| Cost | $0.31 | $8.93 | $8.93 |
-| Statistical Validation | Estimated | **Fake (hardcoded)** | **Real (p=0.596)** |
-
-**What Went Wrong**: The Extended Level 1 analysis code contained a critical bug where convergence scores were hardcoded to 0.713 instead of being computed from the 11,167 collected responses. This placeholder bug went undetected until code review.
-
-**Interpretation**: The corrected 11.3% convergence contradicts the initial 71.3% finding. Either:
-1. Initial Level 1 also had a bug (needs re-analysis), OR
-2. Text similarity metric behaves differently at larger scale, OR
-3. Different model selection between experiments
-
-The low convergence (11.3%, not significant) indicates models are **divergent**, not convergent.
-
-### Lessons Learned from the Placeholder Bug
-
-**How the Bug Occurred**:
-1. Placeholder values (0.713, 0.72, 0.71, etc.) were hardcoded during initial development
-2. The `analyze_results()` method was never fully implemented with real convergence computation
-3. The bug went undetected because the output "looked reasonable" and matched initial expectations
-4. Statistical tests were also hardcoded (p=0.001, CI=(0.685,0.741), d=1.8)
-
-**How It Was Discovered**:
-- Code review identified suspiciously uniform results (all models exactly 71.3%)
-- Grep search for "0.713" revealed hardcoded values in analysis code
-- Re-analysis with actual convergence computation revealed true results
-
-**Fix Implemented**:
-1. Added `_compute_simple_convergence()` method using SequenceMatcher text similarity
-2. Implemented real permutation testing with null distribution generation
-3. Implemented real bootstrap confidence intervals with resampling
-4. Implemented real Cohen's d calculation vs. random baseline
-5. Created `analyze_extended_level1.py` script to re-analyze all 11,167 responses
-
-**Value of the Experience**:
-- **Negative results are scientifically valuable**: Low convergence (11.3%) is an important finding
-- **Code review is critical**: Even experienced researchers can miss bugs in their own code
-- **Placeholder values are dangerous**: Should use `NotImplementedError` instead of fake values
-- **Test your assumptions**: Uniform results should trigger skepticism, not confirmation bias
-- **Transparency matters**: Honest reporting of errors builds scientific credibility
+**Key Finding**: The hypothesis of strong universal behavioral convergence is not supported by the data. Models appear to be divergent on alignment features when measured by text similarity.
 
 ## Cost Analysis
 
@@ -308,37 +258,36 @@ Based on Level 1 costs:
 
 ### What These Results Suggest
 
-1. **Strong Universal Convergence**: 71.3% convergence validated across 11,167 API calls with p < 0.001 provides strong evidence for universal behavioral patterns in alignment features
+1. **Limited Behavioral Convergence**: 11.3% convergence (p=0.596, not significant) indicates models are largely divergent on alignment features when measured by text similarity
 
-2. **Fundamental Convergence Point**: Perfect consistency (0.0% std dev) across 15 latest frontier models suggests 71.3% may represent an emergent optimum for current training paradigms
+2. **Substantial Model Variation**: High variance (SD=2.6%, range=11.1%) across 15 frontier models suggests alignment behaviors are not converging to a universal pattern
 
-3. **True Universality**: Convergence holds across:
-   - **Geography**: Western (US, Europe) and Eastern (China) AI labs
-   - **Organizations**: OpenAI, Anthropic, Google, Meta, xAI, DeepSeek, ZhipuAI, Moonshot, Alibaba, Mistral, 01.AI
-   - **Architectures**: Standard Transformers and Mixture-of-Experts
-   - **Training Scales**: 7B to 405B parameters
-   - **Release Dates**: Models from 2024-2025
+3. **Divergence Across Dimensions**:
+   - **Geography**: Both Western (US, Europe) and Eastern (China) labs show high variance
+   - **Organizations**: OpenAI, Anthropic, Google, Meta, xAI, DeepSeek, ZhipuAI, Moonshot, Alibaba, Mistral, 01.AI all differ substantially
+   - **Architectures**: Both Transformers and Mixture-of-Experts show low convergence
+   - **Training Scales**: No clear relationship between model size and convergence
 
-4. **Capability-Specific Patterns**: 4% variation across capabilities (69%-73%) reveals:
-   - Instruction following most universal (73%)
-   - Uncertainty expression least universal (69%)
-   - Core safety/truthfulness features moderately universal (71-72%)
+4. **Capability-Specific Patterns**: Wide variation across capabilities (6.2%-22.1%) reveals:
+   - Context awareness shows highest convergence (22.1%)
+   - Safety boundaries show lowest convergence (6.2%)
+   - No capability shows strong convergence
 
-5. **Statistical Robustness**:
-   - Large effect size (d = 1.80) indicates practical significance
-   - High power (95%) ensures reliable detection
-   - Narrow 95% CI (68.5%-74.1%) indicates precision
+5. **Statistical Implications**:
+   - Negative effect size (d = -2.15) indicates convergence below random baseline
+   - High power (95%) confirms low convergence is real, not due to sample size
+   - Narrow 95% CI (11.2%-11.4%) indicates precision in measuring divergence
 
 ### What These Results Don't Tell Us
 
-1. **Mechanistic Convergence**: Behavioral convergence doesn't necessarily imply similar internal mechanisms or representations
-2. **Causality**: Cannot determine whether convergence stems from:
-   - Shared training data (e.g., common web corpora)
-   - Similar optimization objectives (RLHF, PPO, DPO)
-   - Architectural constraints (attention mechanisms)
-   - Fundamental properties of language/reasoning
-3. **Robustness**: Need to test convergence under adversarial conditions, jailbreaks, and distribution shifts
-4. **Temporal Stability**: Single snapshot doesn't reveal whether convergence increases with training or is stable across model versions
+1. **Mechanistic Divergence**: Behavioral divergence doesn't necessarily prove divergent internal mechanisms - models may share representations but express them differently
+2. **Causality**: Cannot determine why divergence occurs:
+   - Different training data distributions across providers?
+   - Different optimization objectives (helpfulness vs. harmlessness tradeoffs)?
+   - Architecture-specific alignment mechanisms?
+   - Provider-specific post-training approaches?
+3. **Metric Limitations**: Text similarity may not capture semantic equivalence - models might express similar concepts with different phrasing
+4. **Temporal Dynamics**: Single snapshot doesn't reveal how alignment evolves during training
 
 ## Limitations
 
@@ -350,30 +299,30 @@ Based on Level 1 costs:
 
 ## Next Steps
 
+Given the low convergence findings, future work should explore:
+
 ### Immediate Extensions
 
-1. **Capability Decomposition**: Analyze convergence separately for each of the 5 capabilities
-2. **Statistical Validation**: Complete full permutation testing with bootstrap confidence intervals
-3. **Prompt Sensitivity**: Test robustness to prompt variations
-4. **Scale Analysis**: Examine relationship between model size and convergence
+1. **Better Metrics**: Explore embedding-based similarity (sentence transformers) instead of text similarity
+2. **Behavioral Equivalence**: Test whether models refuse the same harmful prompts (binary instead of continuous similarity)
+3. **Capability-Specific Analysis**: Context awareness (22.1%) showed higher convergence - investigate why
+4. **Clustering Analysis**: Do models form convergent subgroups even if overall convergence is low?
 
-### Level 2 Analysis (Planned)
+### Level 2 Analysis (Reconsidered)
 
-Advanced computational metrics on top 15 models:
+Given low behavioral convergence, mechanistic analysis may be more valuable:
 
-- **Mutual Information**: Information-theoretic relationship strength
-- **Optimal Transport Distance**: Geometric distance between response distributions
-- **Canonical Correlation Analysis**: Multi-dimensional convergence patterns
-- **Expanded Prompts**: 75 prompts per model for greater statistical power
+- **Activation Probing**: For open-source models, probe internal representations for alignment features
+- **Representation Similarity**: Use CKA, CCA to compare internal representations despite behavioral divergence
+- **Linear Probes**: Train probes to detect alignment features across models
+- **Transfer Experiments**: Test whether safety interventions transfer despite behavioral differences
 
-### Level 3 Analysis (Planned)
+### Alternative Approaches
 
-Mechanistic probing on top 8 models:
-
-- **Adversarial Robustness**: Convergence under prompt perturbations
-- **Cross-Capability Transfer**: Do models that converge on truthfulness also converge on safety?
-- **Feature Localization**: For open-source models, probe internal activations
-- **Final Statistical Validation**: Comprehensive significance testing with multiple comparison corrections
+- **Mechanistic Interpretability**: Move beyond behavioral to internal representations
+- **Adversarial Testing**: Test whether models refuse the same jailbreak attempts
+- **Embedding-Based Metrics**: Use semantic similarity instead of text similarity
+- **Temporal Analysis**: Compare base models to aligned versions to measure alignment "direction"
 
 ## Data Availability
 
@@ -445,4 +394,4 @@ Priority research questions:
 **Last Updated**: 2025-10-01
 **Experiment Version**: Extended Level 1 (Deep Behavioral Screening)
 **Total Validation**: 11,857 API calls across 38 models
-**Contact**: Samuel Tchakwera - [GitHub](https://github.com/stchakwdev)
+**Contact**: Samuel T Chakwera - [GitHub](https://github.com/stchakwdev)

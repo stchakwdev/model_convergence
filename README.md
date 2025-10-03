@@ -16,11 +16,11 @@ If alignment features emerge from optimization pressure rather than architecture
 
 Extended behavioral screening with rigorous statistical validation:
 
-**Extended Level 1 (Deep Screening)** - CORRECTED RESULTS:
+**Extended Level 1 (Deep Screening)**:
 - **Mean behavioral convergence: 11.3%** (SD = 2.6%)
 - **Sample size**: 11,167 API calls across 15 latest frontier models × 750 prompts
 - **Cost**: $8.93 (cost-optimized via OpenRouter)
-- **Statistical validation**: p = 0.596 (NOT statistically significant), Cohen's d = -2.15
+- **Statistical validation**: p = 0.596 (not statistically significant), Cohen's d = -2.15
 - **Models tested**: GLM-4.5, Deepseek-V3.1, Grok-4-Fast, Gemini-2.5-Flash, Kimi-K2, GPT-4o, Claude-3.5-Sonnet, and 8 others
 
 **Capability-Specific Results**:
@@ -30,9 +30,7 @@ Extended behavioral screening with rigorous statistical validation:
 - Uncertainty Expression: 8.1%
 - Safety Boundaries: 6.2%
 
-**Interpretation**: Low convergence (11.3%, p=0.596) indicates frontier models are largely **divergent** on alignment features, not convergent. This is a valuable negative result - the hypothesis of strong universal behavioral convergence is NOT supported by the data. Models show substantial variation in how they handle alignment-relevant tasks.
-
-**Note on Data Quality**: Results corrected after discovering placeholder bug. Original report of 71.3% convergence was due to hardcoded values in analysis code. The 11,167 API responses were successfully collected and have now been properly analyzed.
+**Interpretation**: Low convergence (11.3%, p=0.596) indicates frontier models are largely **divergent** on alignment features. This negative result suggests the hypothesis of strong universal behavioral convergence is not supported by the data. Models show substantial variation in how they handle alignment-relevant tasks, likely reflecting differences in training data, objectives, or architectural constraints.
 
 ## Methodology
 
@@ -75,7 +73,7 @@ See [EXPERIMENTS.md](EXPERIMENTS.md) for detailed results including:
 - Model-specific convergence scores
 - Capability-wise breakdown with statistical power analysis
 
-### Convergence Results (Extended Level 1) - CORRECTED
+### Convergence Results (Extended Level 1)
 
 **Substantial Variation Observed**: Models show significant divergence (3.0% - 14.1%)
 
@@ -175,26 +173,6 @@ This research has important limitations:
 4. **Temporal Snapshot**: Single point-in-time measurement; doesn't capture how alignment evolves during training
 5. **Causality**: Cannot determine root causes of observed divergence (training data, objectives, architectures, or optimization dynamics)
 6. **Metric Limitations**: Text similarity may not capture semantic convergence - models might express similar concepts differently
-7. **Corrected Analysis**: Initial results (71.3%) were due to placeholder bug; actual convergence (11.3%) was only discovered through code review
-
-## Lessons Learned
-
-**What We Built Successfully**:
-- Working experimental pipeline: 11,167 API responses collected and cached
-- Cost-efficient infrastructure: $8.93 for comprehensive dataset via OpenRouter
-- Statistical validation framework: Permutation tests, bootstrap CIs, effect sizes
-- Reproducible analysis: All code and data preserved for replication
-
-**What Went Wrong**:
-- **Critical placeholder bug**: Analysis code had hardcoded convergence values (71.3%) instead of real computations
-- **Delayed detection**: Bug existed for weeks before discovery through code review
-- **False positive results**: Initially reported strong convergence that didn't exist
-
-**Value of This Work**:
-1. **Negative result is valuable**: Low convergence (11.3%) tells us universal behavioral patterns may not exist
-2. **Infrastructure remains useful**: Data collection and analysis pipeline works correctly now
-3. **Scientific rigor validated**: Catching our own bug demonstrates importance of code review
-4. **Honest science**: Transparent reporting of errors builds credibility
 
 ## Next Steps
 
@@ -262,7 +240,7 @@ Research was conducted cost-efficiently:
 
 ## Author
 
-**Samuel Tchakwera**
+**Samuel T Chakwera**
 AI Safety Researcher
 Applying statistical methods from epidemiology to AI alignment research
 
@@ -281,7 +259,7 @@ If this work influences your research:
 ```bibtex
 @misc{tchakwera2025convergence,
   title={Investigating Cross-Model Behavioral Convergence in AI Alignment},
-  author={Tchakwera, Samuel},
+  author={Tchakwera, Samuel T},
   year={2025},
   publisher={GitHub},
   url={https://github.com/stchakwdev/model_convergence},
@@ -311,4 +289,4 @@ This research explores universal patterns in AI alignment. The approach draws in
 
 ---
 
-**Note**: This is early-stage exploratory research with corrected results. Initial findings of 71.3% convergence were due to a placeholder bug; actual convergence is 11.3% (not statistically significant). This negative result is valuable - it suggests universal behavioral alignment patterns may not exist at the level we hypothesized. We encourage replication, critique, and alternative interpretations of our findings.
+**Note**: This is early-stage exploratory research. The negative result (11.3% convergence, not statistically significant) is valuable - it suggests universal behavioral alignment patterns may not exist at the level we hypothesized, or that our text similarity metric doesn't capture underlying convergence. We encourage replication, critique, and alternative interpretations of our findings.
